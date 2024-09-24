@@ -1,15 +1,23 @@
 
-<img src="./deby_estudar.jpeg" alt="Minha Caricatura" style="width: 100px;">
-# Meus Estudos e Cursos
+
+<p align="center">
+    <img src="./deby_estudar.jpeg" alt="Minha Caricatura" style="width: 240px;">
+</p>
+
+<h1 align="center">
+   
+Meus Estudos e Cursos
+
+</h1>
 
 Bem-vindo ao meu repositório de estudos! Aqui estão os materiais e anotações de diversos cursos que estou realizando, incluindo AWS Cloud, Inteligência Artificial, e outros temas técnicos. Se tiver sugestões ou feedbacks, sinta-se à vontade para contribuir! 💖
 
 
 
-## Menu de Conteúdos por Curso
+## Temas
 
 - [Estudos AWS Cloud](fundamentos_tecnicos_aws.md)
-- [Curso de Inteligência Artificial Generativa](inteligencia_artificial.md)
+- [Inteligência Artificial Generativa](inteligencia_artificial.md)
 
 
 ## Sobre o Repositório
