@@ -1,4 +1,5 @@
 Estou iniciando meus estudos AWS CLOUD e criei essa página para fazer anotações, se quiser me dar feedbacks serão super aceitos <3
+![AWS Logo](https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg)
 
 # Fundamentos Técnicos da AWS
 
