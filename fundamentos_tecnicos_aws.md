@@ -11,7 +11,7 @@
 ### Visão Geral do Curso
 - **Zonas de Disponibilidade**: São regiões geográficas como América do Sul, Estados Unidos, etc.
 - **Virtual Private Cloud (VPC) - Rede Privada**: É um serviço que permite a criação de uma rede virtual isolada dentro da infraestrutura da AWS
-- **Elastic Compute Cloud (EC2)**: O backend será hospedado no EC2, que oferece máquinas virtuais escaláveis.
+- **Elastic Compute Cloud (EC2)**: ele permite que você crie e execute máquinas virtuais escaláveis (chamadas de instâncias) na infraestrutura da AWS, sem precisar gerenciar o hardware físico.
 - **Amazon S3 (Simple Storage Service)**: Usado para armazenar as fotos dos funcionários com capacidade de armazenamento ilimitado de qualquer tipo de arquivo.
 - **Amazon CloudWatch**: Monitora a aplicação para garantir escalabilidade e tolerância a falhas.
 - **Elastic Load Balancer (ELB)**: Distribui o tráfego entre as instâncias EC2.
