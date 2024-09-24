@@ -2,7 +2,7 @@
 
 Bem-vindo à minha página de anotações e estudos. Aqui estão os tópicos que estou estudando:
 
-## Menu
+## Temas
 
 - [Fundamentos Técnicos da AWS](fundamentos_tecnicos_aws.md)
 
