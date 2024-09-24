@@ -1,7 +1,12 @@
-Estou iniciando meus estudos AWS CLOUD e criei essa página para fazer anotações, se quiser me dar feedbacks serão super aceitos <3
-![AWS Logo](https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg)
+# Introdução
 
-# Fundamentos Técnicos da AWS
+Estou dando início aos meus estudos em **AWS Cloud** e criei esta página para organizar minhas anotações ao longo da jornada. Feedbacks e sugestões são sempre bem-vindos e muito aceito! 💖
+
+<div style="display: flex; align-items: center;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS Logo" style="width: 100px; margin-right: 10px;">
+    <h1 style="margin: 0;">Fundamentos Técnicos da AWS</h1>
+</div>
+
 
 ## Módulo 1: Introdução à Amazon Web Services (AWS)
 
