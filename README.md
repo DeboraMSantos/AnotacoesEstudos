@@ -16,7 +16,7 @@ Bem-vindo ao meu repositório de estudos! Aqui estão os materiais e anotações
 
 ## Temas
 
-- [Estudos AWS Cloud](fundamentos_tecnicos_aws.md)
+- [Fundamentos Técnicos da AWS](fundamentos_tecnicos_aws.md)
 - [Inteligência Artificial Generativa](inteligencia_artificial.md)
 
 
