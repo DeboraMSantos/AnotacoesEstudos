@@ -1,3 +1,5 @@
+Estou iniciando meus estudos AWS CLOUD e criei essa página para fazer anotações, se quiser me dar feedbacks serão super aceitos <3
+
 # Fundamentos Técnicos da AWS
 
 ## Módulo 1: Introdução à Amazon Web Services (AWS)
