@@ -1,7 +1,7 @@
 
 <div style="display: flex; align-items: center;">
     <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" alt="AWS Logo" style="width: 100px; margin-right: 10px;">
-    <h1 style="margin: 0;">Fundamentos Técnicos da AWS</h1>
+    <h1 style="margin: 0;">Fundamentos Técnicos da AWS</h1> - Plataforma AWS SKILL BUILDER
 </div>
 
 
