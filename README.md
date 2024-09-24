@@ -1,8 +1,10 @@
+
+<img src="./deby_estudar.jpeg" alt="Minha Caricatura" style="width: 100px;">
 # Meus Estudos e Cursos
 
 Bem-vindo ao meu repositório de estudos! Aqui estão os materiais e anotações de diversos cursos que estou realizando, incluindo AWS Cloud, Inteligência Artificial, e outros temas técnicos. Se tiver sugestões ou feedbacks, sinta-se à vontade para contribuir! 💖
 
-![Minha Caricatura](./deby_estudar.jpeg)
+
 
 ## Menu de Conteúdos por Curso
 
