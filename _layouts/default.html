@@ -10,6 +10,53 @@
         display: flex;
       }
 
+      /* Topo Superior */
+      header {
+        width: 100%;
+        background-color: #fff;
+        padding: 10px 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+      }
+
+      /* Imagem do Perfil */
+      .profile-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      /* Menu Horizontal no Topo */
+      .top-menu {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+      }
+
+      .top-menu a {
+        text-decoration: none;
+        color: #000;
+        font-weight: 500;
+        font-size: 16px;
+      }
+
+      .top-menu a:hover {
+        text-decoration: underline;
+      }
+
+      /* Campo de Pesquisa */
+      .search-bar {
+        border: 1px solid #ccc;
+        padding: 5px 10px;
+        border-radius: 15px;
+        outline: none;
+      }
+
       /* Menu Lateral */
       nav {
         min-width: 250px;
@@ -18,7 +65,9 @@
         box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
         height: 100vh;
         position: fixed;
+        top: 60px; /* Ajuste para o topo */
         overflow-y: auto;
+        z-index: 500; /* Para ficar abaixo do topo */
       }
 
       nav h1 {
@@ -49,7 +98,7 @@
       /* Conteúdo Principal */
       main {
         margin-left: 270px; /* Espaço para o menu lateral */
-        padding: 20px;
+        padding: 80px 20px 20px 20px; /* Adiciona espaço para o topo */
         flex-grow: 1;
       }
 
@@ -60,6 +109,17 @@
     </style>
   </head>
   <body>
+    <!-- Topo Superior -->
+    <header>
+      <!-- Imagem do Perfil -->
+      <img src="/path/to/deby.jpg" alt="Perfil" class="profile-img" />
+
+      <!-- Campo de Pesquisa -->
+      <input type="text" class="search-bar" placeholder="Pesquisar..." />
+
+      <!-- Menu Horizontal -->
+    </header>
+
     <!-- Menu Lateral -->
     <nav>
       <h1>Meus Estudos</h1>
