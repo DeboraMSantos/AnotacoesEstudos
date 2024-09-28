@@ -1,35 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <title>{{ page.title }}</title>
-  </head>
-  <body>
-    <!-- Topo -->
-    <header style="text-align: center; padding: 20px">
-      <h1>Meus Estudos e Cursos</h1>
-      <p>Bem-vindo ao meu repositório de estudos</p>
-    </header>
+    <style>
+      body {
+        display: flex;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
 
-    <!-- Menu Lateral -->
-    <nav
-      style="
+      /* Menu lateral */
+      nav {
         min-width: 200px;
         height: 100vh;
-        position: fixed;
-        padding: 20px;
         background-color: #f4f4f4;
-      "
-    >
-      <h3>Menu</h3>
-      <ul style="list-style-type: none; padding-left: 0">
-        <li><a href="/index.html">Página Inicial</a></li>
-        <li><a href="/page1.html">Seção 1</a></li>
-        <li><a href="/page2.html">Seção 2</a></li>
+        padding: 20px;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+      }
+
+      /* Topo */
+      header {
+        position: fixed;
+        width: 100%;
+        background-color: #007acc;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        top: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Conteúdo principal */
+      main {
+        margin-left: 220px; /* Largura do menu */
+        padding: 60px 20px; /* Adiciona espaço no topo */
+        flex-grow: 1;
+      }
+
+      h1 {
+        margin-top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Menu Lateral -->
+    <nav>
+      <ul>
+        <li><a href="/index.html">GitPages</a></li>
+        <li><a href="/passo-a-passo.html">Passo a passo</a></li>
+        <li><a href="/como-funciona.html">Como funciona um novo deploy</a></li>
       </ul>
     </nav>
 
+    <!-- Topo -->
+    <header>
+      <h1>AléssioJr</h1>
+      <nav>
+        <a href="/">Início</a> | <a href="/ensino.html">Ensino</a> |
+        <a href="/projetos.html">Projetos</a> |
+        <a href="/pesquisa.html">Pesquisa</a> |
+        <a href="/empreendedorismo.html">Empreendedorismo</a> |
+        <a href="/contatos.html">Contatos</a>
+      </nav>
+    </header>
+
     <!-- Conteúdo Principal -->
-    <main style="margin-left: 220px; padding: 20px">{{ content }}</main>
+    <main>{{ content }}</main>
   </body>
 </html>
