@@ -3,6 +3,10 @@ layout: default
 title: Página Inicial
 ---
 
+<p align="center">
+    <img src="img/deby_estudar.jpeg" alt="Minha Caricatura" style="width: 240px;">
+</p>
+
 <h1 align="center">
    
 Meus Estudos e Cursos
