@@ -48,6 +48,26 @@ A AWS é uma plataforma de computação em nuvem que oferece serviços de TI sob
 - **Nuvem Privada**: Infraestrutura própria, usada por uma única organização.
 - **Nuvem Híbrida**: Combinação de nuvens públicas e privadas.
 
+### Serviços Chave da AWS
+
+### EC2 (Elastic Compute Cloud)
+- Hospeda máquinas virtuais que podem ser escaladas conforme a demanda.
+
+### S3 (Simple Storage Service)
+- Armazenamento de objetos com capacidade ilimitada.
+
+### IAM (Identity and Access Management)
+- Gerenciamento de identidades e controle de acesso a recursos.
+
+### CloudWatch
+- Monitoramento de recursos e métricas para garantir alta disponibilidade.
+
+### Auto Scaling
+- Ajusta automaticamente a quantidade de instâncias EC2 de acordo com o tráfego.
+
+### ELB (Elastic Load Balancer)
+- Distribui o tráfego entre múltiplas instâncias EC2.
+
 ## Infraestrutura Global da AWS
 
 ### Regiões
@@ -233,30 +253,62 @@ Essas políticas ajudam a gerenciar permissões específicas para os recursos da
 
 ## Acesso baseado em função na AWS
 
+### 1. Bloquear o Usuário Raiz
+- O usuário raiz tem acesso total à conta.
+- **Recomendações de Segurança**:
+  - Não compartilhe credenciais.
+  - Exclua chaves de acesso desnecessárias.
+  - Habilite MFA para proteção adicional.
+
+### 2. Princípio de Privilégio Mínimo
+- Conceda apenas as permissões mínimas necessárias para cada tarefa.
+- Comece com permissões básicas e adicione conforme a necessidade.
+
+### 3. Uso Apropriado do IAM
+- O IAM é para gerenciar o acesso a recursos da AWS.
+- Não é usado para autenticação de sites ou segurança de sistemas operacionais/redes.
+
+### 4. Preferir Funções do IAM
+- As funções oferecem credenciais temporárias, expiram após 15 min a 36 horas.
+- Mais seguro e flexível do que gerenciar usuários com credenciais de longo prazo.
+
+### 5. Usar um Provedor de Identidade (IdP)
+- Facilita o gerenciamento de identidades para equipes maiores.
+- Usando um IdP, é possível associar funções do IAM para identidades federadas, centralizando a gestão de permissões.
+
+### 6. Considere o AWS Single Sign-On (SSO)
+- Ideal para organizações com muitos funcionários e várias contas AWS.
+- Permite login único (SSO) para acessar várias contas e aplicações.
+- Oferece integração com IdPs de terceiros para sincronizar usuários e grupos, separando claramente a gestão de identidade e acesso à nuvem.
+
+
+
 ## Demonstração: implemente segurança com o AWS Identity and Access Management (IAM)
 
 ## Hospedagem de aplicação de diretório de funcionários
 
+# Teste de Conhecimento:
 
-## Serviços Chave da AWS
+**P: Quais são os quatro principais fatores que você deve considerar ao escolher uma região?**
 
-### EC2 (Elastic Compute Cloud)
-- Hospeda máquinas virtuais que podem ser escaladas conforme a demanda.
+R: Latência, preço, disponibilidade de serviços e conformidade
 
-### S3 (Simple Storage Service)
-- Armazenamento de objetos com capacidade ilimitada.
+**P: Qual das opções a seguir melhor descreve a relação entre regiões, zonas de disponibilidade e datacenters?**
 
-### IAM (Identity and Access Management)
-- Gerenciamento de identidades e controle de acesso a recursos.
+R: As regiões são clusters de zonas de disponibilidade. As zonas de disponibilidade são clusters de datacenters.
 
-### CloudWatch
-- Monitoramento de recursos e métricas para garantir alta disponibilidade.
+**P: Qual das opções a seguir é um benefício da computação em nuvem?**
 
-### Auto Scaling
-- Ajusta automaticamente a quantidade de instâncias EC2 de acordo com o tráfego.
+R: Obtenha alcance global em minutos
 
-### ELB (Elastic Load Balancer)
-- Distribui o tráfego entre múltiplas instâncias EC2.
+**P: Quais das opções a seguir são uma prática recomendada ao proteger um usuário raiz da AWS? (Selecione DUAS.)**
+
+R:  Habilitar multi-factor authentication (MFA) para o usuário raiz
+    Desabilitar ou excluir as chaves de acesso associadas ao usuário raiz
+
+
+
+
 
 ---
 

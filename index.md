@@ -1,6 +1,11 @@
 ---
-layout: default
-title: Página Inicial
+toc: false
+classes: wide
+author_profile: true
+sidebar:
+  nav: sidebar-sample
+layout: single
+permalink: /
 ---
 
 <p align="center">
