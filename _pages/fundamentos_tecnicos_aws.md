@@ -64,7 +64,35 @@ A AWS é uma plataforma de computação em nuvem que oferece serviços de TI sob
 - **Serviços de AZ**: O cliente gerencia a replicação entre AZs para garantir a alta disponibilidade.
 
 ## Interação com a AWS
+Na AWS, toda interação é feita através de chamadas de API autenticadas e autorizadas, que podem ser realizadas por meio de três ferramentas principais: **Console de Gerenciamento da AWS**, **AWS Command Line Interface (CLI)** e **SDKs da AWS**.
 
+### **Console de Gerenciamento da AWS:**
+- **Interface Web:** Permite gerenciar os recursos da nuvem através de uma interface gráfica amigável.
+- **Categorias de Serviços:** Os serviços são agrupados em categorias, como Computação, Armazenamento, Banco de Dados, entre outros.
+- **Seletor de Região:** Permite escolher a região onde você deseja executar os serviços.
+
+### **AWS CLI:**
+- **Linha de Comando Unificada:** Ferramenta para gerenciar produtos AWS por meio de comandos.
+- **Automação e Scripts:** Pode ser usada para automatizar processos, como a coleta diária de dados de servidores.
+- **Código Aberto e Multiplataforma:** Disponível para Windows, Linux e macOS.
+
+**Exemplo de uso da CLI:**
+- Comando: `aws ec2 describe-instances`
+- Resposta: Dados detalhados sobre as instâncias EC2 em execução.
+
+### **SDKs da AWS:**
+- **Integração com Linguagens de Programação:** Os SDKs (Kits de Desenvolvimento de Software) permitem integrar código de aplicação com os produtos da AWS.
+- **Suporte a Múltiplas Linguagens:** Disponível para C++, Go, Java, JavaScript, .NET, Node.js, PHP, Python, Ruby, entre outros.
+- **Exemplo de Código em Python:**
+  ```python
+  import boto3
+  ec2 = boto3.client('ec2')
+  response = ec2.describe_instances()
+  print(response)
+  ```
+  Neste exemplo, o código usa o SDK do Python (boto3) para interagir com o serviço EC2 e listar as instâncias.
+
+Essas ferramentas oferecem diferentes formas de acessar e gerenciar os recursos da AWS, desde uma interface visual até opções programáticas para automação e integração direta com código.
 
 
 ## Segurança e o modelo de responsabilidade compartilhada da AWS
