@@ -1,0 +1,37 @@
+main:
+  - title: "PostsByYear"
+    url: /posts/
+  - title: "PostsByTags"
+    url: /tags/
+  - title: "PostsByCategory"
+    url: /categories/
+
+sidebar-sample:
+  - title: "Index"
+    children:
+      - title: "PostsByYear"
+        url: /posts/
+      - title: "PostsByTags"
+        url: /tags/
+      - title: "PostsByCategory"
+        url: /categories/
+  - title: "Recent Posts By GenAI Category"
+    children:
+      - title: "IA Generativa"
+        url: /categories/FMBasic/
+      - title: "FM Adapt"
+        url: /categories//FMAdapt/
+      - title: "FM Risk"
+        url: /categories//FMRisk/
+      - title: "FM Multi"
+        url: /categories//FMMulti/
+      - title: "FM Efficiency"
+        url: /categories//FMEfficient/
+  - title: "AWS"
+    children:
+      - title: "Fundamentos AWS"
+        url: /categories/0Basics/
+      - title: "1Theoretical"
+        url: /categories//1Theoretical
+      - title: "2Architecture"
+        url: /categories//2Architecture
