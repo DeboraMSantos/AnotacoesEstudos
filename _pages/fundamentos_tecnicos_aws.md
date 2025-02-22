@@ -453,6 +453,40 @@ Este resumo sintetiza como a AWS utiliza elasticidade e dimensionamento para gar
   - Minimiza o impacto de falhas em cascata e melhora a escalabilidade dos sistemas.
 
 
+    ### Comparação: Amazon SQS x Amazon SNS
+    
+    #### Amazon SQS (Simple Queue Service)
+    - **Natureza:** Serviço de enfileiramento de mensagens.
+    - **Funcionamento:**  
+      - Mensagens são enviadas para uma fila onde ficam armazenadas até serem processadas por consumidores.
+      - Ideal para comunicação assíncrona entre componentes, desacoplando produtores e consumidores.
+    - **Características:**  
+      - Garante a entrega das mensagens (com opções de filas FIFO ou padrão).
+      - As mensagens permanecem na fila até serem processadas ou expirarem.
+      - Útil para processos em lote, workflows e gerenciamento de cargas variáveis.
+    
+    ##### Amazon SNS (Simple Notification Service)
+    - **Natureza:** Serviço de publicação/assinatura (pub/sub).
+    - **Funcionamento:**  
+      - Mensagens são publicadas em tópicos e distribuídas automaticamente a todos os assinantes.
+      - A entrega é em tempo real para diversos endpoints (como e-mail, SMS, funções Lambda, ou até filas SQS).
+    - **Características:**  
+      - Não armazena mensagens para processamento posterior; a entrega é imediata.
+      - Facilita o envio de notificações e alertas para múltiplos destinos simultaneamente.
+      - Excelente para casos de uso que exigem comunicação instantânea e distribuição em larga escala.
+
+    #### Resumo das Diferenças
+    - **Modelo de Comunicação:**  
+      - **SQS:** Ponto a ponto (fila) — armazena mensagens até que sejam processadas.
+      - **SNS:** Pub/Sub — entrega mensagens para todos os assinantes instantaneamente.
+    - **Uso Ideal:**  
+      - **SQS:** Para desacoplar componentes e processar mensagens de forma assíncrona.
+      - **SNS:** Para enviar notificações em tempo real e distribuir mensagens para vários destinos.
+    - **Integração:**  
+      - É comum usar SNS e SQS juntos; por exemplo, SNS pode distribuir notificações que são enfileiradas em SQS para processamento assíncrono.
+
+        Esta combinação permite criar arquiteturas flexíveis, escaláveis e resilientes na AWS.
+
 ## Módulo 3: Rede da AWS
 *Conteúdo do módulo 3...*
 
