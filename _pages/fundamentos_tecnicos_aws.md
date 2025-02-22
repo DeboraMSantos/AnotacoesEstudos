@@ -9,7 +9,7 @@
     
 - [Módulo 1: Introdução à Amazon Web Services](#módulo-1-introdução-à-amazon-web-services-aws)
 - [Módulo 2: Computação da AWS](#m%C3%B3dulo-2-computa%C3%A7%C3%A3o-da-aws)
-- [Módulo 3: Infraestrutura Global e Confiabilidade](#módulo-3-infraestrutura-global-confiabilidade)
+- [Módulo 3: Infraestrutura Global e Confiabilidade](#módulo-3-infraestrutura-global-e-confiabilidade)
 - [Módulo 4: Armazenamento da AWS](#módulo-4-armazenamento-da-aws)
 - [Módulo 5: Bancos de Dados](#módulo-5-bancos-de-dados)
 - [Módulo 6: Monitoramento, Otimização e Serverless](#módulo-6-monitoramento-otimização-e-serverless)
