@@ -505,22 +505,22 @@ Este resumo sintetiza como a AWS utiliza elasticidade e dimensionamento para gar
   - **AWS Fargate:**  
     - Plataforma sem servidor para execução de contêineres, eliminando a necessidade de gerenciar instâncias EC2.
 
-### Conhecimento:
-- P: Você deseja usar uma instância do Amazon EC2 para uma carga de trabalho de processamento em lote. Qual seria o melhor tipo de instância do Amazon EC2 a ser usado?
+# Teste de Conhecimento:
+1. Você deseja usar uma instância do Amazon EC2 para uma carga de trabalho de processamento em lote. Qual seria o melhor tipo de instância do Amazon EC2 a ser usado?
 - R: Otimizada para computação
 
-- P: Quais são as opções de duração do contrato para instâncias reservadas do Amazon EC2? (Selecione DUAS opções.)
+2. Quais são as opções de duração do contrato para instâncias reservadas do Amazon EC2? (Selecione DUAS opções.)
 - R1: 1 ano
 - R2: 3 anos
 
 
-- P: Você tem uma carga de trabalho que será executada por um total de seis meses e consegue suportar interrupções. Qual seria a opção de compra mais econômica do Amazon EC2?
+3. Você tem uma carga de trabalho que será executada por um total de seis meses e consegue suportar interrupções. Qual seria a opção de compra mais econômica do Amazon EC2?
 - R: Instância spot
   
-- P: Qual processo é um exemplo do Elastic Load Balancing?
+4. Qual processo é um exemplo do Elastic Load Balancing?
 - R: Garantir que nenhuma instância única do Amazon EC2 tenha que suportar a carga de trabalho completa sozinha.
 
-- P: Você deseja implantar e gerenciar aplicativos em contêineres. Qual serviço você deve usar?
+5. Você deseja implantar e gerenciar aplicativos em contêineres. Qual serviço você deve usar?
 - R: Amazon Elastic Kubernetes Service (Amazon EKS)
 
 
