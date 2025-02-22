@@ -64,7 +64,31 @@ A AWS é uma plataforma de computação em nuvem que oferece serviços de TI sob
 - O usuário pode criar, lançar e terminar instâncias do servidor, conforme necessário 
 - O usuário paga por hora pelos servidores ativos 
 - O EC2 oferece controle detalhado para gerenciar a infraestrutura com escolhas de processadores, armazenamento e redes
+  # Resumo dos Tipos de Instâncias EC2
   
+  A diversidade de tipos de instâncias permite selecionar a configuração mais adequada às necessidades específicas da aplicação, garantindo eficiência e performance.
+  
+  As instâncias EC2 são comparadas aos funcionários de uma cafeteria, onde cada "funcionário" (instância) tem uma função específica para atender às demandas dos clientes.
+
+- **Famílias de Instâncias:**
+  - **Uso Geral:**  
+    Equilíbrio entre CPU, memória e rede, ideal para tarefas variadas como serviços web e repositórios de código.
+    
+  - **Otimizadas para Computação:**  
+    Focadas em alto desempenho computacional para tarefas intensas, como servidores de jogos, computação de alto desempenho (HPC) e modelagem científica.
+    
+  - **Otimizadas para Memória:**  
+    Recomendadas para cargas de trabalho que exigem grande quantidade de memória.
+    
+  - **Otimizadas para Armazenamento:**  
+    Projetadas para oferecer alto desempenho no acesso e processamento de dados armazenados localmente.
+    
+  - **Computação Acelerada:**  
+    Utilizam aceleradores de hardware para cálculos com ponto flutuante, processamento gráfico e reconhecimento de padrões (semelhante ao funcionário que cria arte com café e leite).
+
+
+
+
 ### S3 (Simple Storage Service)
 - Armazenamento de objetos com capacidade ilimitada.
 
