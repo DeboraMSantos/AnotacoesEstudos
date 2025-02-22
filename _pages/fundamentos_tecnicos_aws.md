@@ -73,14 +73,10 @@ A AWS é uma plataforma de computação em nuvem que oferece serviços de TI sob
 
 #### Famílias de Instâncias:
 
-  - **Uso Geral:** Equilíbrio entre CPU, memória e rede, ideal para tarefas variadas como serviços web e repositórios de código.
-    
-  - **Otimizadas para Computação:** Focadas em alto desempenho computacional para tarefas intensas, como servidores de jogos, computação de alto desempenho (HPC) e modelagem científica.
-    
-  - **Otimizadas para Memória:** Recomendadas para cargas de trabalho que exigem grande quantidade de memória.
-    
-  - **Otimizadas para Armazenamento:** Projetadas para oferecer alto desempenho no acesso e processamento de dados armazenados localmente.
-    
+  - **Uso Geral:** Equilíbrio entre CPU, memória e rede, ideal para tarefas variadas como serviços web e repositórios de código.    
+  - **Otimizadas para Computação:** Focadas em alto desempenho computacional para tarefas intensas, como servidores de jogos, computação de alto desempenho (HPC) e modelagem científica.    
+  - **Otimizadas para Memória:** Recomendadas para cargas de trabalho que exigem grande quantidade de memória.    
+  - **Otimizadas para Armazenamento:** Projetadas para oferecer alto desempenho no acesso e processamento de dados armazenados localmente.    
   - **Computação Acelerada:** Utilizam aceleradores de hardware para cálculos com ponto flutuante, processamento gráfico e reconhecimento de padrões (semelhante ao funcionário que cria arte com café e leite).
 
 
