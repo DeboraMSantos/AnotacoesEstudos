@@ -9,7 +9,7 @@
     
 - [Módulo 1: Introdução à Amazon Web Services](#módulo-1-introdução-à-amazon-web-services-aws)
 - [Módulo 2: Computação da AWS](#m%C3%B3dulo-2-computa%C3%A7%C3%A3o-da-aws)
-- [Módulo 3: Rede da AWS](#módulo-3-rede-da-aws)
+- [Módulo 3: Infraestrutura Global e Confiabilidade](#módulo-3-infraestrutura-global-confiabilidade)
 - [Módulo 4: Armazenamento da AWS](#módulo-4-armazenamento-da-aws)
 - [Módulo 5: Bancos de Dados](#módulo-5-bancos-de-dados)
 - [Módulo 6: Monitoramento, Otimização e Serverless](#módulo-6-monitoramento-otimização-e-serverless)
@@ -429,7 +429,7 @@ Este resumo sintetiza como a AWS utiliza elasticidade e dimensionamento para gar
   - Esse desacoplamento melhora a eficiência e isola falhas, garantindo que um componente não afete diretamente o outro.
 
 
-### Aplicações Monolíticas e Microsserviços
+#### Aplicações Monolíticas e Microsserviços
 
 - **Aplicações Monolíticas:**
   - Constituídas por componentes fortemente acoplados (banco de dados, interface, lógica de negócios, etc.).
@@ -486,8 +486,48 @@ Este resumo sintetiza como a AWS utiliza elasticidade e dimensionamento para gar
       - É comum usar SNS e SQS juntos; por exemplo, SNS pode distribuir notificações que são enfileiradas em SQS para processamento assíncrono.
 
         Esta combinação permite criar arquiteturas flexíveis, escaláveis e resilientes na AWS.
+    #### Outros serviços de computação
 
-## Módulo 3: Rede da AWS
+- **Amazon EC2:**  
+  - Máquinas virtuais que oferecem flexibilidade, confiabilidade e escalabilidade.  
+  - Requer gerenciamento contínuo (patching, scaling, alta disponibilidade).
+
+- **Computação Sem Servidor (Serverless):**  
+  - **AWS Lambda:**  
+    - Executa código em resposta a eventos sem a necessidade de provisionar ou gerenciar servidores.  
+    - Escala automaticamente e é ideal para funções com duração de até 15 minutos.
+
+- **Contêineres e Orquestração:**  
+  - **Amazon Elastic Container Service (Amazon ECS) e Amazon Elastic Kubernetes Service (Amazon EKS):**  
+    - Gerenciam e orquestram contêineres (usando Docker) para implantar aplicações em escala.  
+    - Permitem maior eficiência e portabilidade sem acesso direto ao sistema operacional.
+      
+  - **AWS Fargate:**  
+    - Plataforma sem servidor para execução de contêineres, eliminando a necessidade de gerenciar instâncias EC2.
+
+### Conhecimento:
+- P: Você deseja usar uma instância do Amazon EC2 para uma carga de trabalho de processamento em lote. Qual seria o melhor tipo de instância do Amazon EC2 a ser usado?
+- R: Otimizada para computação
+
+- P: Quais são as opções de duração do contrato para instâncias reservadas do Amazon EC2? (Selecione DUAS opções.)
+- R1: 1 ano
+- R2: 3 anos
+
+
+- P: Você tem uma carga de trabalho que será executada por um total de seis meses e consegue suportar interrupções. Qual seria a opção de compra mais econômica do Amazon EC2?
+- R: Instância spot
+  
+- P: Qual processo é um exemplo do Elastic Load Balancing?
+- R: Garantir que nenhuma instância única do Amazon EC2 tenha que suportar a carga de trabalho completa sozinha.
+
+- P: Você deseja implantar e gerenciar aplicativos em contêineres. Qual serviço você deve usar?
+- R: Amazon Elastic Kubernetes Service (Amazon EKS)
+
+
+
+
+
+- ## Módulo 3: Infraestrutura Global e Confiabilidade
 *Conteúdo do módulo 3...*
 
 ## Módulo 4: Armazenamento da AWS
