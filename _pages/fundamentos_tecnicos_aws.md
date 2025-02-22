@@ -418,7 +418,29 @@ Este resumo sintetiza como a AWS utiliza elasticidade e dimensionamento para gar
 - **Benefícios:**  
   - Alta disponibilidade e desempenho, sem a necessidade de gerenciamento manual do balanceamento de carga.
   - Facilita uma arquitetura desacoplada, onde o front-end não precisa conhecer os detalhes do back-end, simplificando a gestão do tráfego.
-    
+
+### Sistema de mensagens e enfileiramento
+- **Problema do Acoplamento Direto:**
+  - No método tradicional, o operador de caixa passa o pedido diretamente para o barista.
+  - Se o barista estiver ocupado ou indisponível, os pedidos podem atrasar ou ser perdidos.
+
+- **Solução com Filas:**
+  - Introdução de um buffer (fila) entre o operador e o barista permite que os pedidos sejam armazenados até serem processados.
+  - Esse desacoplamento melhora a eficiência e isola falhas, garantindo que um componente não afete diretamente o outro.
+
+- **Serviços AWS:**
+  - **Amazon SQS (Simple Queue Service):**
+    - Enfileira mensagens para que possam ser processadas de forma assíncrona.
+    - Garante que os pedidos (mensagens) sejam mantidos até que o consumidor os processe.
+  - **Amazon SNS (Simple Notification Service):**
+    - Implementa o modelo publish/subscribe, distribuindo mensagens para vários assinantes.
+    - Pode enviar notificações para endpoints variados (e-mails, funções Lambda, SMS, etc.).
+
+- **Benefícios da Abordagem com Filas:**
+  - Permite a criação de arquiteturas desacopladas e resilientes.
+  - Minimiza o impacto de falhas em cascata e melhora a escalabilidade dos sistemas.
+
+
 ## Módulo 3: Rede da AWS
 *Conteúdo do módulo 3...*
 
