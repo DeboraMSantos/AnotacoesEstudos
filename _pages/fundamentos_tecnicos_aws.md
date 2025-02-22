@@ -83,7 +83,7 @@ A AWS é uma plataforma de computação em nuvem que oferece serviços de TI sob
 
 - **Sob Demanda:** Paga apenas pelo tempo de execução (por hora ou por segundo), sem compromissos de longo prazo.
 
-- **Savings Plans:** Oferece preços mais baixos mediante compromisso de uso consistente por 1 ou 3 anos, com economia de até 72%.
+- **Savings Plans:** Oferece preços mais baixos mediante compromisso de uso consistente por 1 ou 3 anos por dolar, com economia de até 72%.
 
 - **Instâncias Reservadas:** Indicadas para cargas de trabalho previsíveis, com descontos de até 75% em relação ao sob demanda.  
   *Opções de pagamento:* total antecipado, parcial ou sem pagamento inicial.
