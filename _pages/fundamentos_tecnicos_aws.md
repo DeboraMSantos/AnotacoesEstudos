@@ -60,7 +60,11 @@ A AWS é uma plataforma de computação em nuvem que oferece serviços de TI sob
 
 ### EC2 (Elastic Compute Cloud)
 - Hospeda máquinas virtuais que podem ser escaladas conforme a demanda.
-
+- O EC2 permite que os usuários aluguem computadores virtuais, chamados "instâncias" 
+- O usuário pode criar, lançar e terminar instâncias do servidor, conforme necessário 
+- O usuário paga por hora pelos servidores ativos 
+- O EC2 oferece controle detalhado para gerenciar a infraestrutura com escolhas de processadores, armazenamento e redes
+  
 ### S3 (Simple Storage Service)
 - Armazenamento de objetos com capacidade ilimitada.
 
