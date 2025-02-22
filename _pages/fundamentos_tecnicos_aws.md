@@ -428,6 +428,18 @@ Este resumo sintetiza como a AWS utiliza elasticidade e dimensionamento para gar
   - Introdução de um buffer (fila) entre o operador e o barista permite que os pedidos sejam armazenados até serem processados.
   - Esse desacoplamento melhora a eficiência e isola falhas, garantindo que um componente não afete diretamente o outro.
 
+
+### Aplicações Monolíticas e Microsserviços
+
+- **Aplicações Monolíticas:**
+  - Constituídas por componentes fortemente acoplados (banco de dados, interface, lógica de negócios, etc.).
+  - Falha em um componente pode levar à falha de toda a aplicação.
+
+- **Microsserviços:**
+  - Arquitetura baseada em componentes fracamente acoplados que operam de forma independente.
+  - Se um componente falha, os demais continuam funcionando, evitando falhas em cascata.
+  - Facilita a integração e comunicação por meio de serviços como Amazon SNS e Amazon SQS.
+
 - **Serviços AWS:**
   - **Amazon SQS (Simple Queue Service):**
     - Enfileira mensagens para que possam ser processadas de forma assíncrona.
