@@ -35,6 +35,39 @@
 ### O que é a AWS?
 A AWS é uma plataforma de computação em nuvem que oferece serviços de TI sob demanda pela internet. Isso permite que empresas eliminem a necessidade de gerenciar datacenters físicos, utilizando datacenters virtuais fornecidos pela AWS.
 
+### Modelos de implantação da computação em nuvem
+
+A computação em nuvem oferece aos desenvolvedores e departamentos de TI a capacidade de se concentrar no que é mais importante, evitando trabalhos como aquisição, manutenção e planejamento de capacidade. Com o crescimento da popularidade da computação em nuvem, várias estratégias de implantação surgiram para atender a essas necessidades específicas de usuários distintos. Cada tipo de método de implantação disponibiliza diferentes níveis de controle, flexibilidade e gerenciamento. Entender as diferenças entre essas estratégias de implantação pode ajudar você a decidir qual conjunto de serviços é ideal para suas necessidades. 
+
+### Modelos de implantação on-premises, na nuvem e híbrida.
+
+#### On-premises
+
+Antes da nuvem, empresas e organizações hospedavam e mantinham hardware, como equipamentos de computação, armazenamento e rede em seus próprios data centers. Muitas vezes, eles alocavam departamentos de infraestrutura inteiros para cuidar de seus data centers, o que resultou em operações dispendiosas que impossibilitaram algumas workloads e experimentações. 
+
+À medida que o uso da internet se tornou mais difundido, a demanda por equipamentos de computação, armazenamento e rede aumentou. Para algumas empresas e organizações, o custo de manter uma grande presença física era insustentável. Para resolver esse problema, surgiu a computação em nuvem.
+
+#### Nuvem
+
+Computação em nuvem é a entrega de recursos de TI sob demanda pela internet, com pagamento conforme o uso. Com a computação em nuvem, as empresas não precisam gerenciar e manter hardware e data centers próprios. Em vez disso, empresas como a Amazon Web Services (AWS) têm e mantêm data centers e fornecem tecnologias e serviços de data center virtual para empresas e usuários pela internet.
+
+#### Híbrida
+
+Uma terceira opção é uma implantação híbrida. Esse tipo de implantação é uma maneira de conectar infraestrutura e aplicações entre recursos baseados em nuvem e recursos atuais que não se encontram na nuvem. O método mais comum de implantação híbrida entre a nuvem e a infraestrutura on-premises existente conecta os recursos da nuvem aos sistemas internos para estender e expandir a infraestrutura de uma organização na nuvem.
+
+### Modelos de implantação de computação on-premises ou em nuvem.
+Para ajudar a diferenciar entre executar workloads on-premises e na nuvem, considere um cenário em que os desenvolvedores devem implantar um novo recurso da aplicação. Antes da implantação, a equipe deseja testar o recurso em um ambiente de garantia de qualidade (QA) separado que tenha as mesmas configurações que o de produção. Em uma solução on-premises, um ambiente adicional exige que você compre e instale hardware, conecte o cabeamento necessário, forneça energia, instale sistemas operacionais e muito mais. Essas tarefas podem ser demoradas e caras. Enquanto isso, o tempo de comercialização do novo recurso aumenta enquanto os desenvolvedores esperam pelo ambiente de controle de qualidade (QA). 
+
+Por outro lado, ao executar sua aplicação na nuvem, você pode replicar todo o ambiente de produção em questão de minutos ou até mesmo segundos. Em vez de instalar fisicamente o hardware e conectar o cabeamento, a solução é gerenciada pela internet.
+
+O uso da computação em nuvem economiza tempo durante a configuração e remove tarefas redundantes e desnecessárias. Se você olhar para qualquer aplicação, verá que alguns de seus aspectos são muito importantes para sua empresa, como o código. No entanto, outros aspectos não são diferentes de qualquer outra aplicação que você possa fazer, por exemplo, a computação na qual o código é executado. Algumas tarefas comuns repetitivas não diferenciam sua empresa, como instalar máquinas virtuais (VMs) ou armazenar backups. Ao remover essas tarefas, você pode se concentrar no que é estrategicamente exclusivo para a sua empresa e deixar que a AWS cuide das tarefas demoradas que não a separam dos seus concorrentes. Chamamos isso de remoção de "trabalho pesado indiferenciado". É aí que a AWS se encaixa em tudo isso.
+
+
+
+A AWS fornece serviços de computação em nuvem. Os recursos de TI mencionados na definição de computação em nuvem são produtos da AWS. Para a aplicação de diretório corporativo deste curso, você usará os produtos da AWS para arquitetar uma infraestrutura dimensionável, altamente disponível e econômica para hospedar a aplicação de diretório corporativo. Dessa forma, você pode disponibilizar a aplicação rapidamente, sem gerenciar hardware físico pesado.
+
+
+
 ### Seis Vantagens da Computação em Nuvem
 1. **Pagamento conforme o uso**: Pague apenas pelos recursos utilizados.
 2. **Economia em escala**: Custo mais baixo devido ao uso agregado de vários clientes.
