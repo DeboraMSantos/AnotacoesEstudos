@@ -60,53 +60,6 @@ A AWS é uma plataforma de computação em nuvem que oferece serviços de TI sob
 
 ### EC2 (Elastic Compute Cloud)
 - Hospeda máquinas virtuais que podem ser escaladas conforme a demanda.
-- O EC2 permite que os usuários aluguem computadores virtuais, chamados "instâncias" 
-- O usuário pode criar, lançar e terminar instâncias do servidor, conforme necessário 
-- O usuário paga por hora pelos servidores ativos 
-- O EC2 oferece controle detalhado para gerenciar a infraestrutura com escolhas de processadores, armazenamento e redes
-#### Resumo dos Tipos de Instâncias EC2
-
-  A diversidade de tipos de instâncias permite selecionar a configuração mais adequada às necessidades específicas da aplicação, garantindo eficiência e performance.
-  
-  As instâncias EC2 são comparadas aos funcionários de uma cafeteria, onde cada "funcionário" (instância) tem uma função específica para atender às demandas dos clientes.
-
-#### Famílias de Instâncias
-
-  - **Uso Geral:** Equilíbrio entre CPU, memória e rede, ideal para tarefas variadas como  servidores de jogos, servidores de aplicações  e repositórios de código.    
-  - **Otimizadas para Computação:** Focadas em alto desempenho computacional para tarefas intensas, como servidores de jogos, computação de alto desempenho (HPC) e modelagem científica.    
-  - **Otimizadas para Memória:** Recomendadas para cargas de trabalho que exigem grande quantidade de memória.    
-  - **Otimizadas para Armazenamento:** São projetadas para cargas de trabalho que exigem alto acesso sequencial de leitura e gravação a grandes conjuntos de dados no armazenamento local. Projetadas para oferecer alto desempenho no acesso e processamento de dados armazenados localmente.    
-  - **Computação Acelerada:** Utilizam aceleradores de hardware para cálculos com ponto flutuante, processamento gráfico e reconhecimento de padrões (semelhante ao funcionário que cria arte com café e leite).
-
-#### Preços do Amazon EC2
-
-- **Sob Demanda:** Paga apenas pelo tempo de execução (por hora ou por segundo), sem compromissos de longo prazo.
-
-- **Savings Plans:** Oferece preços mais baixos mediante compromisso de uso consistente por 1 ou 3 anos por dolar, com economia de até 72%.
-
-- **Instâncias Reservadas:** Indicadas para cargas de trabalho previsíveis, com descontos de até 75% em relação ao sob demanda.  
-  *Opções de pagamento:* total antecipado, parcial ou sem pagamento inicial.
-
-  Há dois tipos disponíveis de instância reservada a ***Standard Reserved Instances*** e ***Instâncias reservadas conversíveis***.  
-  Com período de vigência disponíveis para 1 ou 3 anos, com maior economia no plano de 3 anos.
-    
-    - **Standard Reserved Instances:**  
-      - Indicadas para cargas de trabalho com especificações definidas (tipo e tamanho da instância, plataforma, tenancy).  
-      - Permite a reserva de capacidade se uma Zona de Disponibilidade for especificada.
-    
-    - **Instâncias Reservadas Conversíveis:**  
-      - Oferecem maior flexibilidade para mudar entre diferentes Zonas de Disponibilidade ou tipos de instância, embora com desconto um pouco menor.
-    
-    - **Após o Período de Vigência:**  
-      - A instância pode continuar funcionando como sob demanda, a menos que seja terminada ou substituída por uma nova reserva com atributos correspondentes.
-
-
-- **Instâncias Spot:** Permitem solicitar capacidade excedente com descontos de até 90%, mas podem ser interrompidas com aviso de 2 minutos. Ideal para workloads tolerantes a interrupções.
-
-- **Hosts Dedicados:** Servem para alocar hosts físicos exclusivos, atendendo requisitos de conformidade e garantindo tenant exclusivo.
-
-
-
 
 ### S3 (Simple Storage Service)
 - Armazenamento de objetos com capacidade ilimitada.
@@ -368,7 +321,53 @@ R:  Habilitar multi-factor authentication (MFA) para o usuário raiz
 ---
 
 ## Módulo 2: Computação da AWS
-*Conteúdo do módulo 2...*
+### EC2 (Elastic Compute Cloud)
+- Hospeda máquinas virtuais que podem ser escaladas conforme a demanda.
+- O EC2 permite que os usuários aluguem computadores virtuais, chamados "instâncias" 
+- O usuário pode criar, lançar e terminar instâncias do servidor, conforme necessário 
+- O usuário paga por hora pelos servidores ativos 
+- O EC2 oferece controle detalhado para gerenciar a infraestrutura com escolhas de processadores, armazenamento e redes
+#### Resumo dos Tipos de Instâncias EC2
+
+  A diversidade de tipos de instâncias permite selecionar a configuração mais adequada às necessidades específicas da aplicação, garantindo eficiência e performance.
+  
+  As instâncias EC2 são comparadas aos funcionários de uma cafeteria, onde cada "funcionário" (instância) tem uma função específica para atender às demandas dos clientes.
+
+#### Famílias de Instâncias
+
+  - **Uso Geral:** Equilíbrio entre CPU, memória e rede, ideal para tarefas variadas como  servidores de jogos, servidores de aplicações  e repositórios de código.    
+  - **Otimizadas para Computação:** Focadas em alto desempenho computacional para tarefas intensas, como servidores de jogos, computação de alto desempenho (HPC) e modelagem científica.    
+  - **Otimizadas para Memória:** Recomendadas para cargas de trabalho que exigem grande quantidade de memória.    
+  - **Otimizadas para Armazenamento:** São projetadas para cargas de trabalho que exigem alto acesso sequencial de leitura e gravação a grandes conjuntos de dados no armazenamento local. Projetadas para oferecer alto desempenho no acesso e processamento de dados armazenados localmente.    
+  - **Computação Acelerada:** Utilizam aceleradores de hardware para cálculos com ponto flutuante, processamento gráfico e reconhecimento de padrões (semelhante ao funcionário que cria arte com café e leite).
+
+#### Preços do Amazon EC2
+
+- **Sob Demanda:** Paga apenas pelo tempo de execução (por hora ou por segundo), sem compromissos de longo prazo.
+
+- **Savings Plans:** Oferece preços mais baixos mediante compromisso de uso consistente por 1 ou 3 anos por dolar, com economia de até 72%.
+
+- **Instâncias Reservadas:** Indicadas para cargas de trabalho previsíveis, com descontos de até 75% em relação ao sob demanda.  
+  *Opções de pagamento:* total antecipado, parcial ou sem pagamento inicial.
+
+  Há dois tipos disponíveis de instância reservada a ***Standard Reserved Instances*** e ***Instâncias reservadas conversíveis***.  
+  Com período de vigência disponíveis para 1 ou 3 anos, com maior economia no plano de 3 anos.
+    
+    - **Standard Reserved Instances:**  
+      - Indicadas para cargas de trabalho com especificações definidas (tipo e tamanho da instância, plataforma, tenancy).  
+      - Permite a reserva de capacidade se uma Zona de Disponibilidade for especificada.
+    
+    - **Instâncias Reservadas Conversíveis:**  
+      - Oferecem maior flexibilidade para mudar entre diferentes Zonas de Disponibilidade ou tipos de instância, embora com desconto um pouco menor.
+    
+    - **Após o Período de Vigência:**  
+      - A instância pode continuar funcionando como sob demanda, a menos que seja terminada ou substituída por uma nova reserva com atributos correspondentes.
+
+
+- **Instâncias Spot:** Permitem solicitar capacidade excedente com descontos de até 90%, mas podem ser interrompidas com aviso de 2 minutos. Ideal para workloads tolerantes a interrupções.
+
+- **Hosts Dedicados:** Servem para alocar hosts físicos exclusivos, atendendo requisitos de conformidade e garantindo tenant exclusivo.
+
 
 ## Módulo 3: Rede da AWS
 *Conteúdo do módulo 3...*
