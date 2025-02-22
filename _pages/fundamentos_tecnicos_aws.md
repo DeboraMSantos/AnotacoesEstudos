@@ -64,7 +64,8 @@ A AWS é uma plataforma de computação em nuvem que oferece serviços de TI sob
 - O usuário pode criar, lançar e terminar instâncias do servidor, conforme necessário 
 - O usuário paga por hora pelos servidores ativos 
 - O EC2 oferece controle detalhado para gerenciar a infraestrutura com escolhas de processadores, armazenamento e redes
-  # Resumo dos Tipos de Instâncias EC2
+ 
+ ### Resumo dos Tipos de Instâncias EC2
   
   A diversidade de tipos de instâncias permite selecionar a configuração mais adequada às necessidades específicas da aplicação, garantindo eficiência e performance.
   
