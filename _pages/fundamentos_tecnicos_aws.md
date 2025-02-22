@@ -523,12 +523,17 @@ Este resumo sintetiza como a AWS utiliza elasticidade e dimensionamento para gar
 5. Você deseja implantar e gerenciar aplicativos em contêineres. Qual serviço você deve usar?
 - R: Amazon Elastic Kubernetes Service (Amazon EKS)
 
-
-
-
-
 ## Módulo 3: Infraestrutura Global e Confiabilidade
-*Conteúdo do módulo 3...*
+### Alta Disponibilidade na AWS
+
+- **Metáfora da Cafeteria:**  
+  - Se um evento (como um desfile, inundação ou queda de energia) bloquear uma unidade, os clientes podem simplesmente ir a outra próxima.
+  - Essa rede de cafeterias garante que o serviço continue disponível, mesmo se uma unidade ficar indisponível.
+
+- **Alta Disponibilidade na AWS:**  
+  - A AWS opera em várias regiões pelo mundo, distribuindo os recursos entre múltiplos datacenters.
+  - Se um datacenter falhar, as aplicações continuam disponíveis em outras regiões, assegurando tolerância a falhas.
+  - Essa estratégia minimiza o risco de interrupção total dos serviços, mantendo a continuidade mesmo em situações adversas.
 
 ## Módulo 4: Armazenamento da AWS
 *Conteúdo do módulo 4...*
