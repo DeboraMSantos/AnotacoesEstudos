@@ -406,8 +406,19 @@ Este resumo sintetiza como a AWS utiliza elasticidade e dimensionamento para gar
   - **Benefícios:**  
     - Otimiza custos, pois você paga somente pelo que é utilizado.
     - Garante uma experiência consistente para os clientes, sem sobrecarga ou desperdício de recursos.
-   
-    - 
+
+### Direcionamento de tráfego com o Elastic Load Balancing   
+- **Desafio de Distribuição:**  
+  - Sem um sistema de roteamento, as solicitações (clientes) se acumulam desigualmente entre as instâncias (caixas), causando sobrecarga em alguns pontos e ociosidade em outros.
+
+- **Função do ELB:**  
+  - Atua como um "host" que direciona os clientes para a fila com menos carga, distribuindo uniformemente o tráfego entre as instâncias EC2.
+  - Garante que, conforme o Auto Scaling adiciona ou remove instâncias, o tráfego seja roteado de maneira equilibrada e eficiente.
+
+- **Benefícios:**  
+  - Alta disponibilidade e desempenho, sem a necessidade de gerenciamento manual do balanceamento de carga.
+  - Facilita uma arquitetura desacoplada, onde o front-end não precisa conhecer os detalhes do back-end, simplificando a gestão do tráfego.
+    
 ## Módulo 3: Rede da AWS
 *Conteúdo do módulo 3...*
 
