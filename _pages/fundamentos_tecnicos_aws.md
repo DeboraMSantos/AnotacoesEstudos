@@ -527,7 +527,7 @@ Este resumo sintetiza como a AWS utiliza elasticidade e dimensionamento para gar
 
 
 
-- ## Módulo 3: Infraestrutura Global e Confiabilidade
+## Módulo 3: Infraestrutura Global e Confiabilidade
 *Conteúdo do módulo 3...*
 
 ## Módulo 4: Armazenamento da AWS
