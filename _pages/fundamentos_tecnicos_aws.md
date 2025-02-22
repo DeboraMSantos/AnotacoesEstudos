@@ -87,6 +87,20 @@ A AWS é uma plataforma de computação em nuvem que oferece serviços de TI sob
 
 - **Instâncias Reservadas:** Indicadas para cargas de trabalho previsíveis, com descontos de até 75% em relação ao sob demanda.  
   *Opções de pagamento:* total antecipado, parcial ou sem pagamento inicial.
+  
+    - **Período de Vigência:**  
+      - Disponíveis para 1 ou 3 anos, com maior economia no plano de 3 anos.
+    
+    - **Standard Reserved Instances:**  
+      - Indicadas para cargas de trabalho com especificações definidas (tipo e tamanho da instância, plataforma, tenancy).  
+      - Permite a reserva de capacidade se uma Zona de Disponibilidade for especificada.
+    
+    - **Instâncias Reservadas Conversíveis:**  
+      - Oferecem maior flexibilidade para mudar entre diferentes Zonas de Disponibilidade ou tipos de instância, embora com desconto um pouco menor.
+    
+    - **Após o Período de Vigência:**  
+      - A instância pode continuar funcionando como sob demanda, a menos que seja terminada ou substituída por uma nova reserva com atributos correspondentes.
+
 
 - **Instâncias Spot:** Permitem solicitar capacidade excedente com descontos de até 90%, mas podem ser interrompidas com aviso de 2 minutos. Ideal para workloads tolerantes a interrupções.
 
