@@ -76,21 +76,6 @@ A AWS é uma plataforma de computação em nuvem que oferece serviços de TI sob
 ### ELB (Elastic Load Balancer)
 - Distribui o tráfego entre múltiplas instâncias EC2.
 
-## Infraestrutura Global da AWS
-
-### Regiões
-- As regiões são locais geográficos onde a AWS hospeda seus datacenters. Exemplo: `us-east-1` (Norte da Virgínia), `sa-east-1` (São Paulo).
-- Cada região opera de forma independente e não compartilha dados sem consentimento do cliente.
-
-### Zonas de Disponibilidade (AZs)
-- As Zonas de Disponibilidade são datacenters localizados dentro de uma região.
-- Exemplo: `us-east-1a` é uma AZ dentro da região `us-east-1` (Norte da Virgínia).
-- Os serviços podem ser implantados com escopo de Zona de Disponibilidade (AZ), Regional ou Global.
-
-### Escopo dos Serviços AWS
-- **Serviços Regionais**: AWS gerencia a durabilidade e disponibilidade dos dados entre AZs.
-- **Serviços de AZ**: O cliente gerencia a replicação entre AZs para garantir a alta disponibilidade.
-
 ## Interação com a AWS
 Na AWS, toda interação é feita através de chamadas de API autenticadas e autorizadas, que podem ser realizadas por meio de três ferramentas principais: **Console de Gerenciamento da AWS**, **AWS Command Line Interface (CLI)** e **SDKs da AWS**.
 
@@ -524,16 +509,88 @@ Este resumo sintetiza como a AWS utiliza elasticidade e dimensionamento para gar
 - R: Amazon Elastic Kubernetes Service (Amazon EKS)
 
 ## Módulo 3: Infraestrutura Global e Confiabilidade
-### Alta Disponibilidade na AWS
-
-- **Metáfora da Cafeteria:**  
+  
   - Se um evento (como um desfile, inundação ou queda de energia) bloquear uma unidade, os clientes podem simplesmente ir a outra próxima.
   - Essa rede de cafeterias garante que o serviço continue disponível, mesmo se uma unidade ficar indisponível.
-
-- **Alta Disponibilidade na AWS:**  
   - A AWS opera em várias regiões pelo mundo, distribuindo os recursos entre múltiplos datacenters.
   - Se um datacenter falhar, as aplicações continuam disponíveis em outras regiões, assegurando tolerância a falhas.
   - Essa estratégia minimiza o risco de interrupção total dos serviços, mantendo a continuidade mesmo em situações adversas.
+
+## Infraestrutura Global da AWS
+
+- **Necessidade Comercial:**  
+  Empresas precisam executar aplicações, armazenar dados e analisar informações. Antigamente, isso era feito em datacenters próprios, mas hoje a AWS oferece uma alternativa gerenciada.
+
+- **Infraestrutura AWS:**  
+  - A AWS constrói datacenters em grupos chamados **Regiões**.  
+  - Cada região possui múltiplos datacenters que fornecem computação, armazenamento e outros serviços essenciais.  
+  - Regiões são isoladas para garantir que os dados permaneçam sob jurisdição local, atendendo a requisitos de conformidade e governança.
+
+- **Conectividade Global:**  
+  - As regiões são interligadas por redes de fibra de alta velocidade, permitindo operações globais integradas.
+
+- **Fatores para Seleção de Região:**  
+  1. **Conformidade:** Necessidade de manter dados em determinadas jurisdições (ex.: Reino Unido, Alemanha).  
+  2. **Proximidade:** Escolher regiões próximas aos clientes para reduzir a latência.  
+  3. **Disponibilidade de Serviços:** Nem todas as regiões possuem todos os recursos; serviços novos podem ser lançados gradualmente.  
+  4. **Preços:** Os custos podem variar conforme fatores locais, como impostos e custos operacionais.
+
+  Ao escolher uma região, as empresas devem equilibrar conformidade, performance, disponibilidade de recursos e custo, garantindo que sua infraestrutura esteja próxima dos clientes e em conformidade com as leis locais.
+
+#### Alta Disponibilidade com Zonas de Disponibilidade (AZs)
+
+  - Executar uma aplicação em uma única instância ou datacenter (ou AZ) pode levar a interrupções caso ocorra um desastre.
+
+#### Regiões
+  - As regiões são locais geográficos onde a AWS hospeda seus datacenters. Exemplo: `us-east-1` (Norte da Virgínia), `sa-east-1` (São Paulo).
+  - Cada região opera de forma independente e não compartilha dados sem consentimento do cliente
+    
+#### Zonas de Disponibilidade (AZs)
+  -  As Zonas de Disponibilidade são datacenters localizados dentro de uma região.
+     Exemplo: `us-east-1a` é uma AZ dentro da região `us-east-1` (Norte da Virgínia).
+  - Os serviços podem ser implantados com escopo de Zona de Disponibilidade (AZ), Regional ou Global. 
+  - Cada região é composta por múltiplas AZs, que são datacenters ou grupos de datacenters fisicamente separados e com infraestrutura redundante (energia, rede, conectividade).  
+  - As AZs estão suficientemente distantes para evitar que um desastre afete todas simultaneamente, mas próximas o bastante para manter baixa latência.
+
+#### Escopo dos Serviços AWS
+- **Serviços Regionais**: AWS gerencia a durabilidade e disponibilidade dos dados entre AZs.
+- **Serviços de AZ**: O cliente gerencia a replicação entre AZs para garantir a alta disponibilidade.
+  
+#### Prática Recomendada 
+  - Implantar aplicações em pelo menos duas AZs dentro de uma mesma região para garantir continuidade do serviço em caso de falha de uma delas.
+  - Serviços regionais (como o ELB) já operam em múltiplas AZs, facilitando a alta disponibilidade sem esforço adicional.
+
+#### Benefício Final
+  - Se uma AZ falhar, a aplicação continua operando nas demais, mantendo a disponibilidade e a resiliência da infraestrutura.
+
+
+### Locais de Borda
+
+- **Regiões e Proximidade:**  
+  - As regiões AWS são áreas geográficas isoladas que permitem executar serviços essenciais.  
+  - Escolher uma região próxima aos clientes melhora a latência.
+
+- **Alta Disponibilidade:**  
+  - Cada região é dividida em Zonas de Disponibilidade (AZs), datacenters fisicamente separados que garantem continuidade mesmo em caso de falhas.
+
+- **Entrega de Conteúdo com Baixa Latência:**  
+  - **Amazon CloudFront (CDN):**  
+    - Armazena cópias em cache do conteúdo em locais de borda globalmente, proporcionando entrega rápida a usuários, independentemente de sua localização.      
+  - **Amazon Route 53:**  
+    - Serviço de DNS que direciona os clientes para os locais de borda com a menor latência.
+
+- **AWS Outposts:**  
+  - Permite executar uma versão local da AWS dentro do datacenter da empresa, para necessidades específicas que exigem operação on-premises.
+
+
+  - A combinação de regiões, AZs, CloudFront, Route 53 e Outposts possibilita alta disponibilidade e desempenho otimizado para clientes em qualquer parte do mundo.
+ 
+    
+### Teste de Conhecimento
+#### 1. Qual das afirmações a seguir melhor descreve as Zonas de Disponibilidade?
+R: Um único data center ou grupo de data centers em uma Região
+
+
 
 ## Módulo 4: Armazenamento da AWS
 *Conteúdo do módulo 4...*
