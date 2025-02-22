@@ -368,7 +368,46 @@ R:  Habilitar multi-factor authentication (MFA) para o usuário raiz
 
 - **Hosts Dedicados:** Servem para alocar hosts físicos exclusivos, atendendo requisitos de conformidade e garantindo tenant exclusivo.
 
+### Scaling do AWS EC2
 
+- **Conceito Básico:**  
+  Assim como o café produzido por um funcionário em uma cafeteria, as instâncias EC2 "produzem" os recursos de computação necessários.
+
+- **Elasticidade e Dimensionamento:**  
+  - **Desafio On-Premises:**  
+    - A demanda dos clientes varia ao longo do tempo, exigindo hardware suficiente para picos sem desperdiçar recursos na média.
+  - **Solução AWS:**  
+    - A capacidade pode ser ajustada automaticamente conforme a demanda, garantindo que os clientes sejam atendidos e reduzindo custos.
+
+- **Redundância e Alta Disponibilidade:**  
+  - Se uma instância falhar, outra é automaticamente provisionada, assegurando continuidade dos serviços.
+  - O sistema é projetado para não ter pontos únicos de falha, mantendo o serviço disponível mesmo em situações críticas.
+
+- **Amazon EC2 Auto Scaling:**  
+  - **Scaling Dinâmico:** Responde em tempo real às variações de demanda.  
+  - **Scaling Preditivo:** Ajusta a capacidade com base em previsões de demanda.  
+  - **Combinação:** Integrar ambos os métodos permite uma resposta mais rápida e eficiente.
+
+Este resumo sintetiza como a AWS utiliza elasticidade e dimensionamento para garantir serviços sob demanda, evitando desperdícios e melhorando a experiência do cliente.
+
+- **Formas de Escalar:**
+  - **Vertical:** Aumenta a potência das máquinas existentes.
+  - **Horizontal:** Aumenta a quantidade de instâncias para lidar com a alta demanda.
+
+- **Desacoplamento:**  
+  Cada parte do sistema pode ser dimensionada separadamente, evitando provisionamento excessivo.
+
+- **Amazon EC2 Auto Scaling:**
+  - **Ajuste Dinâmico:** Adiciona ou remove instâncias conforme a demanda.
+  - **Configurações do Grupo de Auto Scaling:**
+    - **Capacidade Mínima:** Número mínimo de instâncias sempre ativas.
+    - **Capacidade Desejada:** Número padrão de instâncias em operação.
+    - **Capacidade Máxima:** Limite superior de instâncias mesmo em picos de demanda.
+  - **Benefícios:**  
+    - Otimiza custos, pois você paga somente pelo que é utilizado.
+    - Garante uma experiência consistente para os clientes, sem sobrecarga ou desperdício de recursos.
+   
+    - 
 ## Módulo 3: Rede da AWS
 *Conteúdo do módulo 3...*
 
