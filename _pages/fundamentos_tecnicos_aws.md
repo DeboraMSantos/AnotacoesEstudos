@@ -71,13 +71,28 @@ A AWS é uma plataforma de computação em nuvem que oferece serviços de TI sob
   
   As instâncias EC2 são comparadas aos funcionários de uma cafeteria, onde cada "funcionário" (instância) tem uma função específica para atender às demandas dos clientes.
 
-#### Famílias de Instâncias:
+#### Famílias de Instâncias
 
-  - **Uso Geral:** Equilíbrio entre CPU, memória e rede, ideal para tarefas variadas como serviços web e repositórios de código.    
+  - **Uso Geral:** Equilíbrio entre CPU, memória e rede, ideal para tarefas variadas como  servidores de jogos, servidores de aplicações  e repositórios de código.    
   - **Otimizadas para Computação:** Focadas em alto desempenho computacional para tarefas intensas, como servidores de jogos, computação de alto desempenho (HPC) e modelagem científica.    
   - **Otimizadas para Memória:** Recomendadas para cargas de trabalho que exigem grande quantidade de memória.    
-  - **Otimizadas para Armazenamento:** Projetadas para oferecer alto desempenho no acesso e processamento de dados armazenados localmente.    
+  - **Otimizadas para Armazenamento:** São projetadas para cargas de trabalho que exigem alto acesso sequencial de leitura e gravação a grandes conjuntos de dados no armazenamento local. Projetadas para oferecer alto desempenho no acesso e processamento de dados armazenados localmente.    
   - **Computação Acelerada:** Utilizam aceleradores de hardware para cálculos com ponto flutuante, processamento gráfico e reconhecimento de padrões (semelhante ao funcionário que cria arte com café e leite).
+
+#### Preços do Amazon EC2
+
+- **Sob Demanda:** Paga apenas pelo tempo de execução (por hora ou por segundo), sem compromissos de longo prazo.
+
+- **Savings Plans:** Oferece preços mais baixos mediante compromisso de uso consistente por 1 ou 3 anos, com economia de até 72%.
+
+- **Instâncias Reservadas:** Indicadas para cargas de trabalho previsíveis, com descontos de até 75% em relação ao sob demanda.  
+  *Opções de pagamento:* total antecipado, parcial ou sem pagamento inicial.
+
+- **Instâncias Spot:** Permitem solicitar capacidade excedente com descontos de até 90%, mas podem ser interrompidas com aviso de 2 minutos. Ideal para workloads tolerantes a interrupções.
+
+- **Hosts Dedicados:** Servem para alocar hosts físicos exclusivos, atendendo requisitos de conformidade e garantindo tenant exclusivo.
+
+
 
 
 ### S3 (Simple Storage Service)
