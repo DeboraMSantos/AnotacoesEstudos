@@ -1056,7 +1056,40 @@ O **AWS DMS** (Database Migration Service) ajuda a **migrar bancos de dados** (r
 **Conclusão**:  
 O AWS DMS **facilita a migração e replicação** de dados entre diversas origens e destinos, permitindo **baixos tempos de inatividade** e suporte a diversos tipos de bancos de dados, seja on-premises ou já na AWS.
 
+### Serviços de banco de dados adicionais
 
+1. **Uso de Banco de Dados Apropriado**  
+   - Não existe um “banco de dados universal” para todos os casos.  
+   - Selecione o tipo de banco de dados ou plataforma de armazenamento **com base nas necessidades** do projeto (escalabilidade, relacionamento, tipo de dado, latência etc.).
+
+2. **Serviços Adicionais de Banco de Dados na AWS**
+   - **Amazon DocumentDB**  
+     - Compatível com cargas de trabalho do MongoDB.  
+     - Ideal para armazenar documentos JSON (catálogos, perfis de usuário, gerenciamento de conteúdo).
+   - **Amazon Neptune**  
+     - Banco de dados de **grafos**.  
+     - Perfeito para redes sociais, mecanismos de recomendação, detecção de fraudes.
+   - **Amazon QLDB (Quantum Ledger Database)**  
+     - Banco de dados **ledger imutável**.  
+     - Mantém histórico completo, sem possibilidade de remoção de registros (auditabilidade).
+   - **Amazon Managed Blockchain**  
+     - Criação e gerenciamento de redes **blockchain** com frameworks de código aberto (Hyperledger Fabric, etc.).  
+     - Adequado quando se deseja transações distribuídas sem autoridade central.
+   - **Amazon ElastiCache**  
+     - Camada de cache gerenciado para bancos de dados tradicionais e aplicações.  
+     - Compatível com **Redis** e **Memcached**, reduzindo a latência de leituras repetidas.
+   - **Amazon DynamoDB Accelerator (DAX)**  
+     - Cache em memória para **DynamoDB**.  
+     - Reduz latências de milissegundos para **microssegundos** em leituras de dados não relacionais.
+
+3. **Conclusão**
+   - Escolha a ferramenta com base no **caso de uso**:  
+     - **Documentos** (Amazon DocumentDB),  
+     - **Grafos** (Amazon Neptune),  
+     - **Ledger Imutável** (Amazon QLDB),  
+     - **Blockchain Distribuído** (Amazon Managed Blockchain),  
+     - **Cache** (Amazon ElastiCache ou DAX).  
+   - Utilize **a melhor opção** para cada demanda ao invés de forçar um modelo de dados único para todas as aplicações.
 
 
 
