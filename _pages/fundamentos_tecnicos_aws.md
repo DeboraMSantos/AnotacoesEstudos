@@ -626,28 +626,85 @@ R: Local de borda
 R: Estender a infraestrutura e os serviços da AWS para diferentes locais, incluindo um data center on-premises.
 
 ## Módulo 4: Redes
-### VPC (Virtual Private Cloud)
+#### VPC (Virtual Private Cloud)
 - Seção isolada da nuvem AWS que permite definir uma rede virtual própria.  
 - Permite criar **sub-redes (subnets)** para organizar recursos de forma lógica, definindo quais podem ser públicos ou privados.
 
-### Gateway de Internet (IGW)
+#### Gateway de Internet (IGW)
 - Necessário para que o tráfego da internet pública possa entrar e sair da VPC.  
 - Funciona como a “porta de entrada” aberta ao público. Sem esse gateway, a VPC não é acessível externamente.
 
-### Gateway Privado Virtual (VGW)
+#### Gateway Privado Virtual (VGW)
 - Possibilita criar uma conexão de VPN entre a VPC e uma rede privada (por exemplo, rede corporativa ou datacenter on-premises).  
 - Permite tráfego criptografado de redes aprovadas, garantindo acesso seguro a recursos privados na VPC.
 
-### Conexão VPN vs. Tráfego de Internet
+#### Conexão VPN vs. Tráfego de Internet
 - A VPN utiliza a infraestrutura comum da internet, podendo sofrer problemas de latência ou congestionamento.  
 - Mesmo criptografada, a conexão ainda está sujeita à rede pública.
 
-### AWS Direct Connect
+#### AWS Direct Connect
 - Oferece uma conexão física dedicada entre o datacenter local e a VPC.  
 - Reduz custos, aumenta largura de banda e melhora a confiabilidade em relação à VPN, pois não compartilha a infraestrutura pública.
 
 #### Em resumo
 O **Amazon VPC** fornece controle sobre como os recursos na nuvem AWS são expostos ou protegidos. Você pode usar **gateways de internet** para recursos públicos, **gateways privados virtuais** para conexões VPN seguras e o **AWS Direct Connect** para uma conexão dedicada e mais confiável.
+
+### Sub-redes e listas de controle de acesso à rede
+
+#### 1. VPC (Virtual Private Cloud)
+- É como um **castelo** (ambiente isolado) na AWS, onde você define quem entra e sai.
+- Possui **gateways** (por exemplo, Internet Gateway) para comunicação externa.
+- Dentro dela, você cria **sub-redes** (públicas e privadas) de acordo com necessidades de acesso e segurança.
+
+#### 2. Sub-redes
+- **Sub-rede Pública**:  
+  - Possui acesso à internet via Internet Gateway.  
+  - Hospeda recursos que precisam ser acessados externamente (ex.: servidores web).
+- **Sub-rede Privada**:  
+  - Não tem acesso direto à internet.  
+  - Armazena recursos sensíveis (ex.: bancos de dados).  
+  - Conexões de saída podem ser feitas por meio de um **NAT Gateway**, se necessário.
+
+#### 3. NACL (Network Access Control List) – *Stateless*
+- **Age no nível de sub-rede**, controlando o tráfego de entrada e saída (como um controle de passaporte).
+- *Stateless*: não “lembra” requisições anteriores; cada pacote é analisado individualmente.
+- Possui regras de permissão e negação:
+  - **NACL padrão**: permite todo o tráfego, mas pode ser customizada.
+  - **NACL customizada**: começa negando todo o tráfego até que você adicione regras de permissão.
+  - Há sempre uma regra de **negação implícita** no final.
+
+#### 4. Security Group (Grupo de Segurança) – *Stateful*
+- **Age no nível de instância** (ex.: EC2).
+- **Stateful**: “lembra” das conexões, permitindo o retorno do tráfego que foi originado pela instância.
+- Por padrão:
+  - **Tráfego de entrada negado** (todas as portas bloqueadas).
+  - **Tráfego de saída permitido**.
+- Você adiciona regras para **permitir** portas, protocolos e endereços IP específicos.
+
+#### 5. Diferenças-Chave entre NACL e Security Group
+
+| Característica           | NACL (Network ACL) | Security Group         |
+|-------------------------|--------------------|------------------------|
+| **Nível de atuação**    | Sub-rede           | Instância (EC2)        |
+| **Tipo de filtragem**   | Stateless          | Stateful               |
+| **Tráfego padrão**      | - Padrão permite tudo (NACL padrão)<br>- Customizada começa negando tudo | - Entrada negada<br>- Saída permitida |
+| **Regras**              | Ordem importa (numérica) e há negação implícita | Sem ordem específica; se o tráfego corresponder a **qualquer** regra, ele passa |
+| **Retorno de tráfego**  | Precisa de regra explícita de entrada e saída    | Lembra a conexão (retorno é liberado automaticamente) |
+
+#### 6. Boas Práticas
+- **Least Privilege**: permitir somente o mínimo necessário de acesso.
+- **Sub-rede Pública**: hospeda o que precisa estar acessível ao público (web servers).
+- **Sub-rede Privada**: hospeda dados sensíveis (bancos de dados); acessos externos podem ocorrer via NAT Gateway ou conexões VPN.
+- **NACL**: controle mais amplo de tráfego entre sub-redes, bloqueando tentativas maliciosas no perímetro.
+- **Security Group**: configurações específicas por instância, liberando apenas as portas necessárias.
+
+#### 7. Outros Elementos de VPC
+- **Internet Gateway**: permite que instâncias em sub-rede pública se comuniquem com a internet.
+- **Gateway Privado Virtual (VGW)**: cria VPN para conectar data centers on-premises à VPC.
+- **AWS Direct Connect**: conexão dedicada de alta velocidade entre o data center local e a AWS.
+
+
+> **Em resumo**, entender a distinção entre NACL (nível de sub-rede, *stateless*) e Security Group (nível de instância, *stateful*) e saber configurar corretamente sub-redes públicas e privadas são pontos fundamentais para a certificação AWS.
 
 ## Módulo 5: Armazenamento e Bancos de Dados
 *Conteúdo do módulo 5...*
