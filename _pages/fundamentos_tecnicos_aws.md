@@ -910,6 +910,76 @@ R: Amazon Route 53
   - **EBS** para “escritas e leituras intensas” em nível de blocos, junto a EC2.  
 - **Saiba qual é o padrão de uso da sua aplicação** para escolher o serviço (ou combinação) ideal.
 
+
+#### Amazon EFS (Elastic File System)
+
+1. **Conceito de Sistema de Arquivos Compartilhado**  
+   - Permite que **várias instâncias** (servidores, aplicações, etc.) acessem **simultaneamente** um repositório central de arquivos.
+   - Ao contrário de **armazenamento em blocos** (EBS) ou **armazenamento de objetos** (S3), o EFS fornece um **sistema de arquivos** completo.
+
+2. **Características do Amazon EFS**
+   - **Gerenciado e elástico**: expande ou contrai de forma automática conforme você adiciona ou remove dados, sem necessidade de provisionamento prévio.
+   - **Recurso regional**: armazena dados em **várias Zonas de Disponibilidade (AZs)**, oferecendo alta disponibilidade e redundância.
+   - **Acesso simultâneo**: várias instâncias EC2 (em qualquer AZ da mesma região) podem **ler e gravar** no mesmo sistema de arquivos.
+   - **Compatível** com servidores on-premises via **AWS Direct Connect** para cenários híbridos.
+
+3. **Comparação EBS vs EFS**
+
+| **Amazon EBS**                                   | **Amazon EFS**                                          |
+|--------------------------------------------------|---------------------------------------------------------|
+| **Nível de AZ**: um volume está ligado a uma AZ  | **Nível regional**: dados replicados em múltiplas AZs   |
+| **É um “disco rígido”** para uma única instância  | **Várias instâncias** podem compartilhar ao mesmo tempo |
+| Dimensionamento **fixo** (é preciso aumentar manualmente o volume) | **Cresce e diminui** automaticamente                   |
+| Ideal para **bancos de dados** e aplicativos que precisam de armazenamento em bloco com alta IOPS | Ideal para **sistemas de arquivos compartilhados**, workflows que exigem múltiplos servidores acessando dados simultaneamente |
+
+---
+
+**Conclusão**:  
+- O **Amazon EFS** é perfeito para cenários em que diferentes serviços ou instâncias precisam ler e gravar em um **mesmo sistema de arquivos** com escalabilidade automática.  
+- O **Amazon EBS** continua sendo adequado para armazenamento em bloco vinculado a uma instância específica, em uma única AZ.  
+- Cada serviço atende a necessidades de armazenamento distintas, então a escolha depende do padrão de acesso e uso dos dados.
+
+#### Amazon Relational Database Service (Amazon RDS)
+
+Bancos de Dados Relacionais e Serviços AWS
+
+### 1. Conceito de Banco de Dados Relacional
+- **Dados organizados em tabelas** (linhas/colunas), onde cada registro pode se relacionar a outro.
+- **SQL (Structured Query Language)**: principal forma de interação (consultas, atualizações, etc.).
+- Exemplos de RDBMS populares: MySQL, PostgreSQL, Oracle, SQL Server, etc.
+
+### 2. Opções na AWS
+1. **Executar RDBMS em Instâncias EC2 (Lift & Shift)**
+   - Você gerencia OS, armazenamento, patches, backups.
+   - Prático para migração direta de ambientes on-premises.
+2. **Amazon RDS**
+   - Serviço gerenciado para bancos de dados relacionais.
+   - Automatiza provisionamento de hardware, aplicação de patches, backups e alta disponibilidade.
+   - Compatível com mecanismos: MySQL, PostgreSQL, MariaDB, Oracle, SQL Server e Amazon Aurora.
+
+### 3. Amazon Aurora
+- **Banco de dados relacional** de nível empresarial.
+- Compatível com MySQL e PostgreSQL, porém **mais rápido** (até 5x comparado a MySQL comum e 3x comparado a PostgreSQL comum).
+- **Alta disponibilidade**: 6 cópias dos dados em 3 Zonas de Disponibilidade.
+- **Backups contínuos** para o S3 e suporte a Point in Time Recovery.
+- **Custo-efetivo**: reduz operações desnecessárias de E/S e mantém confiabilidade.
+
+### 4. Benefícios do RDS/Aurora
+- **Menos trabalho operacional**: a AWS cuida de tarefas como upgrades, manutenção, backups.
+- **Failover automático** e **alta disponibilidade**.
+- **Escalabilidade**: fácil aumentar ou diminuir recursos (CPU, memória, armazenamento).
+- **Segurança**: criptografia em repouso e em trânsito, integração com VPC e IAM.
+
+---
+
+**Conclusão**: Para armazenar dados relacionais na AWS, as opções variam desde gerenciar tudo em instâncias EC2 (lift & shift) até usar o **Amazon RDS** ou **Aurora**, que oferecem maior automação, confiabilidade e desempenho. A escolha depende das necessidades de controle, custo, desempenho e escalabilidade de cada aplicação.
+
+
+
+
+
+
+
 ### Teste seu conhecimento
 #### 1. Você quer armazenar dados que são acessados com pouca frequência, mas devem estar imediatamente disponíveis quando necessário. Qual storage class do Amazon S3 você deve usar?
 R: S3 Standard-IA 
