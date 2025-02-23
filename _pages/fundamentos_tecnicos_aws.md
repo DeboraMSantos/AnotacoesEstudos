@@ -939,16 +939,16 @@ R: Amazon Route 53
 - O **Amazon EBS** continua sendo adequado para armazenamento em bloco vinculado a uma instância específica, em uma única AZ.  
 - Cada serviço atende a necessidades de armazenamento distintas, então a escolha depende do padrão de acesso e uso dos dados.
 
-#### Amazon Relational Database Service (Amazon RDS)
+### Amazon Relational Database Service (Amazon RDS)
 
 Bancos de Dados Relacionais e Serviços AWS
 
-### 1. Conceito de Banco de Dados Relacional
+#### 1. Conceito de Banco de Dados Relacional
 - **Dados organizados em tabelas** (linhas/colunas), onde cada registro pode se relacionar a outro.
 - **SQL (Structured Query Language)**: principal forma de interação (consultas, atualizações, etc.).
 - Exemplos de RDBMS populares: MySQL, PostgreSQL, Oracle, SQL Server, etc.
 
-### 2. Opções na AWS
+#### 2. Opções na AWS
 1. **Executar RDBMS em Instâncias EC2 (Lift & Shift)**
    - Você gerencia OS, armazenamento, patches, backups.
    - Prático para migração direta de ambientes on-premises.
@@ -957,22 +957,56 @@ Bancos de Dados Relacionais e Serviços AWS
    - Automatiza provisionamento de hardware, aplicação de patches, backups e alta disponibilidade.
    - Compatível com mecanismos: MySQL, PostgreSQL, MariaDB, Oracle, SQL Server e Amazon Aurora.
 
-### 3. Amazon Aurora
+#### 3. Amazon Aurora
 - **Banco de dados relacional** de nível empresarial.
 - Compatível com MySQL e PostgreSQL, porém **mais rápido** (até 5x comparado a MySQL comum e 3x comparado a PostgreSQL comum).
 - **Alta disponibilidade**: 6 cópias dos dados em 3 Zonas de Disponibilidade.
 - **Backups contínuos** para o S3 e suporte a Point in Time Recovery.
 - **Custo-efetivo**: reduz operações desnecessárias de E/S e mantém confiabilidade.
 
-### 4. Benefícios do RDS/Aurora
+#### 4. Benefícios do RDS/Aurora
 - **Menos trabalho operacional**: a AWS cuida de tarefas como upgrades, manutenção, backups.
 - **Failover automático** e **alta disponibilidade**.
 - **Escalabilidade**: fácil aumentar ou diminuir recursos (CPU, memória, armazenamento).
 - **Segurança**: criptografia em repouso e em trânsito, integração com VPC e IAM.
 
----
-
 **Conclusão**: Para armazenar dados relacionais na AWS, as opções variam desde gerenciar tudo em instâncias EC2 (lift & shift) até usar o **Amazon RDS** ou **Aurora**, que oferecem maior automação, confiabilidade e desempenho. A escolha depende das necessidades de controle, custo, desempenho e escalabilidade de cada aplicação.
+
+
+
+### Amazon DynamoDB (Banco de Dados Não Relacional)
+
+#### 1. Conceito de Banco de Dados Não Relacional (NoSQL)
+- **Armazenamento em formato de chave-valor**, sem esquema rígido (cada registro pode ter atributos diferentes).
+- Focado em alta **escalabilidade** e **baixa latência**.
+- Não há consultas complexas que envolvem múltiplas tabelas; **consultas simples** baseadas em chaves.
+
+#### 2. Características do DynamoDB
+- **Sem servidor (Serverless)**: você não gerencia instâncias, patches ou infraestrutura.
+- **Escalonamento automático**: ajusta capacidade para lidar com grandes variações de carga.
+- **Altamente distribuído e replicado**: dados armazenados em múltiplas Zonas de Disponibilidade, garantindo alta disponibilidade.
+- **Tempo de resposta em milissegundos**: ideal para aplicações que exigem latência muito baixa e alto throughput.
+
+#### 3. Diferenciação de Bancos Relacionais
+- **NoSQL**: maior **flexibilidade** de schema, mas consultas menos complexas.
+- **Relacional (SQL)**: suporte a relações entre tabelas e consultas complexas, mas pode ter limitações de escalabilidade se não for bem planejado.
+
+#### 4. Casos de Uso
+- Aplicações web/móveis de grande escala, com variação de dados (atributos dinâmicos).
+- Workloads com picos de tráfego massivos (ex.: grandes eventos de vendas, PrimeDay da Amazon).
+- Cenários em que adicionar/remover atributos frequentemente se faz necessário sem alterar todo o schema.
+
+#### 5. Exemplo Real
+- **PrimeDay 2019**:  
+  - 7,11 **trilhões** de chamadas de API ao DynamoDB em 48 horas.  
+  - Pico de **45,4 milhões** de solicitações por segundo.  
+  - Sem necessidade de gerenciar servidores ou infraestrutura.
+
+**Conclusão**:  
+O DynamoDB é um **banco de dados NoSQL** altamente escalável, com **latência de milissegundos**, sem gerenciamento de servidores. Ele traz flexibilidade de schema (chave-valor) e é ideal para aplicativos que precisam lidar com grande quantidade de acessos e dados variáveis.  
+
+
+
 
 
 
