@@ -13,6 +13,12 @@
 - [Módulo 4: Redes](#módulo-4-redes)
 - [Módulo 5: Armazenamento e Bancos de Dados](#módulo-5-armazenamento-e-bancos-de-dados)
 - [Módulo 6: Segurança](#módulo-6-segurança)
+- [Módulo 7: Monitoramento e Análise](#módulo-7-monitoramento-e-análise)
+- [Módulo 8: Definição de Preços e Suporte](#módulo-8-definição-de-preços-e-suporte)
+- [Módulo 9: Migração e Inovação](#módulo-9-migração-e-inovação)
+- [Módulo 10: A Jornada para a Nuvem](#módulo-10-a-jornada-para-a-nuvem)
+- [Módulo 11: Noções Básicas do AWS Certified Cloud Practitioner](#módulo-11-noções-básicas-do-aws-certified-cloud-practitioner)
+
   
 </menu>
 
