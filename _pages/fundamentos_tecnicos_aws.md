@@ -858,7 +858,63 @@ R: Amazon Route 53
 - **Políticas de ciclo de vida** automatizam a migração de dados, reduzindo custos e esforço de gerenciamento.  
 - **Versionamento** e **controle de acesso** fornecem maior segurança e rastreabilidade dos objetos.
 
-  
+#### Amazon EBS vs. Amazon S3 — Qual a Melhor Opção?
+
+#### 1. Contexto Geral
+- **Amazon EBS (Elastic Block Storage)**  
+  - Armazenamento em **blocos**.  
+  - Cada volume pode chegar até **16 TiB**.  
+  - Persistente mesmo quando a instância EC2 é interrompida ou terminada.  
+  - Atualizações acontecem em nível de blocos (não precisa regravar o arquivo inteiro).  
+
+- **Amazon S3 (Simple Storage Service)**  
+  - Armazenamento em **objetos** (pensa em arquivos inteiros).  
+  - Armazena dados de forma **ilimitada**; cada objeto pode ter até **5 TB**.  
+  - Garantia de durabilidade de **99.999999999%** (11 noves).  
+  - Suporte nativo à Web (cada objeto tem sua própria URL).  
+  - Custo efetivo e sem necessidade de gerenciar servidores (serverless).
+
+#### 2. Comparando os Casos de Uso
+
+#### Round 1: Aplicativo de Análise de Fotos
+- **Milhões de imagens** para upload, indexação e visualização.
+- S3 oferece:
+  - Armazenamento **ilimitado**.  
+  - URLs nativas para cada objeto.  
+  - Alta durabilidade e sem preocupação extra de backup.  
+  - Custos menores que EBS para armazenar grandes quantidades de dados estáticos.  
+  - **Conclusão**: S3 vence para esse tipo de workload (objetos estáticos, acesso global, URLs públicas).
+
+##### Round 2: Arquivo de Vídeo de 80 GB com Edição Constante
+- **Edição frequente** de vídeo, com muitas mudanças pontuais.
+- EBS oferece:
+  - Armazenamento em **blocos** (atualiza só as partes alteradas).  
+  - Evita regravar todo o arquivo cada vez que uma pequena mudança é feita.  
+  - **Conclusão**: EBS vence para workloads que exigem mudanças constantes, pois S3 exigiria upload completo a cada alteração.
+
+#### 3. Quando Usar Cada Serviço
+- **S3**:  
+  - Armazenamento de objetos “write once/read many”.  
+  - Hospedagem de arquivos estáticos, imagens, documentos, arquivos de mídia.  
+  - Acesso via URL e integração fácil com aplicações web (serverless).  
+  - Altamente escalável para grandes quantidades de dados.
+
+- **EBS**:  
+  - Armazenamento de blocos para instâncias EC2.  
+  - Ideal para bancos de dados, sistemas de arquivos, ou edições frequentes.  
+  - Atualizações delta em nível de bloco.
+
+#### 4. Conclusão
+- **Não há um “vencedor universal”**. Cada serviço se destaca em **situações diferentes**:
+  - **S3** para “upload/download de arquivos completos” e acesso distribuído.  
+  - **EBS** para “escritas e leituras intensas” em nível de blocos, junto a EC2.  
+- **Saiba qual é o padrão de uso da sua aplicação** para escolher o serviço (ou combinação) ideal.
+
+### Teste seu conhecimento
+#### 1. Você quer armazenar dados que são acessados com pouca frequência, mas devem estar imediatamente disponíveis quando necessário. Qual storage class do Amazon S3 você deve usar?
+R: S3 Standard-IA 
+
+
 ## Módulo 6: Segurança
 *Conteúdo do módulo 6...*
 
