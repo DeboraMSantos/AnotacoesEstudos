@@ -767,7 +767,7 @@ R: Gateway de internet
 R: Amazon Route 53
 
 ## Módulo 5: Armazenamento e Bancos de Dados
-#### Armazenamentos de instância e Amazon Elastic Block Store (Amazon EBS)
+### Armazenamentos de instância e Amazon Elastic Block Store (Amazon EBS)
 
 
 1. **Armazenamento em Nível de Bloco**
@@ -794,6 +794,69 @@ R: Amazon Route 53
 - O armazenamento de instância é **efêmero**; só use para dados que podem ser perdidos.  
 - O Amazon EBS oferece **persistência** e flexibilidade de tamanho/tipo, sendo adequado para workloads que requerem alto grau de disponibilidade de dados.  
 - **Snapshots** são fundamentais para backup e recuperação de volumes do EBS.
+  
+### Amazon Simple Storage Service (Amazon S3)
+#### 1. Conceito de Armazenamento de Objetos
+- **Armazena dados como objetos** (dados + metadados + chave única).
+- **Buckets**: “pastas” onde os objetos são armazenados.
+- Ideal para **arquivos** (imagens, documentos, vídeos, backups, etc.).
+- **Tamanho máximo de objeto**: 5 TB.
+
+#### 2. Amazon S3
+- Serviço de armazenamento em nível de objeto **altamente escalável e durável**.
+- Possui **espaço praticamente ilimitado**.
+- **Controle de acesso** via permissões (quem pode visualizar/editar).
+- **Versionamento**: possível habilitar para manter histórico de alterações em objetos.
+- **Hospedagem de site estático**: basta carregar arquivos HTML e habilitar a função de hosting.
+
+#### 3. Storage Classes (Principais)
+1. **S3 Standard**  
+   - Acesso frequente.  
+   - Armazenamento em pelo menos 3 Zonas de Disponibilidade (AZs).  
+   - Alta disponibilidade e durabilidade (99.999999999%).  
+   - Custo de armazenamento maior que classes para acesso infrequente.
+
+2. **S3 Standard – Infrequent Access (IA)**  
+   - Para dados acessados **raramente** mas precisam de **rápido acesso** quando necessário.  
+   - Armazenado em pelo menos 3 AZs.  
+   - Custo de armazenamento menor que Standard; custo de recuperação mais alto.
+
+3. **S3 One Zone – IA**  
+   - Armazena dados em **uma única AZ** (mais barato, porém menos resiliente).  
+   - Para dados que podem ser recriados caso haja falha na AZ.
+
+4. **S3 Intelligent-Tiering**  
+   - Movimenta objetos automaticamente entre S3 Standard e IA conforme o padrão de acesso.  
+   - Pequena taxa de monitoramento e automação mensal por objeto.
+
+#### 4. Storage Classes de Arquivamento
+1. **S3 Glacier Instant Retrieval**  
+   - Acesso **imediato** (milissegundos) para dados arquivados.  
+   - Custo menor que S3 Standard, mas voltado a dados de arquivo raramente acessados.
+
+2. **S3 Glacier Flexible Retrieval**  
+   - **Baixo custo** para arquivamento com recuperação de **minutos a horas**.  
+   - Bom para armazenar registros antigos, fotos, vídeos que não precisam de acesso imediato.
+
+3. **S3 Glacier Deep Archive**  
+   - **Menor custo** de todas as classes, porém recuperação de **12 a 48 horas**.  
+   - Ideal para retenção de longo prazo e conformidade.
+
+4. **S3 Outposts**  
+   - Para armazenamento em **ambientes on-premises** (AWS Outposts).  
+   - Mantém dados próximos às aplicações locais que exigem alta performance ou requisitos de residência de dados.
+
+#### 5. Políticas de Ciclo de Vida (Lifecycle Policies)
+- **Movimentam objetos automaticamente** entre classes de armazenamento após determinado tempo.  
+- Exemplos:
+  - Ficar 90 dias em S3 Standard, depois mover para S3 Standard-IA por 30 dias.
+  - Em seguida mover para S3 Glacier Flexible Retrieval para arquivo de longo prazo.
+
+**Conclusão**:  
+- O Amazon S3 **simplifica o armazenamento** de arquivos de todos os tipos.  
+- Cada **storage class** equilibra **custo** e **disponibilidade** conforme a frequência de acesso e o tempo de retenção.  
+- **Políticas de ciclo de vida** automatizam a migração de dados, reduzindo custos e esforço de gerenciamento.  
+- **Versionamento** e **controle de acesso** fornecem maior segurança e rastreabilidade dos objetos.
 
   
 ## Módulo 6: Segurança
