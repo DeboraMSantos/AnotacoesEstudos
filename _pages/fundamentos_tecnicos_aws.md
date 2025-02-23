@@ -706,6 +706,52 @@ O **Amazon VPC** fornece controle sobre como os recursos na nuvem AWS são expos
 
 > **Em resumo**, entender a distinção entre NACL (nível de sub-rede, *stateless*) e Security Group (nível de instância, *stateful*) e saber configurar corretamente sub-redes públicas e privadas são pontos fundamentais para a certificação AWS.
 
+##  Teste seu conhecimento
+#### 1. Qual declaração descreve melhor a lista de controle de acesso de rede-padrão de uma conta AWS?
+R: Ela é stateless e permite todo o tráfego de entrada e saída.
+
+### RedesGlobais
+#### 1. DNS (Domain Name System)
+- **Função**: Traduz nomes de domínio (ex.: `www.exemplo.com`) para endereços IP (ex.: `192.0.2.0`).
+- **Analogia**: É como uma “lista telefônica” da internet.  
+  - Quando o usuário digita um endereço no navegador, o **resolvedor DNS** do cliente solicita ao **servidor DNS** qual o IP correspondente ao domínio.
+
+#### 2. Amazon Route 53
+- **Serviço de DNS** gerenciado da AWS.
+- Permite **rotear** usuários para recursos:
+  - Instâncias do Amazon EC2, **load balancers**, ou até infraestrutura fora da AWS.
+- **Gerenciamento de Domínios**:
+  - Registrar novos domínios diretamente no Route 53.
+  - Transferir registros DNS de outros registradores para manter tudo em um só lugar.
+- **Políticas de Roteamento** disponíveis:
+  - Baseada em **latência**: envia o usuário para a região mais próxima em termos de tempo de resposta.
+  - **Geolocalização** ou **geoproximidade**: direciona usuários de acordo com sua localização geográfica.
+  - **Weighted Routing** (roteamento por pesos): distribui tráfego conforme proporções definidas.
+
+#### 3. Amazon CloudFront
+- **CDN** (Content Delivery Network) da AWS.
+- **Função**: Distribuir conteúdo estático e dinâmico (imagens, vídeos, arquivos) a partir de **locais de borda** próximos do usuário, reduzindo latência.
+- **Exemplo de uso**:
+  - Usuários na América do Norte recebem conteúdo de um local de borda em uma região próxima, como Oregon.
+  - Usuários na Europa recebem o mesmo conteúdo de um local de borda em Dublin, melhorando o tempo de resposta.
+
+#### 4. Integração Route 53 e CloudFront
+1. O cliente solicita dados do site (por exemplo, `anycompany.com`).
+2. **Route 53** faz a resolução de DNS, retornando o IP ou endpoint correspondente (ex.: `192.0.2.0`).
+3. A solicitação do cliente é roteada para o **local de borda** mais próximo via **CloudFront**.
+4. O **CloudFront** encaminha a solicitação para o **Application Load Balancer**, que direciona o tráfego para as instâncias do **Amazon EC2**.
+
+#### 5. Benefícios Gerais
+- **Menor latência**: conteúdo entregue de forma mais rápida ao usuário final.
+- **Alta disponibilidade**: com roteamento e escalabilidade integrados.
+- **Gestão facilitada**: administração de domínios e distribuição de conteúdo em um só lugar (AWS).
+
+
+**Conclusão**: 
+- **DNS** converte o domínio em IP para localizar a aplicação.
+- **Amazon Route 53** oferece um DNS globalmente disponível, com roteamento avançado e registro de domínios.
+- **Amazon CloudFront** melhora a performance ao distribuir conteúdo em locais de borda próximos ao usuário.
+
 ## Módulo 5: Armazenamento e Bancos de Dados
 *Conteúdo do módulo 5...*
 
