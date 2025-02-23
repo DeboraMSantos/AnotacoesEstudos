@@ -10,9 +10,9 @@
 - [Módulo 1: Introdução à Amazon Web Services](#módulo-1-introdução-à-amazon-web-services-aws)
 - [Módulo 2: Computação da AWS](#m%C3%B3dulo-2-computa%C3%A7%C3%A3o-da-aws)
 - [Módulo 3: Infraestrutura Global e Confiabilidade](#módulo-3-infraestrutura-global-e-confiabilidade)
-- [Módulo 4: Armazenamento da AWS](#módulo-4-armazenamento-da-aws)
-- [Módulo 5: Bancos de Dados](#módulo-5-bancos-de-dados)
-- [Módulo 6: Monitoramento, Otimização e Serverless](#módulo-6-monitoramento-otimização-e-serverless)
+- [Módulo 4: Redes](#módulo-4-redes)
+- [Módulo 5: Armazenamento e Bancos de Dados](#módulo-5-armazenamento-e-bancos-de-dados)
+- [Módulo 6: Segurança](#módulo-6-segurança)
   
 </menu>
 
@@ -607,14 +607,33 @@ Essas ferramentas oferecem diferentes formas de acessar e gerenciar os recursos 
 ### Teste de Conhecimento
 #### 1. Qual das afirmações a seguir melhor descreve as Zonas de Disponibilidade?
 R: Um único data center ou grupo de data centers em uma Região
+#### 2. Qual declaração é VERDADEIRA para a infraestrutura global da AWS?
+R: Uma Região consiste em três ou mais Zonas de Disponibilidade.
+#### 3. Quais fatores devem ser considerados ao selecionar uma Região? (Selecione DUAS opções.)
+R1: Conformidade com governança de dados e requisitos legais
+R2: Proximidade com os clientes
+#### 4. Qual declaração descreve melhor o Amazon CloudFront?
+R: Um serviço global de entrega de conteúdo
+#### 5. Qual site o Amazon CloudFront usa para armazenar cópias de conteúdo em cache para entregá-los mais rapidamente aos usuários em qualquer local?
+R: Local de borda
+#### 6. Qual ação você pode executar com o AWS Outposts?
+R: Estender a infraestrutura e os serviços da AWS para diferentes locais, incluindo um data center on-premises.
 
-
-
-## Módulo 4: Armazenamento da AWS
+## Módulo 4: Redes
 *Conteúdo do módulo 4...*
 
-## Módulo 5: Bancos de Dados
+## Módulo 5: Armazenamento e Bancos de Dados
 *Conteúdo do módulo 5...*
 
-## Módulo 6: Monitoramento, Otimização e Serverless
+## Módulo 6: Segurança
 *Conteúdo do módulo 6...*
+
+## Módulo 7: Monitoramento e Análise
+
+## Módulo 8: Definição de Preços e Suporte
+
+## Módulo 9: Migraçao e Inovação
+
+## Módulo 10: A Jornada para a Nuvem
+
+## Módulo 11: Noções Básicas do AWS Certified Cloud Practitioner
