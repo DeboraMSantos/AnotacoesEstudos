@@ -706,10 +706,6 @@ O **Amazon VPC** fornece controle sobre como os recursos na nuvem AWS são expos
 
 > **Em resumo**, entender a distinção entre NACL (nível de sub-rede, *stateless*) e Security Group (nível de instância, *stateful*) e saber configurar corretamente sub-redes públicas e privadas são pontos fundamentais para a certificação AWS.
 
-##  Teste seu conhecimento
-#### 1. Qual declaração descreve melhor a lista de controle de acesso de rede-padrão de uma conta AWS?
-R: Ela é stateless e permite todo o tráfego de entrada e saída.
-
 ### RedesGlobais
 #### 1. DNS (Domain Name System)
 - **Função**: Traduz nomes de domínio (ex.: `www.exemplo.com`) para endereços IP (ex.: `192.0.2.0`).
@@ -751,6 +747,24 @@ R: Ela é stateless e permite todo o tráfego de entrada e saída.
 - **DNS** converte o domínio em IP para localizar a aplicação.
 - **Amazon Route 53** oferece um DNS globalmente disponível, com roteamento avançado e registro de domínios.
 - **Amazon CloudFront** melhora a performance ao distribuir conteúdo em locais de borda próximos ao usuário.
+
+
+
+##  Teste seu conhecimento
+#### 1. Qual declaração descreve melhor a lista de controle de acesso de rede-padrão de uma conta AWS?
+R: Ela é stateless e permite todo o tráfego de entrada e saída.
+#### 2. Qual declaração melhor descreve a resolução de DNS?
+R: Converter um nome de domínio em um endereço IP
+#### 3. Sua empresa tem um aplicativo que usa instâncias do Amazon EC2 para executar o site voltado para o cliente e instâncias de banco de dados do Amazon RDS para armazenar informações pessoais dos clientes. Como o desenvolvedor deve configurar a VPC de acordo com as práticas recomendadas?
+R: Colocar as instâncias do Amazon EC2 em uma sub-rede pública e as instâncias de bancos de dados do Amazon RDS em uma sub-rede privada.
+#### 4. Qual componente pode ser usado para estabelecer uma conexão privada dedicada entre o data center da sua empresa e a AWS?
+R: AWS Direct Connect
+#### 5. Qual declaração descreve melhor os grupos de segurança?
+R: Eles são stateful e negam todo o tráfego de entrada por padrão.
+#### 6. Qual componente é usado para conectar uma VPC à internet?
+R: Gateway de internet
+#### 7. Qual serviço é usado para gerenciar os registros de DNS para nomes de domínio?
+R: Amazon Route 53
 
 ## Módulo 5: Armazenamento e Bancos de Dados
 *Conteúdo do módulo 5...*
