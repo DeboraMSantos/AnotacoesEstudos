@@ -767,8 +767,35 @@ R: Gateway de internet
 R: Amazon Route 53
 
 ## Módulo 5: Armazenamento e Bancos de Dados
-*Conteúdo do módulo 5...*
+#### Armazenamentos de instância e Amazon Elastic Block Store (Amazon EBS)
 
+
+1. **Armazenamento em Nível de Bloco**
+   - Equivale a “discos rígidos” que armazenam dados em blocos.
+   - Atualizações são feitas apenas nos blocos modificados (eficiência para bases de dados e sistemas de arquivos).
+
+2. **Armazenamento de Instância (Instance Store)**
+   - Volumes físicos anexados ao host que executa a instância do EC2.
+   - Dados são perdidos quando a instância é interrompida ou encerrada.
+   - Útil para dados temporários ou que podem ser facilmente recriados (ex.: cache, arquivos de teste).
+
+3. **Amazon EBS (Elastic Block Store)**
+   - Serviço de armazenamento persistente em nível de bloco.
+   - Volumes independentes do host físico; mantêm dados mesmo após interrupção ou encerramento da instância EC2.
+   - É possível escolher tamanho, tipo de volume (SSD ou HDD), etc.
+   - Ideal para aplicações que precisam manter dados críticos (como bancos de dados).
+
+4. **Snapshots de EBS**
+   - Backups incrementais: o primeiro snapshot copia todo o volume, os seguintes copiam apenas blocos alterados.
+   - Permitem restaurar dados em caso de falha ou corrupção.
+   - Boa prática: realizar snapshots regulares para proteger dados importantes.
+
+**Conclusão**:  
+- O armazenamento de instância é **efêmero**; só use para dados que podem ser perdidos.  
+- O Amazon EBS oferece **persistência** e flexibilidade de tamanho/tipo, sendo adequado para workloads que requerem alto grau de disponibilidade de dados.  
+- **Snapshots** são fundamentais para backup e recuperação de volumes do EBS.
+
+  
 ## Módulo 6: Segurança
 *Conteúdo do módulo 6...*
 
