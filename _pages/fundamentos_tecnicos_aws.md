@@ -626,7 +626,39 @@ R: Local de borda
 R: Estender a infraestrutura e os serviços da AWS para diferentes locais, incluindo um data center on-premises.
 
 ## Módulo 4: Redes
-*Conteúdo do módulo 4...*
+### VPC (Virtual Private Cloud)
+- Seção isolada da nuvem AWS que permite definir uma rede virtual própria.  
+- Permite criar **sub-redes (subnets)** para organizar recursos de forma lógica, definindo quais podem ser públicos ou privados.
+
+---
+
+### Gateway de Internet (IGW)
+- Necessário para que o tráfego da internet pública possa entrar e sair da VPC.  
+- Funciona como a “porta de entrada” aberta ao público. Sem esse gateway, a VPC não é acessível externamente.
+
+---
+
+### Gateway Privado Virtual (VGW)
+- Possibilita criar uma conexão de VPN entre a VPC e uma rede privada (por exemplo, rede corporativa ou datacenter on-premises).  
+- Permite tráfego criptografado de redes aprovadas, garantindo acesso seguro a recursos privados na VPC.
+
+---
+
+### Conexão VPN vs. Tráfego de Internet
+- A VPN utiliza a infraestrutura comum da internet, podendo sofrer problemas de latência ou congestionamento.  
+- Mesmo criptografada, a conexão ainda está sujeita à rede pública.
+
+---
+
+### AWS Direct Connect
+- Oferece uma conexão física dedicada entre o datacenter local e a VPC.  
+- Reduz custos, aumenta largura de banda e melhora a confiabilidade em relação à VPN, pois não compartilha a infraestrutura pública.
+
+---
+
+#### Em resumo
+O **Amazon VPC** fornece controle sobre como os recursos na nuvem AWS são expostos ou protegidos. Você pode usar **gateways de internet** para recursos públicos, **gateways privados virtuais** para conexões VPN seguras e o **AWS Direct Connect** para uma conexão dedicada e mais confiável.
+
 
 ## Módulo 5: Armazenamento e Bancos de Dados
 *Conteúdo do módulo 5...*
