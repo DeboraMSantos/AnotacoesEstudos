@@ -1038,7 +1038,23 @@ O DynamoDB é um **banco de dados NoSQL** altamente escalável, com **latência 
 **Conclusão**:  
 Para **análise histórica** e **inteligência de negócios** em grande escala, o **Amazon Redshift** fornece um ambiente de data warehouse gerenciado, com desempenho otimizado para **consultas analíticas** que envolvem **quantidades massivas de dados**.
 
+### AWS Database Migration Service (AWS DMS)
 
+#### 1. Propósito
+O **AWS DMS** (Database Migration Service) ajuda a **migrar bancos de dados** (relacionais ou não) para a AWS com **tempo de inatividade reduzido**. É possível:
+- **Transferir dados** entre bancos de diferentes tipos (MySQL → Aurora, Oracle → PostgreSQL, etc.).
+- **Manter o banco de dados de origem operacional** durante a migração, minimizando impacto em aplicativos.
+
+#### 2. Casos de Uso Principais
+1. **Desenvolvimento e Testes**
+   - Permite testar aplicações em um ambiente com **dados de produção** sem afetar usuários reais.
+2. **Consolidação de Banco de Dados**
+   - Combina múltiplos bancos de dados em um único destino, simplificando a gestão.
+3. **Replicação Contínua**
+   - **Sincroniza dados** para fins de backup, relatórios ou carga de trabalho híbrida, ao invés de apenas uma migração pontual.
+
+**Conclusão**:  
+O AWS DMS **facilita a migração e replicação** de dados entre diversas origens e destinos, permitindo **baixos tempos de inatividade** e suporte a diversos tipos de bancos de dados, seja on-premises ou já na AWS.
 
 
 
