@@ -1096,7 +1096,18 @@ O AWS DMS **facilita a migração e replicação** de dados entre diversas orige
 ### Teste seu conhecimento
 #### 1. Você quer armazenar dados que são acessados com pouca frequência, mas devem estar imediatamente disponíveis quando necessário. Qual storage class do Amazon S3 você deve usar?
 R: S3 Standard-IA 
-
+#### 2. Quais storage classes do Amazon S3 são otimizadas para dados de arquivamento? (Selecione DUAS opções.)
+R1: Amazon S3 Glacier Flexible Retrieval
+R2: Amazon S3 Glacier Deep Archive
+#### 3. Qual(ais) afirmação(ões) é(são) VERDADEIRA(S) sobre os volumes do Amazon EBS e sistemas de arquivos do Amazon Elastic File System?
+R: Os volumes do EBS armazenam dados em uma única Zona de Disponibilidade. Os sistemas de arquivos do Amazon EFS armazenam dados em várias Zonas de Disponibilidade.
+#### 4.Você quer armazenar dados em um serviço de armazenamento de objetos. Qual serviço da AWS é o melhor para esse tipo de armazenamento?
+R: Amazon Simple Storage Service (Amazon S3)
+#### 5.Qual afirmação melhor descreve o Amazon DynamoDB?
+R: 
+Um serviço de banco de dados de chave-valor sem servidor
+#### 6. Qual serviço é usado para consultar e analisar dados em um data warehouse?
+R: Amazon Redshift
 
 ## Módulo 6: Segurança
 *Conteúdo do módulo 6...*
