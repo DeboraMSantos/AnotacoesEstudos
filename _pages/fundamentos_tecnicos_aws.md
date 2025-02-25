@@ -1082,26 +1082,20 @@ Essas políticas ajudam a gerenciar permissões específicas para os recursos da
 
 ## Hospedagem de aplicação de diretório de funcionários
 
-# Teste de Conhecimento:
+## Teste de Conhecimento:
 
-**P: Quais são os quatro principais fatores que você deve considerar ao escolher uma região?**
-
+#### 1: Quais são os quatro principais fatores que você deve considerar ao escolher uma região?**
 R: Latência, preço, disponibilidade de serviços e conformidade
-
-**P: Qual das opções a seguir melhor descreve a relação entre regiões, zonas de disponibilidade e datacenters?**
-
+#### 2: Qual das opções a seguir melhor descreve a relação entre regiões, zonas de disponibilidade e datacenters?**
 R: As regiões são clusters de zonas de disponibilidade. As zonas de disponibilidade são clusters de datacenters.
-
-**P: Qual das opções a seguir é um benefício da computação em nuvem?**
-
+#### 3: Qual das opções a seguir é um benefício da computação em nuvem?**
 R: Obtenha alcance global em minutos
-
-**P: Quais das opções a seguir são uma prática recomendada ao proteger um usuário raiz da AWS? (Selecione DUAS.)**
-
-R:  Habilitar multi-factor authentication (MFA) para o usuário raiz
-    Desabilitar ou excluir as chaves de acesso associadas ao usuário raiz
-
-
+#### 4: Quais das opções a seguir são uma prática recomendada ao proteger um usuário raiz da AWS? (Selecione DUAS.)**
+R1: Habilitar multi-factor authentication (MFA) para o usuário raiz
+R2: Desabilitar ou excluir as chaves de acesso associadas ao usuário raiz
+#### 5: Quais tarefas são responsabilidades dos clientes? (Selecione DUAS opções.)
+R1: Aplicação de patches em software em instâncias do Amazon EC2
+R2: Definição de permissões para objetos do Amazon S3
 
 
 
