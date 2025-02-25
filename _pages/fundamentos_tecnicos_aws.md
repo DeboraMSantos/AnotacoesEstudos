@@ -82,206 +82,6 @@ A AWS é uma plataforma de computação em nuvem que oferece serviços de TI sob
 ### ELB (Elastic Load Balancer)
 - Distribui o tráfego entre múltiplas instâncias EC2.
 
-
-
-
-## Segurança e o modelo de responsabilidade compartilhada da AWS
-
-Quando você usa a AWS, a segurança é uma responsabilidade compartilhada entre você e a AWS. Isso é conhecido como o "modelo de responsabilidade compartilhada," dividido em dois conceitos:
-
-![image](https://github.com/user-attachments/assets/f6bf140b-c64d-49b1-8e2f-4b31bb95a782)
-
-
-1. **Segurança *na* Nuvem (Responsabilidade da AWS)**: A AWS é responsável por proteger toda a infraestrutura que executa os serviços, incluindo:
-   - Segurança física de datacenters, regiões e zonas de disponibilidade.
-   - Gerenciamento de hardware, software, redes, e servidores físicos, além dos sistemas operacionais de host e camadas de virtualização.
-
-   **Categorias de Serviços AWS e Responsabilidades da AWS:**
-
-    1. **Serviços de Infraestrutura** (e.g., Amazon EC2)
-    - **Responsabilidade AWS**: Gerenciar a infraestrutura subjacente e os serviços base.
-
-    2. **Serviços de Contêiner** (e.g., Amazon RDS)
-    - **Responsabilidade AWS**: Gerenciar a infraestrutura, serviços base, sistema operacional, e plataforma de aplicações.
-
-    3. **Serviços Abstratos** (e.g., Amazon S3)
-    - **Responsabilidade AWS**: Gerenciar a infraestrutura, sistema operacional, plataformas, criptografia do lado do servidor, e proteção de dados.
-
-    **Observação sobre Serviços de Contêiner da AWS**: 
-
-    Os serviços de contêiner da AWS se referem à abstração de aplicações que a AWS gerencia internamente, e não a contêineres Docker. Isso alivia a carga dos clientes em relação ao gerenciamento da plataforma e infraestrutura, ficando sob responsabilidade da AWS.
-
-
-2. **Segurança *da* Nuvem (Responsabilidade do Cliente)**: Você, como cliente, é responsável por configurar e proteger os serviços e dados que utiliza. 
-   - Dependendo do serviço AWS, sua responsabilidade varia: de configurar e gerenciar toda a segurança, até apenas controlar o acesso aos seus recursos e dados. 
-
-    Portanto, sua carga de responsabilidade muda conforme o tipo de serviço AWS que você está usando.
-    **Responsabilidades da AWS e do Cliente por Categoria de Serviço:**
-
-    1. **Serviços de Infraestrutura**
-    - **AWS**: Gerencia infraestrutura e serviços base.
-    - **Cliente**: Gerencia sistema operacional, plataforma de aplicação, criptografia, e segurança dos dados.
-
-    2. **Serviços de Contêiner**
-    - **AWS**: Gerencia infraestrutura, serviços base, sistema operacional e plataforma de aplicação.
-    - **Cliente**: Gerencia dados do cliente, implementa criptografia e segurança por meio de firewalls e backups.
-
-    3. **Serviços Abstratos**
-    - **AWS**: Gerencia infraestrutura, sistema operacional, plataformas, e criptografia do lado do servidor.
-    - **Cliente**: Gerencia e protege dados do cliente, incluindo a criptografia do lado do cliente.
-
-
-## Proteja o usuário raiz da AWS
-
-### Autenticação vs. Autorização
-- **Autenticação**: Verifica a identidade do usuário (ex: e-mail e senha).
-- **Autorização**: Define o que o usuário pode fazer (ex: ler, editar, criar).
-
-### Usuário Raiz da AWS
-- Conta criada inicialmente com acesso total a todos os produtos e dados.
-- **Credenciais**: 
-  - **Login**: E-mail e senha para o console de gerenciamento.
-  - **Chaves de acesso**: ID e chave secreta para solicitações via CLI ou API.
-- **Melhores práticas**:
-  - Use uma senha forte.
-  - Nunca compartilhe credenciais.
-  - Desative/exclua as chaves de acesso, a menos que sejam necessárias.
-  - Use o usuário raiz apenas para tarefas específicas.
-
-### Autenticação Multifator (MFA)
-- **MFA**: Adiciona segurança ao exigir dois métodos de autenticação (ex: senha + token de segurança).
-- **Por que usar MFA?**: Protege contra o acesso indesejado, mesmo que uma senha seja comprometida.
-- **Como habilitar MFA na AWS**:
-  1. Primeiro, use e-mail e senha.
-  2. Depois, insira um código gerado pelo dispositivo MFA.
-
-### Tipos de Dispositivos MFA
-- **MFA Virtual**: Aplicativos móveis que geram códigos únicos (ex: Google Authenticator).
-- **Dispositivos de Hardware**: Chaveiros ou cartões que geram códigos numéricos.
-- **U2F (Fator Universal de 2ª Geração)**: Dispositivo físico conectado via USB (ex: Yubikey).
-
-Habilitar MFA é uma recomendação da AWS para maior segurança das contas e recursos.
-
-## AWS Identity and Access Management
-
-
-O AWS Identity and Access Management (IAM) é um serviço da AWS que permite gerenciar o acesso à sua conta e aos recursos da AWS. Ele define quem pode autenticar (fazer login) e quem pode autorizar (ter permissões) para usar os recursos. Com o IAM, é possível compartilhar acesso sem expor chaves ou senhas, oferecendo permissões granulares aos usuários para acessarem apenas o que for necessário.
-
-### **Recursos do IAM:**
-- **Global:** O IAM não é específico de uma região e funciona em todas as regiões da AWS.
-- **Integração:** Já vem integrado com muitos serviços AWS.
-- **Políticas de Senha:** Permite definir complexidade e rotação de senhas.
-- **MFA:** Suporta autenticação multifator.
-- **Federação de Identidades:** Permite que usuários de sistemas externos acessem temporariamente a conta AWS.
-- **Gratuito:** O uso do IAM não gera custos adicionais.
-
-### **Usuários e Grupos do IAM:**
-- Um **usuário do IAM** é qualquer pessoa ou serviço que interage com a AWS. Cada usuário possui credenciais únicas e permissões definidas.
-- Os **grupos do IAM** são coleções de usuários que herdam permissões atribuídas ao grupo, facilitando a gestão de acesso, por exemplo, separando grupos por função como "desenvolvedores" ou "administradores."
-
-### **Credenciais do Usuário IAM:**
-- Acesso ao **Console de Gerenciamento AWS** com usuário e senha.
-- **Acesso Programático** via AWS CLI e APIs utilizando chaves de acesso.
-- Gerenciar permissões diretamente nos usuários é possível, mas agrupar por grupos é uma prática recomendada para facilitar a administração.
-
-### **Políticas do IAM:**
-As **políticas** definem permissões para usuários, grupos e funções. Elas são escritas em JSON e têm quatro principais elementos:
-- **Version:** Define a versão da linguagem de política.
-- **Effect:** Especifica se a permissão é "Allow" (permitir) ou "Deny" (negar).
-- **Action:** Determina as ações permitidas ou negadas (por exemplo, `iam:ChangePassword`).
-- **Resource:** Especifica os recursos afetados.
-
-### **Exemplos de Políticas:**
-- **Política de Administrador:** Permite todas as ações em todos os recursos:
-  ```json
-  {
-    "Version": "2012-10-17",
-    "Statement": [{
-      "Effect": "Allow",
-      "Action": "*",
-      "Resource": "*"
-    }]
-  }
-  ```
-- **Política Granular:** Permite que um usuário altere sua própria senha e obtenha suas próprias informações:
-  ```json
-  {
-    "Version": "2012-10-17",
-    "Statement": [{
-      "Effect": "Allow",
-      "Action": [
-        "iam:ChangePassword",
-        "iam:GetUser"
-      ],
-      "Resource": "arn:aws:iam::123456789012:user/${aws:username}"
-    }]
-  }
-  ```
-
-Essas políticas ajudam a gerenciar permissões específicas para os recursos da AWS, tornando o acesso seguro e organizado.
-
-
-## Acesso baseado em função na AWS
-
-### 1. Bloquear o Usuário Raiz
-- O usuário raiz tem acesso total à conta.
-- **Recomendações de Segurança**:
-  - Não compartilhe credenciais.
-  - Exclua chaves de acesso desnecessárias.
-  - Habilite MFA para proteção adicional.
-
-### 2. Princípio de Privilégio Mínimo
-- Conceda apenas as permissões mínimas necessárias para cada tarefa.
-- Comece com permissões básicas e adicione conforme a necessidade.
-
-### 3. Uso Apropriado do IAM
-- O IAM é para gerenciar o acesso a recursos da AWS.
-- Não é usado para autenticação de sites ou segurança de sistemas operacionais/redes.
-
-### 4. Preferir Funções do IAM
-- As funções oferecem credenciais temporárias, expiram após 15 min a 36 horas.
-- Mais seguro e flexível do que gerenciar usuários com credenciais de longo prazo.
-
-### 5. Usar um Provedor de Identidade (IdP)
-- Facilita o gerenciamento de identidades para equipes maiores.
-- Usando um IdP, é possível associar funções do IAM para identidades federadas, centralizando a gestão de permissões.
-
-### 6. Considere o AWS Single Sign-On (SSO)
-- Ideal para organizações com muitos funcionários e várias contas AWS.
-- Permite login único (SSO) para acessar várias contas e aplicações.
-- Oferece integração com IdPs de terceiros para sincronizar usuários e grupos, separando claramente a gestão de identidade e acesso à nuvem.
-
-
-
-## Demonstração: implemente segurança com o AWS Identity and Access Management (IAM)
-
-## Hospedagem de aplicação de diretório de funcionários
-
-# Teste de Conhecimento:
-
-**P: Quais são os quatro principais fatores que você deve considerar ao escolher uma região?**
-
-R: Latência, preço, disponibilidade de serviços e conformidade
-
-**P: Qual das opções a seguir melhor descreve a relação entre regiões, zonas de disponibilidade e datacenters?**
-
-R: As regiões são clusters de zonas de disponibilidade. As zonas de disponibilidade são clusters de datacenters.
-
-**P: Qual das opções a seguir é um benefício da computação em nuvem?**
-
-R: Obtenha alcance global em minutos
-
-**P: Quais das opções a seguir são uma prática recomendada ao proteger um usuário raiz da AWS? (Selecione DUAS.)**
-
-R:  Habilitar multi-factor authentication (MFA) para o usuário raiz
-    Desabilitar ou excluir as chaves de acesso associadas ao usuário raiz
-
-
-
-
-
----
-
 ## Módulo 2: Computação da AWS
 ### EC2 (Elastic Compute Cloud)
 - Hospeda máquinas virtuais que podem ser escaladas conforme a demanda.
@@ -1110,7 +910,201 @@ Um serviço de banco de dados de chave-valor sem servidor
 R: Amazon Redshift
 
 ## Módulo 6: Segurança
-*Conteúdo do módulo 6...*
+## Segurança e o modelo de responsabilidade compartilhada da AWS
+
+Quando você usa a AWS, a segurança é uma responsabilidade compartilhada entre você e a AWS. Isso é conhecido como o "modelo de responsabilidade compartilhada," dividido em dois conceitos:
+
+![image](https://github.com/user-attachments/assets/f6bf140b-c64d-49b1-8e2f-4b31bb95a782)
+
+
+1. **Segurança *na* Nuvem (Responsabilidade da AWS)**: A AWS é responsável por proteger toda a infraestrutura que executa os serviços, incluindo:
+   - Segurança física de datacenters, regiões e zonas de disponibilidade.
+   - Gerenciamento de hardware, software, redes, e servidores físicos, além dos sistemas operacionais de host e camadas de virtualização.
+
+   **Categorias de Serviços AWS e Responsabilidades da AWS:**
+
+    1. **Serviços de Infraestrutura** (e.g., Amazon EC2)
+    - **Responsabilidade AWS**: Gerenciar a infraestrutura subjacente e os serviços base.
+
+    2. **Serviços de Contêiner** (e.g., Amazon RDS)
+    - **Responsabilidade AWS**: Gerenciar a infraestrutura, serviços base, sistema operacional, e plataforma de aplicações.
+
+    3. **Serviços Abstratos** (e.g., Amazon S3)
+    - **Responsabilidade AWS**: Gerenciar a infraestrutura, sistema operacional, plataformas, criptografia do lado do servidor, e proteção de dados.
+
+    **Observação sobre Serviços de Contêiner da AWS**: 
+
+    Os serviços de contêiner da AWS se referem à abstração de aplicações que a AWS gerencia internamente, e não a contêineres Docker. Isso alivia a carga dos clientes em relação ao gerenciamento da plataforma e infraestrutura, ficando sob responsabilidade da AWS.
+
+
+2. **Segurança *da* Nuvem (Responsabilidade do Cliente)**: Você, como cliente, é responsável por configurar e proteger os serviços e dados que utiliza. 
+   - Dependendo do serviço AWS, sua responsabilidade varia: de configurar e gerenciar toda a segurança, até apenas controlar o acesso aos seus recursos e dados. 
+
+    Portanto, sua carga de responsabilidade muda conforme o tipo de serviço AWS que você está usando.
+    **Responsabilidades da AWS e do Cliente por Categoria de Serviço:**
+
+    1. **Serviços de Infraestrutura**
+    - **AWS**: Gerencia infraestrutura e serviços base.
+    - **Cliente**: Gerencia sistema operacional, plataforma de aplicação, criptografia, e segurança dos dados.
+
+    2. **Serviços de Contêiner**
+    - **AWS**: Gerencia infraestrutura, serviços base, sistema operacional e plataforma de aplicação.
+    - **Cliente**: Gerencia dados do cliente, implementa criptografia e segurança por meio de firewalls e backups.
+
+    3. **Serviços Abstratos**
+    - **AWS**: Gerencia infraestrutura, sistema operacional, plataformas, e criptografia do lado do servidor.
+    - **Cliente**: Gerencia e protege dados do cliente, incluindo a criptografia do lado do cliente.
+
+
+## Proteja o usuário raiz da AWS
+
+### Autenticação vs. Autorização
+- **Autenticação**: Verifica a identidade do usuário (ex: e-mail e senha).
+- **Autorização**: Define o que o usuário pode fazer (ex: ler, editar, criar).
+
+### Usuário Raiz da AWS
+- Conta criada inicialmente com acesso total a todos os produtos e dados.
+- **Credenciais**: 
+  - **Login**: E-mail e senha para o console de gerenciamento.
+  - **Chaves de acesso**: ID e chave secreta para solicitações via CLI ou API.
+- **Melhores práticas**:
+  - Use uma senha forte.
+  - Nunca compartilhe credenciais.
+  - Desative/exclua as chaves de acesso, a menos que sejam necessárias.
+  - Use o usuário raiz apenas para tarefas específicas.
+
+### Autenticação Multifator (MFA)
+- **MFA**: Adiciona segurança ao exigir dois métodos de autenticação (ex: senha + token de segurança).
+- **Por que usar MFA?**: Protege contra o acesso indesejado, mesmo que uma senha seja comprometida.
+- **Como habilitar MFA na AWS**:
+  1. Primeiro, use e-mail e senha.
+  2. Depois, insira um código gerado pelo dispositivo MFA.
+
+### Tipos de Dispositivos MFA
+- **MFA Virtual**: Aplicativos móveis que geram códigos únicos (ex: Google Authenticator).
+- **Dispositivos de Hardware**: Chaveiros ou cartões que geram códigos numéricos.
+- **U2F (Fator Universal de 2ª Geração)**: Dispositivo físico conectado via USB (ex: Yubikey).
+
+Habilitar MFA é uma recomendação da AWS para maior segurança das contas e recursos.
+
+## AWS Identity and Access Management
+
+
+O AWS Identity and Access Management (IAM) é um serviço da AWS que permite gerenciar o acesso à sua conta e aos recursos da AWS. Ele define quem pode autenticar (fazer login) e quem pode autorizar (ter permissões) para usar os recursos. Com o IAM, é possível compartilhar acesso sem expor chaves ou senhas, oferecendo permissões granulares aos usuários para acessarem apenas o que for necessário.
+
+### **Recursos do IAM:**
+- **Global:** O IAM não é específico de uma região e funciona em todas as regiões da AWS.
+- **Integração:** Já vem integrado com muitos serviços AWS.
+- **Políticas de Senha:** Permite definir complexidade e rotação de senhas.
+- **MFA:** Suporta autenticação multifator.
+- **Federação de Identidades:** Permite que usuários de sistemas externos acessem temporariamente a conta AWS.
+- **Gratuito:** O uso do IAM não gera custos adicionais.
+
+### **Usuários e Grupos do IAM:**
+- Um **usuário do IAM** é qualquer pessoa ou serviço que interage com a AWS. Cada usuário possui credenciais únicas e permissões definidas.
+- Os **grupos do IAM** são coleções de usuários que herdam permissões atribuídas ao grupo, facilitando a gestão de acesso, por exemplo, separando grupos por função como "desenvolvedores" ou "administradores."
+
+### **Credenciais do Usuário IAM:**
+- Acesso ao **Console de Gerenciamento AWS** com usuário e senha.
+- **Acesso Programático** via AWS CLI e APIs utilizando chaves de acesso.
+- Gerenciar permissões diretamente nos usuários é possível, mas agrupar por grupos é uma prática recomendada para facilitar a administração.
+
+### **Políticas do IAM:**
+As **políticas** definem permissões para usuários, grupos e funções. Elas são escritas em JSON e têm quatro principais elementos:
+- **Version:** Define a versão da linguagem de política.
+- **Effect:** Especifica se a permissão é "Allow" (permitir) ou "Deny" (negar).
+- **Action:** Determina as ações permitidas ou negadas (por exemplo, `iam:ChangePassword`).
+- **Resource:** Especifica os recursos afetados.
+
+### **Exemplos de Políticas:**
+- **Política de Administrador:** Permite todas as ações em todos os recursos:
+  ```json
+  {
+    "Version": "2012-10-17",
+    "Statement": [{
+      "Effect": "Allow",
+      "Action": "*",
+      "Resource": "*"
+    }]
+  }
+  ```
+- **Política Granular:** Permite que um usuário altere sua própria senha e obtenha suas próprias informações:
+  ```json
+  {
+    "Version": "2012-10-17",
+    "Statement": [{
+      "Effect": "Allow",
+      "Action": [
+        "iam:ChangePassword",
+        "iam:GetUser"
+      ],
+      "Resource": "arn:aws:iam::123456789012:user/${aws:username}"
+    }]
+  }
+  ```
+
+Essas políticas ajudam a gerenciar permissões específicas para os recursos da AWS, tornando o acesso seguro e organizado.
+
+
+## Acesso baseado em função na AWS
+
+### 1. Bloquear o Usuário Raiz
+- O usuário raiz tem acesso total à conta.
+- **Recomendações de Segurança**:
+  - Não compartilhe credenciais.
+  - Exclua chaves de acesso desnecessárias.
+  - Habilite MFA para proteção adicional.
+
+### 2. Princípio de Privilégio Mínimo
+- Conceda apenas as permissões mínimas necessárias para cada tarefa.
+- Comece com permissões básicas e adicione conforme a necessidade.
+
+### 3. Uso Apropriado do IAM
+- O IAM é para gerenciar o acesso a recursos da AWS.
+- Não é usado para autenticação de sites ou segurança de sistemas operacionais/redes.
+
+### 4. Preferir Funções do IAM
+- As funções oferecem credenciais temporárias, expiram após 15 min a 36 horas.
+- Mais seguro e flexível do que gerenciar usuários com credenciais de longo prazo.
+
+### 5. Usar um Provedor de Identidade (IdP)
+- Facilita o gerenciamento de identidades para equipes maiores.
+- Usando um IdP, é possível associar funções do IAM para identidades federadas, centralizando a gestão de permissões.
+
+### 6. Considere o AWS Single Sign-On (SSO)
+- Ideal para organizações com muitos funcionários e várias contas AWS.
+- Permite login único (SSO) para acessar várias contas e aplicações.
+- Oferece integração com IdPs de terceiros para sincronizar usuários e grupos, separando claramente a gestão de identidade e acesso à nuvem.
+
+
+
+## Demonstração: implemente segurança com o AWS Identity and Access Management (IAM)
+
+## Hospedagem de aplicação de diretório de funcionários
+
+# Teste de Conhecimento:
+
+**P: Quais são os quatro principais fatores que você deve considerar ao escolher uma região?**
+
+R: Latência, preço, disponibilidade de serviços e conformidade
+
+**P: Qual das opções a seguir melhor descreve a relação entre regiões, zonas de disponibilidade e datacenters?**
+
+R: As regiões são clusters de zonas de disponibilidade. As zonas de disponibilidade são clusters de datacenters.
+
+**P: Qual das opções a seguir é um benefício da computação em nuvem?**
+
+R: Obtenha alcance global em minutos
+
+**P: Quais das opções a seguir são uma prática recomendada ao proteger um usuário raiz da AWS? (Selecione DUAS.)**
+
+R:  Habilitar multi-factor authentication (MFA) para o usuário raiz
+    Desabilitar ou excluir as chaves de acesso associadas ao usuário raiz
+
+
+
+
+
 
 ## Módulo 7: Monitoramento e Análise
 
