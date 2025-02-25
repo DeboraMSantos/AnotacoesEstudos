@@ -910,50 +910,60 @@ Um serviço de banco de dados de chave-valor sem servidor
 R: Amazon Redshift
 
 ## Módulo 6: Segurança
-## Segurança e o modelo de responsabilidade compartilhada da AWS
+## Modelo de Responsabilidade Compartilhada da AWS
 
 Quando você usa a AWS, a segurança é uma responsabilidade compartilhada entre você e a AWS. Isso é conhecido como o "modelo de responsabilidade compartilhada," dividido em dois conceitos:
+
+A AWS providencia a infraestrutura da nuvem, enquanto o cliente é responsável pela segurança do que implementa nessa infraestrutura.
 
 ![image](https://github.com/user-attachments/assets/f6bf140b-c64d-49b1-8e2f-4b31bb95a782)
 
 
-1. **Segurança *na* Nuvem (Responsabilidade da AWS)**: A AWS é responsável por proteger toda a infraestrutura que executa os serviços, incluindo:
-   - Segurança física de datacenters, regiões e zonas de disponibilidade.
-   - Gerenciamento de hardware, software, redes, e servidores físicos, além dos sistemas operacionais de host e camadas de virtualização.
+### **Responsabilidades da AWS: Segurança *da* Nuvem**
+A AWS é encarregada de proteger a infraestrutura que suporta todos os serviços oferecidos na AWS Cloud, o que envolve:
 
-   **Categorias de Serviços AWS e Responsabilidades da AWS:**
+- **Software e Hardware**: Gerencia todos os aspectos da computação, armazenamento, bancos de dados e redes.
+- **Infraestrutura Física**: Responsável pela segurança física dos data centers e pelo gerenciamento de toda a infraestrutura de hardware e software.
+- **Proteção Global**: Cuida da segurança das Regiões AWS, Zonas de Disponibilidade e locais de borda, assegurando a integridade e a proteção física em todos os níveis da infraestrutura.
+- **Segurança de Host e Virtualização**: Encarrega-se do sistema operacional do host e das camadas de virtualização, garantindo a separação e o isolamento apropriados dos recursos virtuais.
 
-    1. **Serviços de Infraestrutura** (e.g., Amazon EC2)
-    - **Responsabilidade AWS**: Gerenciar a infraestrutura subjacente e os serviços base.
+#### **Categorias de Serviços AWS e Responsabilidades Correspondentes:**
 
-    2. **Serviços de Contêiner** (e.g., Amazon RDS)
-    - **Responsabilidade AWS**: Gerenciar a infraestrutura, serviços base, sistema operacional, e plataforma de aplicações.
+1. **Serviços de Infraestrutura** (ex.: Amazon EC2)
+   - **Responsabilidade AWS**: Administração da infraestrutura básica e dos serviços essenciais.
 
-    3. **Serviços Abstratos** (e.g., Amazon S3)
-    - **Responsabilidade AWS**: Gerenciar a infraestrutura, sistema operacional, plataformas, criptografia do lado do servidor, e proteção de dados.
+2. **Serviços de Contêiner** (ex.: Amazon RDS)
+   - **Responsabilidade AWS**: Gerenciamento da infraestrutura, serviços essenciais, sistema operacional e plataforma de aplicações.
 
-    **Observação sobre Serviços de Contêiner da AWS**: 
+3. **Serviços Abstratos** (ex.: Amazon S3)
+   - **Responsabilidade AWS**: Administração da infraestrutura, do sistema operacional, das plataformas de aplicação, da criptografia do lado do servidor e da proteção de dados.
 
-    Os serviços de contêiner da AWS se referem à abstração de aplicações que a AWS gerencia internamente, e não a contêineres Docker. Isso alivia a carga dos clientes em relação ao gerenciamento da plataforma e infraestrutura, ficando sob responsabilidade da AWS.
+#### **Nota sobre Serviços de Contêiner da AWS**: 
+Os "Serviços de Contêiner" da AWS referem-se a serviços que automatizam o gerenciamento de aplicações, não estando relacionados a contêineres Docker. Isso minimiza a responsabilidade dos clientes pelo gerenciamento da plataforma e infraestrutura, ficando sob a gestão da AWS.
 
 
-2. **Segurança *da* Nuvem (Responsabilidade do Cliente)**: Você, como cliente, é responsável por configurar e proteger os serviços e dados que utiliza. 
-   - Dependendo do serviço AWS, sua responsabilidade varia: de configurar e gerenciar toda a segurança, até apenas controlar o acesso aos seus recursos e dados. 
 
-    Portanto, sua carga de responsabilidade muda conforme o tipo de serviço AWS que você está usando.
-    **Responsabilidades da AWS e do Cliente por Categoria de Serviço:**
+### **Responsabilidades do Cliente: Segurança *na* Nuvem**
+Como cliente da AWS, você tem a responsabilidade de proteger os recursos que implementa e utiliza na nuvem. Essas responsabilidades variam conforme o tipo de serviço AWS utilizado:
 
-    1. **Serviços de Infraestrutura**
-    - **AWS**: Gerencia infraestrutura e serviços base.
-    - **Cliente**: Gerencia sistema operacional, plataforma de aplicação, criptografia, e segurança dos dados.
+- **Dados do Cliente**: Responsabilidade total pela segurança dos dados.
+- **Plataforma e Aplicações**: Inclui o gerenciamento de sistemas operacionais, aplicações e Identity and Access Management (IAM).
+- **Configuração de Rede**: Abrange a configuração de sistemas operacionais, rede e firewall, além da criptografia de dados.
 
-    2. **Serviços de Contêiner**
-    - **AWS**: Gerencia infraestrutura, serviços base, sistema operacional e plataforma de aplicação.
-    - **Cliente**: Gerencia dados do cliente, implementa criptografia e segurança por meio de firewalls e backups.
+**Detalhamento por Categoria de Serviço:**
+1. **Serviços de Infraestrutura**
+   - **AWS**: Gerencia a infraestrutura e os serviços base.
+   - **Cliente**: Gerencia o sistema operacional, a plataforma de aplicação, a criptografia e a segurança dos dados.
 
-    3. **Serviços Abstratos**
-    - **AWS**: Gerencia infraestrutura, sistema operacional, plataformas, e criptografia do lado do servidor.
-    - **Cliente**: Gerencia e protege dados do cliente, incluindo a criptografia do lado do cliente.
+2. **Serviços de Contêiner**
+   - **AWS**: Gerencia a infraestrutura, serviços base, sistema operacional e plataforma de aplicação.
+   - **Cliente**: Responsável pela segurança dos dados do cliente, implementação de criptografia, e medidas de segurança como firewalls e backups.
+
+3. **Serviços Abstratos**
+   - **AWS**: Gerencia a infraestrutura, o sistema operacional, as plataformas de aplicação, e a criptografia do lado do servidor.
+   - **Cliente**: Gerencia e protege os dados do cliente, incluindo a criptografia do lado do cliente.
+
+Estas responsabilidades sublinham a importância do controle que você mantém sobre seus conteúdos e a necessidade de uma configuração e gestão cuidadosas, dependendo do tipo e da complexidade dos serviços utilizados na AWS.
 
 
 ## Proteja o usuário raiz da AWS
