@@ -1118,6 +1118,32 @@ AWS Organizations é uma ferramenta para consolidar e gerenciar múltiplas conta
 - O uso de UOs permite o acesso facilitado aos serviços e recursos necessários, enquanto impede o acesso a serviços ou recursos desnecessários. Além disso, o acesso continua sendo gerenciado por meio do IAM para usuários, grupos e perfis.
 
 
+### Conformidade - AWS Artifact
+
+AWS Artifact é um serviço da AWS que fornece acesso sob demanda a relatórios de segurança e conformidade, bem como a contratos on-line relacionados ao uso de serviços AWS.
+
+#### Principais Componentes do AWS Artifact
+
+#### AWS Artifact Agreements
+- **Descrição**: Permite visualizar, aceitar e gerenciar contratos para uma conta individual ou todas as contas no AWS Organizations.
+- **Utilidade**: Especialmente útil para clientes sujeitos a regulamentações específicas, como a HIPAA nos EUA.
+  
+#### AWS Artifact Reports
+- **Descrição**: Oferece relatórios de conformidade de auditores terceirizados que verificaram a adesão da AWS a normas e regulamentações de segurança globais, regionais e setoriais.
+- **Utilidade**: Ideal para membros da equipe que precisam de evidências de conformidade para desenvolvimento de aplicações em ambientes regulados.
+- **Exemplos de Relatórios**: Inclui certificações ISO da AWS, relatórios do Payment Card Industry (PCI), e Service Organization Control (SOC).
+
+#### Centro de Conformidade para o Cliente
+- **Recursos**: Contém histórias de conformidade de clientes, whitepapers, e documentação sobre conformidade, além de oferecer um plano de aprendizagem para auditores.
+- **Finalidade**: Ajuda a entender como demonstrar conformidade usando a nuvem AWS em setores regulamentados.
+
+#### Benefícios do AWS Artifact
+- **Acesso Instantâneo**: Acesso imediato a documentos importantes sem a necessidade de solicitações formais.
+- **Transparência de Conformidade**: Facilita a demonstração de conformidade com regulamentações necessárias para auditores e reguladores.
+- **Gestão de Contratos**: Simplifica o gerenciamento de acordos legais e de conformidade para usuários de AWS Organizations.
+
+
+
 ## Teste de Conhecimento:
 
 #### 1: Quais são os quatro principais fatores que você deve considerar ao escolher uma região?**
@@ -1135,6 +1161,12 @@ R2: Definição de permissões para objetos do Amazon S3
 #### 6: Você está configurando políticas de controle de serviço (SCPs) no AWS Organizations. A quais identidades e recursos as SCPs podem ser aplicadas? (Selecione DUAS opções.)
 R1: Uma conta de membro individual
 R2: Uma unidade organizacional (UO)
+#### 7: Quais tarefas você pode concluir no AWS Artifact? (Selecione DUAS opções.)
+R1: Acessar relatórios de conformidade da AWS sob demanda.
+R2: Analisar, aceitar e gerenciar seus contratos com a AWS.
+
+
+#### 
 
 
 
