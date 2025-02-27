@@ -1257,6 +1257,77 @@ O **painel** do CloudWatch permite acessar e visualizar métricas de todos os se
 O CloudWatch é essencial para o monitoramento em tempo real e a automação de tarefas baseadas em métricas específicas, ajudando a otimizar o desempenho e reduzir custos operacionais.
 
 
+# AWS CloudTrail
+
+**AWS CloudTrail** é um serviço que registra chamadas de API na sua conta AWS, fornecendo detalhes como identidade do chamador, horário da chamada, endereço IP do chamador, entre outros. Esse log de ações ajuda você a monitorar e revisar as atividades dentro de sua infraestrutura AWS.
+
+## Características Principais
+
+- **Registros Detalhados**: Cada evento registrado inclui informações detalhadas sobre a ação executada.
+- **Tempo de Atualização**: Os eventos geralmente são disponibilizados no CloudTrail em até 15 minutos após as chamadas de API.
+- **Filtros de Pesquisa**: Permite a filtragem de eventos por data, usuário, tipo de recurso e outras especificações.
+
+## Exemplo Prático
+
+### Caso de Uso
+Suponha que uma chamada de API no IAM criou um usuário chamado Mary. Usando o CloudTrail, você pode descobrir quem criou o usuário, quando e através de qual método.
+
+### Resultados do CloudTrail
+O registro no CloudTrail mostra que, em 1º de janeiro de 2020, às 9:00, o usuário do IAM John utilizou o console da AWS para criar o usuário Mary.
+
+## CloudTrail Insights
+
+Este recurso adicional permite a detecção automática de atividades de API incomuns, ajudando a identificar e responder a operações atípicas, como um número anormal de instâncias EC2 sendo iniciadas.
+
+# AWS Trusted Advisor
+
+**AWS Trusted Advisor** é um serviço que oferece orientações para otimizar recursos da AWS, melhorar a segurança e aumentar a eficiência operacional, baseando-se nas melhores práticas da AWS.
+
+## Funcionalidades
+
+- **Categorias de Análise**:
+  - Otimização de custos
+  - Desempenho
+  - Segurança
+  - Tolerância a falhas
+  - Limites de serviço
+
+- **Relatórios e Recomendações**: Fornece recomendações de ações e recursos para melhorar a configuração e performance dos seus recursos AWS.
+
+## Painel do AWS Trusted Advisor
+
+O painel no console AWS mostra uma visão geral das verificações e suas categorias:
+
+- **Verificações Verdes**: Indicam configurações sem problemas detectados.
+- **Investigações Laranjas**: Recomendam análise mais detalhada.
+- **Ações Vermelhas**: Sugerem intervenções imediatas para resolver questões críticas.
+
+### Benefícios
+
+O AWS Trusted Advisor pode ser utilizado tanto para novos projetos e fluxos de trabalho quanto para a melhoria contínua de aplicações e recursos existentes, proporcionando um ambiente otimizado e seguro.
+
+### Teste de conhecimento
+#### 1. Quais tarefas você pode executar usando o AWS CloudTrail? (Selecione DUAS opções.)
+R1: Rastrear atividades do usuário e solicitações de API em toda a infraestrutura da AWS
+R2: Filtrar logs para auxiliar na análise operacional e na solução de problemas
+
+#### 2. Quais ações você pode executar usando o Amazon CloudWatch? (Selecione DUAS opções.)
+R1: Monitorar a utilização e o desempenho de seus recursos
+R2: Acessar métricas em um único painel
+#### 3. Qual serviço permite que você reveja a segurança de seus buckets do Amazon S3 verificando permissões de acesso aberto?
+R: AWS Trusted Advisor
+#### 4. Quais categorias estão inclusas no painel do AWS Trusted Advisor? (Selecione DUAS opções.)
+R1: Desempenho
+R2: Tolerância a falhas
+
+OBS: Essas são as categorias:
+  - Otimização de custos
+  - Desempenho
+  - Segurança
+  - Tolerância a falhas
+  - Limites de serviço
+
+
 # Módulo 8: Definição de Preços e Suporte
 
 # Módulo 9: Migraçao e Inovação
