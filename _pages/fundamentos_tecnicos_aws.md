@@ -1228,12 +1228,34 @@ R: AWS Shield
 #### 12: Qual tarefa o AWS Key Management Service (AWS KMS) pode executar?
 R: Criar chaves de criptografia.
 
-
-
-
-
-
 # Módulo 7: Monitoramento e Análise
+
+## Amazon CloudWatch
+
+O **Amazon CloudWatch** é um serviço que oferece monitoramento e gerenciamento de métricas para recursos da AWS e aplicações executadas na Amazon Web Services. Ele coleta dados de monitoramento na forma de métricas, oferecendo insights operacionais de seus recursos AWS.
+
+### Métricas
+
+As métricas são pontos de dados que representam o desempenho de seus recursos. Os serviços AWS automaticamente enviam essas métricas para o CloudWatch, permitindo que você visualize e analise gráficos para entender como o desempenho mudou ao longo do tempo.
+
+### Alarmes do CloudWatch
+
+Você pode criar **alarmes** no CloudWatch para acionar ações automáticas se a métrica ultrapassar ou ficar abaixo de um limite definido. Por exemplo:
+
+- **Cenário de Uso**: Suponha que instâncias do Amazon EC2 sejam usadas para desenvolvimento ou teste e ocasionalmente não sejam interrompidas pelos desenvolvedores, gerando custos desnecessários.
+- **Solução**: Um alarme do CloudWatch pode ser configurado para interromper automaticamente uma instância do EC2 quando a utilização da CPU ficar abaixo de um limite específico por um período definido.
+- **Notificações**: Você também pode optar por receber notificações quando esse alarme for acionado.
+
+### Painel do CloudWatch
+
+O **painel** do CloudWatch permite acessar e visualizar métricas de todos os seus recursos AWS em um único local. Você pode:
+
+- Monitorar métricas como a utilização da CPU de instâncias EC2, o número de solicitações a um bucket do Amazon S3, entre outras.
+- Personalizar painéis para diferentes necessidades comerciais, aplicativos ou recursos, facilitando a gestão e o monitoramento de operações específicas.
+
+
+O CloudWatch é essencial para o monitoramento em tempo real e a automação de tarefas baseadas em métricas específicas, ajudando a otimizar o desempenho e reduzir custos operacionais.
+
 
 # Módulo 8: Definição de Preços e Suporte
 
