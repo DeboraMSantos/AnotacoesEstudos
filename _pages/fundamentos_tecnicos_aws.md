@@ -22,10 +22,6 @@
   
 </menu>
 
-
-
-
-
 ## Módulo 1: Introdução à Amazon Web Services (AWS)
 
 ### Visão Geral do Curso
@@ -1170,7 +1166,35 @@ AWS Shield é um serviço projetado para proteger aplicações contra ataques DD
 - **Capacidades**: Oferece diagnósticos detalhados de ataques e maior capacidade de detectar e mitigar ataques elaborados de DDoS.
 - **Integração**: Funciona com Amazon CloudFront, Amazon Route 53, Elastic Load Balancing e pode ser integrado ao AWS WAF com regras personalizadas para uma proteção mais robusta.
 
+### Serviços de Segurança da AWS
 
+#### AWS Key Management Service (AWS KMS)
+AWS KMS é um serviço que permite criar, gerenciar e usar chaves de criptografia para proteger seus dados.
+
+- **Proteção de Dados**: Garante a segurança dos dados durante o armazenamento (criptografia em repouso) e durante a transmissão (criptografia em trânsito).
+- **Gerenciamento de Chaves**: Oferece controles de acesso detalhados para gerenciamento de chaves de criptografia.
+- **Controle**: Permite especificar quem pode gerenciar chaves e temporariamente desativar chaves quando necessário.
+
+#### AWS WAF
+AWS WAF é um firewall de aplicação web que protege aplicações web de ameaças comuns.
+
+- **Funcionalidade**: Monitora e controla o tráfego de rede que chega às aplicações web.
+- **Listas de Controle de Acesso**: Utiliza ACLs da web para bloquear ou permitir tráfego específico, protegendo contra solicitações mal-intencionadas.
+- **Flexibilidade**: Permite configurar regras que definem quais solicitações devem ser bloqueadas ou permitidas.
+
+#### Amazon Inspector
+Amazon Inspector é um serviço que realiza avaliações automatizadas de segurança para identificar vulnerabilidades e desvios nas aplicações.
+
+- **Avaliações Automatizadas**: Verifica automaticamente aplicações em busca de vulnerabilidades de segurança.
+- **Relatórios de Segurança**: Fornece uma lista de descobertas de segurança, classificadas por nível de gravidade, com recomendações para correção.
+- **Melhoria Contínua**: Ajuda a manter as práticas recomendadas de segurança, embora a responsabilidade final pela segurança recaia sobre o cliente.
+
+#### Amazon GuardDuty
+Amazon GuardDuty é um serviço de detecção de ameaças que protege sua infraestrutura AWS e recursos monitorando atividades suspeitas.
+
+- **Monitoramento Contínuo**: Analisa logs de fluxo de VPC, logs de DNS e outros sinais para detectar atividades suspeitas.
+- **Detecção Inteligente de Ameaças**: Utiliza aprendizado de máquina e inteligência de ameaças para identificar comportamentos anormais.
+- **Resposta Automatizada**: Integra-se com AWS Lambda para permitir ações automáticas em resposta a descobertas de segurança.
 
 
 ## Teste de Conhecimento:
