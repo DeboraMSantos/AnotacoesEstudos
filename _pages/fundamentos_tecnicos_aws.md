@@ -1142,6 +1142,35 @@ AWS Artifact é um serviço da AWS que fornece acesso sob demanda a relatórios 
 - **Transparência de Conformidade**: Facilita a demonstração de conformidade com regulamentações necessárias para auditores e reguladores.
 - **Gestão de Contratos**: Simplifica o gerenciamento de acordos legais e de conformidade para usuários de AWS Organizations.
 
+### Ataques de Negação de Serviço (DoS e DDoS)
+
+#### Analogia da Cafeteria
+- **Problema**: Clientes fazem pedidos por telefone e nunca os retiram, bloqueando a linha para clientes legítimos.
+- **Solução Tentativa**: Bloquear o número do telefone usado para fazer pedidos falsos.
+- **Semelhança com DoS**: O comportamento é comparável a um ataque de negação de serviço, onde um invasor sobrecarrega um serviço para torná-lo indisponível.
+
+#### Ataques de Negação de Serviço (DoS)
+- **Definição**: Tentativa deliberada de tornar um site ou aplicação indisponível, inundando-o com tráfego excessivo até que fique sobrecarregado.
+- **Impacto**: Usuários legítimos não conseguem acessar o serviço.
+
+#### Ataques Distribuídos de Negação de Serviço (DDoS)
+- **Cenário**: Múltiplas fontes (possivelmente coordenadas por um único ator) sobrecarregam um serviço, tornando difícil ou impossível bloquear os ataques devido ao número variado de fontes.
+- **Complexidade**: Um único ator pode usar muitos computadores infectados para atacar, aumentando a escala e o impacto do ataque.
+
+#### AWS Shield
+AWS Shield é um serviço projetado para proteger aplicações contra ataques DDoS.
+
+#### AWS Shield Standard
+- **Cobertura**: Proteção automática para todos os clientes AWS, sem custos adicionais.
+- **Proteção**: Mitiga os tipos mais comuns de ataques DDoS.
+- **Funcionamento**: Utiliza técnicas de análise para detectar e mitigar tráfego mal-intencionado em tempo real.
+
+#### AWS Shield Advanced
+- **Custo**: Serviço pago com recursos avançados.
+- **Capacidades**: Oferece diagnósticos detalhados de ataques e maior capacidade de detectar e mitigar ataques elaborados de DDoS.
+- **Integração**: Funciona com Amazon CloudFront, Amazon Route 53, Elastic Load Balancing e pode ser integrado ao AWS WAF com regras personalizadas para uma proteção mais robusta.
+
+
 
 
 ## Teste de Conhecimento:
