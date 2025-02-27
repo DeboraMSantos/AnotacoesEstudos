@@ -1199,13 +1199,13 @@ Amazon GuardDuty é um serviço de detecção de ameaças que protege sua infrae
 
 ## Teste de Conhecimento:
 
-#### 1: Quais são os quatro principais fatores que você deve considerar ao escolher uma região?**
+#### 1: Quais são os quatro principais fatores que você deve considerar ao escolher uma região?
 R: Latência, preço, disponibilidade de serviços e conformidade
-#### 2: Qual das opções a seguir melhor descreve a relação entre regiões, zonas de disponibilidade e datacenters?**
+#### 2: Qual das opções a seguir melhor descreve a relação entre regiões, zonas de disponibilidade e datacenters?
 R: As regiões são clusters de zonas de disponibilidade. As zonas de disponibilidade são clusters de datacenters.
 #### 3: Qual das opções a seguir é um benefício da computação em nuvem?**
 R: Obtenha alcance global em minutos
-#### 4: Quais das opções a seguir são uma prática recomendada ao proteger um usuário raiz da AWS? (Selecione DUAS.)**
+#### 4: Quais das opções a seguir são uma prática recomendada ao proteger um usuário raiz da AWS? (Selecione DUAS.)
 R1: Habilitar multi-factor authentication (MFA) para o usuário raiz
 R2: Desabilitar ou excluir as chaves de acesso associadas ao usuário raiz
 #### 5: Quais tarefas são responsabilidades dos clientes? (Selecione DUAS opções.)
@@ -1217,9 +1217,18 @@ R2: Uma unidade organizacional (UO)
 #### 7: Quais tarefas você pode concluir no AWS Artifact? (Selecione DUAS opções.)
 R1: Acessar relatórios de conformidade da AWS sob demanda.
 R2: Analisar, aceitar e gerenciar seus contratos com a AWS.
+#### 8: Qual afirmativa descreve melhor uma política do IAM?
+R: Um documento que concede ou nega permissões para serviços e recursos AWS
+#### 9: Um funcionário precisa de acesso temporário para criar vários buckets do Amazon S3. Qual opção seria a melhor escolha para essa tarefa?
+R: Função do IAM
+#### 10: Qual afirmativa melhor descreve o princípio de menor privilégio?
+R: Conceder apenas as permissões necessárias para executar tarefas específicas
+#### 11: Qual serviço ajuda a proteger suas aplicações contra ataques distribuídos de negação de serviço (DDoS)?
+R: AWS Shield
+#### 12: Qual tarefa o AWS Key Management Service (AWS KMS) pode executar?
+R: Criar chaves de criptografia.
 
 
-#### 
 
 
 
