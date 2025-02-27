@@ -1087,10 +1087,36 @@ Essas políticas ajudam a gerenciar permissões específicas para os recursos da
 - Oferece integração com IdPs de terceiros para sincronizar usuários e grupos, separando claramente a gestão de identidade e acesso à nuvem.
 
 
+### AWS Organizations
 
-## Demonstração: implemente segurança com o AWS Identity and Access Management (IAM)
+AWS Organizations é uma ferramenta para consolidar e gerenciar múltiplas contas AWS de uma empresa em um local central. Ao criar uma organização no AWS, é automaticamente criada uma raiz, que serve como contêiner principal para todas as contas na organização.
 
-## Hospedagem de aplicação de diretório de funcionários
+#### Características Principais
+
+#### Controle Centralizado
+- **Políticas de Controle de Serviço (SCPs)**: Permitem a administração centralizada das permissões, restringindo os serviços AWS, recursos e ações de API que usuários e funções podem acessar em cada conta.
+
+#### Cobrança Consolidada
+- A cobrança consolidada é facilitada pelo AWS Organizations, permitindo uma gestão financeira mais eficiente das várias contas.
+
+#### Unidades Organizacionais (UO)
+- **Agrupamento de Contas**: Contas podem ser agrupadas em Unidades Organizacionais (UO) para gerenciamento simplificado, especialmente útil para contas com requisitos de negócios ou segurança semelhantes.
+- **Herança de Políticas**: Ao aplicar uma política a uma UO, todas as contas na UO automaticamente herdam as permissões especificadas na política.
+
+#### Exemplo Prático
+
+#### Passo 1: Estrutura Organizacional
+- Imagine uma empresa com contas AWS separadas para os departamentos de Financeiro, TI, RH e Jurídico. Ao consolidar essas contas em uma organização, estabelece-se uma raiz.
+
+#### Passo 2: Sem UO
+- Os departamentos de Financeiro e TI são colocados diretamente sob a raiz por terem requisitos distintos, sem sobreposição com outros departamentos.
+
+#### Passo 3: Com UO
+- Os departamentos de RH e Jurídico são colocados em uma UO juntos, permitindo a aplicação de políticas comuns que cobrem ambos os departamentos.
+
+#### Conclusão
+- O uso de UOs permite o acesso facilitado aos serviços e recursos necessários, enquanto impede o acesso a serviços ou recursos desnecessários. Além disso, o acesso continua sendo gerenciado por meio do IAM para usuários, grupos e perfis.
+
 
 ## Teste de Conhecimento:
 
@@ -1106,6 +1132,9 @@ R2: Desabilitar ou excluir as chaves de acesso associadas ao usuário raiz
 #### 5: Quais tarefas são responsabilidades dos clientes? (Selecione DUAS opções.)
 R1: Aplicação de patches em software em instâncias do Amazon EC2
 R2: Definição de permissões para objetos do Amazon S3
+#### 6: Você está configurando políticas de controle de serviço (SCPs) no AWS Organizations. A quais identidades e recursos as SCPs podem ser aplicadas? (Selecione DUAS opções.)
+R1: Uma conta de membro individual
+R2: Uma unidade organizacional (UO)
 
 
 
