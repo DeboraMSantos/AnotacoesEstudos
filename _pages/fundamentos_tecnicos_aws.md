@@ -22,7 +22,7 @@
   
 </menu>
 
-## Módulo 1: Introdução à Amazon Web Services (AWS)
+# Módulo 1: Introdução à Amazon Web Services (AWS)
 
 ### Visão Geral do Curso
 - **Zonas de Disponibilidade**: São regiões geográficas como América do Sul, Estados Unidos, etc.
@@ -78,7 +78,7 @@ A AWS é uma plataforma de computação em nuvem que oferece serviços de TI sob
 ### ELB (Elastic Load Balancer)
 - Distribui o tráfego entre múltiplas instâncias EC2.
 
-## Módulo 2: Computação da AWS
+# Módulo 2: Computação da AWS
 ### EC2 (Elastic Compute Cloud)
 - Hospeda máquinas virtuais que podem ser escaladas conforme a demanda.
 - O EC2 permite que os usuários aluguem computadores virtuais, chamados "instâncias" 
@@ -281,7 +281,7 @@ Este resumo sintetiza como a AWS utiliza elasticidade e dimensionamento para gar
 5. Você deseja implantar e gerenciar aplicativos em contêineres. Qual serviço você deve usar?
 - R: Amazon Elastic Kubernetes Service (Amazon EKS)
 
-## Módulo 3: Infraestrutura Global e Confiabilidade
+# Módulo 3: Infraestrutura Global e Confiabilidade
   
   - Se um evento (como um desfile, inundação ou queda de energia) bloquear uma unidade, os clientes podem simplesmente ir a outra próxima.
   - Essa rede de cafeterias garante que o serviço continue disponível, mesmo se uma unidade ficar indisponível.
@@ -421,7 +421,7 @@ R: Local de borda
 #### 6. Qual ação você pode executar com o AWS Outposts?
 R: Estender a infraestrutura e os serviços da AWS para diferentes locais, incluindo um data center on-premises.
 
-## Módulo 4: Redes
+# Módulo 4: Redes
 #### VPC (Virtual Private Cloud)
 - Seção isolada da nuvem AWS que permite definir uma rede virtual própria.  
 - Permite criar **sub-redes (subnets)** para organizar recursos de forma lógica, definindo quais podem ser públicos ou privados.
@@ -562,7 +562,7 @@ R: Gateway de internet
 #### 7. Qual serviço é usado para gerenciar os registros de DNS para nomes de domínio?
 R: Amazon Route 53
 
-## Módulo 5: Armazenamento e Bancos de Dados
+# Módulo 5: Armazenamento e Bancos de Dados
 ### Armazenamentos de instância e Amazon Elastic Block Store (Amazon EBS)
 
 
@@ -905,7 +905,7 @@ Um serviço de banco de dados de chave-valor sem servidor
 #### 6. Qual serviço é usado para consultar e analisar dados em um data warehouse?
 R: Amazon Redshift
 
-## Módulo 6: Segurança
+# Módulo 6: Segurança
 ## Modelo de Responsabilidade Compartilhada da AWS
 
 Quando você usa a AWS, a segurança é uma responsabilidade compartilhada entre você e a AWS. Isso é conhecido como o "modelo de responsabilidade compartilhada," dividido em dois conceitos:
@@ -1224,12 +1224,12 @@ R2: Analisar, aceitar e gerenciar seus contratos com a AWS.
 
 
 
-## Módulo 7: Monitoramento e Análise
+# Módulo 7: Monitoramento e Análise
 
-## Módulo 8: Definição de Preços e Suporte
+# Módulo 8: Definição de Preços e Suporte
 
-## Módulo 9: Migraçao e Inovação
+# Módulo 9: Migraçao e Inovação
 
-## Módulo 10: A Jornada para a Nuvem
+# Módulo 10: A Jornada para a Nuvem
 
-## Módulo 11: Noções Básicas do AWS Certified Cloud Practitioner
+# Módulo 11: Noções Básicas do AWS Certified Cloud Practitioner
