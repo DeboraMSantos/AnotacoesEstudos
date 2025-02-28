@@ -1393,8 +1393,7 @@ A Calculadora de Preços da AWS permite aos usuários explorar e estimar os cust
 
 
 ### Painel de Cobrança da AWS
-
-Olá, entusiastas da AWS! Vou demonstrar como acessar informações detalhadas de cobrança na sua conta da AWS.
+Este painel é uma ferramenta essencial para monitorar, analisar e controlar os custos associados ao uso de serviços da AWS.
 
 #### Acessando o Painel de Faturamento
 
