@@ -1469,7 +1469,7 @@ Com a cobrança consolidada, gerenciar várias contas AWS se torna mais simples 
 
 ### AWS Budgets
 
-O AWS Budgets é uma ferramenta que permite criar orçamentos para gerenciar o uso do serviço, os custos associados e as reservas de instâncias dentro da AWS.
+O AWS Budgets é uma ferramenta que permite criar orçamentos para gerenciar o uso do serviço, os custos associados e as reservas de instâncias dentro da AWS. Possui uma interface detalhada que permite explorar diversas configurações e opções, acessível através do painel de gestão do AWS.
 
 #### Atualizações e Precisão
 
@@ -1486,9 +1486,28 @@ O AWS Budgets é uma ferramenta que permite criar orçamentos para gerenciar o u
 - **Exemplo de Uso**: Ao definir um orçamento para o Amazon EC2, você pode ser proativo na gestão dos custos, evitando surpresas no final do mês.
 - **Configuração de Alertas**: Esses alertas permitem uma resposta rápida a mudanças inesperadas no uso, assegurando que as decisões sobre gastos possam ser ajustadas em tempo real.
 
-#### Para Mais Informações
 
-- **Aprender Mais**: O AWS Budgets possui uma interface detalhada que permite explorar diversas configurações e opções, acessível através do painel de gestão do AWS.
+
+### AWS Cost Explorer
+
+O AWS Cost Explorer é uma ferramenta analítica projetada para ajudar você a visualizar, interpretar e gerenciar os custos e o uso dos serviços AWS ao longo do tempo.
+
+#### Funcionalidades
+
+- **Relatório Padrão**: Inclui um relatório dos custos e do uso dos cinco principais serviços da AWS que mais acumulam custos.
+- **Personalização**: Permite a aplicação de filtros e grupos personalizados para analisar dados de maneira mais específica.
+  - **Exemplo de Análise**: Possibilidade de exibir o uso de recursos no nível por hora para uma análise mais detalhada.
+
+#### Exemplo de Uso do AWS Cost Explorer
+
+- **Painel**: Um exemplo típico de painel do AWS Cost Explorer mostra os custos mensais para instâncias do Amazon EC2 durante um período de seis meses.
+  - **Visualização de Custos**: As barras em um gráfico podem separar os custos por tipos diferentes de instâncias do Amazon EC2, como t2.micro ou m3.large.
+  - **Análise de Custos**: Permite a você fazer uma avaliação dos custos da AWS ao longo do tempo, o que ajuda a tomar decisões informadas sobre custos futuros e planejamento orçamentário.
+
+#### Implicações para a Gestão de Custos
+
+- **Planejamento Orçamentário**: A análise detalhada oferecida pelo AWS Cost Explorer auxilia no planejamento orçamentário, permitindo ajustes proativos nas estratégias de uso e alocação de recursos.
+- **Decisões Estratégicas**: As visualizações e os relatórios gerados podem fundamentar decisões estratégicas, otimizando gastos e melhorando a eficiência operacional.
 
 
 ### Teste de Conhecimento
