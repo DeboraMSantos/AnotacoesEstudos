@@ -1594,8 +1594,11 @@ R: AWS Marketplace
 
 O AWS Cloud Adoption Framework ajuda as organizações a planejar e realizar a migração para a nuvem. O framework divide a adoção da nuvem em seis perspectivas principais, que abrangem tanto aspectos técnicos quanto de negócios.
 
-### Perspectivas do AWS CAF
 
+### Utilizando o AWS CAF
+O AWS CAF fornece um roteiro estruturado para organizações que buscam migrar para a nuvem, ajudando a identificar as áreas de mudança necessárias, planejar ações e mobilizar recursos adequados.
+
+### Perspectivas do AWS CAF
 #### Perspectiva de Negócio
 - **Objetivo**: Alinhar as estratégias de TI e de negócios.
 - **Participantes**: Gerentes de negócios, financeiros, proprietários de orçamento e stakeholders de estratégia.
@@ -1626,8 +1629,6 @@ O AWS Cloud Adoption Framework ajuda as organizações a planejar e realizar a m
 - **Participantes**: Gerentes de operações de TI, gerentes de suporte de TI.
 - **Atividades**: Definir e alinhar procedimentos operacionais e treinamentos para suportar operações na nuvem.
 
-### Utilizando o AWS CAF
-O AWS CAF fornece um roteiro estruturado para organizações que buscam migrar para a nuvem, ajudando a identificar as áreas de mudança necessárias, planejar ações e mobilizar recursos adequados.
 
 
 ### Seis Estratégias de Migração para a Nuvem
