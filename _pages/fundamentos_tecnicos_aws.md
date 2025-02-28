@@ -1589,39 +1589,39 @@ R: Empresarial de Grande Porte
 #### 7. Qual serviço ou recurso é usado para encontrar software de terceiros que pode ser executado na AWS?
 R: AWS Marketplace
 
-# Módulo 9: Migraçao e Inovação
+# Módulo 9: Migração e Inovação
 ### AWS Cloud Adoption Framework (AWS CAF)
 
 O AWS Cloud Adoption Framework ajuda as organizações a planejar e realizar a migração para a nuvem. O framework divide a adoção da nuvem em seis perspectivas principais, que abrangem tanto aspectos técnicos quanto de negócios.
 
-#### Perspectivas do AWS CAF
+### Perspectivas do AWS CAF
 
-##### Perspectiva de Negócio
+#### Perspectiva de Negócio
 - **Objetivo**: Alinhar as estratégias de TI e de negócios.
 - **Participantes**: Gerentes de negócios, financeiros, proprietários de orçamento e stakeholders de estratégia.
 - **Atividades**: Desenvolver casos de negócio para adoção da nuvem e alinhar metas de negócios e TI.
 
-##### Perspectiva de Pessoas
+#### Perspectiva de Pessoas
 - **Objetivo**: Gerenciar mudanças organizacionais para suportar a transformação para a nuvem.
 - **Participantes**: Recursos humanos, equipe de gestão de pessoas.
 - **Atividades**: Avaliar e desenvolver novas competências, treinamentos e mudanças organizacionais necessárias.
 
-##### Perspectiva de Governança
+#### Perspectiva de Governança
 - **Objetivo**: Alinhar estratégias de TI à estratégia de negócios e gerenciar riscos.
 - **Participantes**: CIOs, gerentes de programas, arquitetos empresariais, analistas de negócios e gerentes de portfólio.
 - **Atividades**: Atualizar habilidades, processos e governança para gerenciamento na nuvem.
 
-##### Perspectiva de Plataforma
+#### Perspectiva de Plataforma
 - **Objetivo**: Orientar a migração e implementação de soluções na nuvem.
 - **Participantes**: CTOs, gerentes de TI, arquitetos de soluções.
 - **Atividades**: Definir arquiteturas de sistemas, modelos e comunicação de estrutura de TI.
 
-##### Perspectiva de Segurança
+#### Perspectiva de Segurança
 - **Objetivo**: Garantir que os objetivos de segurança sejam atingidos com visibilidade, controle, auditoria e agilidade.
 - **Participantes**: CISOs, gerentes de segurança de TI, analistas de segurança.
 - **Atividades**: Estruturar e implementar controles de segurança que atendam às necessidades organizacionais.
 
-##### Perspectiva de Operações
+#### Perspectiva de Operações
 - **Objetivo**: Gerenciar e operacionalizar cargas de trabalho de TI na nuvem.
 - **Participantes**: Gerentes de operações de TI, gerentes de suporte de TI.
 - **Atividades**: Definir e alinhar procedimentos operacionais e treinamentos para suportar operações na nuvem.
@@ -1629,6 +1629,9 @@ O AWS Cloud Adoption Framework ajuda as organizações a planejar e realizar a m
 ### Utilizando o AWS CAF
 O AWS CAF fornece um roteiro estruturado para organizações que buscam migrar para a nuvem, ajudando a identificar as áreas de mudança necessárias, planejar ações e mobilizar recursos adequados.
 
+### Teste de Conhecimento
+#### 1. Qual perspectiva do AWS Cloud Adoption Framework ajuda você a elaborar, implementar e otimizar sua infraestrutura da AWS com base em suas metas e perspectivas de negócio?
+R: Perspectiva de plataforma
 
 # Módulo 10: A Jornada para a Nuvem
 
