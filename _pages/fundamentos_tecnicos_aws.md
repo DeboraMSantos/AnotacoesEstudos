@@ -1392,6 +1392,45 @@ A Calculadora de Preços da AWS permite aos usuários explorar e estimar os cust
 - **Amazon S3**: Uso exemplificado em duas regiões com diferentes níveis de solicitações e uso de armazenamento, todas abaixo dos limites do nível gratuito, resultando em nenhum custo.
 
 
+### Painel de Cobrança da AWS
+
+Olá, entusiastas da AWS! Vou demonstrar como acessar informações detalhadas de cobrança na sua conta da AWS.
+
+#### Acessando o Painel de Faturamento
+
+- **Localização**: Acesse a aba de pesquisa e procure por 'faturamento' ou 'billing'.
+- **Funcionalidades**: O painel de faturamento oferece um resumo das atividades financeiras, incluindo:
+  - Previsão total para o mês atual.
+  - Saldo atual dos gastos.
+  - Movimento de tendência em relação ao mês anterior.
+  
+#### Detalhes do Painel
+
+- **Serviços Ativos**: O painel mostra a quantidade de serviços ativos e o número de contas que você pode consolidar.
+- **Regiões Ativas**: Total de regiões ativas para a sua conta.
+- **Ranking de Gastos**: Visualização dos serviços que mais consomem recursos, com destaque para o Amazon SageMaker.
+
+#### Tendências e Análises
+
+- **Custos dos Principais Serviços**: Análise da tendência de custos pelos cinco principais serviços.
+- **Linha do Tempo de Gastos**: Observação dos gastos dos últimos três meses e comparação com a média dos três meses anteriores.
+
+#### Faturas Detalhadas
+
+- **Acesso às Faturas**: Clique em 'faturas' para ver detalhes de um mês específico.
+  - Resumo da fatura.
+  - Quantidade de dólares gastos.
+  - Informações de pagamento.
+  - Gastos específicos por serviço.
+
+#### Recursos Adicionais do Painel de Faturamento e Gerenciamento de Custos
+
+- **Funcionalidades Adicionais**:
+  - Compare o saldo atual do mês com o mês anterior e obtenha uma previsão para o próximo mês.
+  - Visualize os gastos acumulados do mês por serviço.
+  - Acesse o Cost Explorer para análises mais profundas e crie orçamentos.
+  - Adquira e gerencie Savings Plans.
+  - Publique relatórios de uso e custo.
 
 
 ### Teste de Conhecimento
