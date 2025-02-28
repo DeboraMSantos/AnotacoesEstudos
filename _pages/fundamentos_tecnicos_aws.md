@@ -1540,18 +1540,43 @@ A AWS oferece uma variedade de planos de suporte para atender às necessidades d
 - **Incluído em**: Planos Enterprise.
 - **Funções**: Os TAMs fornecem gerenciamento de eventos de infraestrutura, análises da Well-Architected e análises de operações.
 
-### Recursos Adicionais
-- Para mais informações sobre os planos e estruturas de preços do AWS Support, visite: [AWS Premium Support](https://aws.amazon.com/premiumsupport).
-
 ### Nota sobre TAMs
 - Os TAMs são parte integral dos planos Enterprise, oferecendo orientação especializada para otimizar o uso de recursos da AWS e suporte personalizado conforme as necessidades do negócio.
+
+### AWS Marketplace
+
+O AWS Marketplace é um catálogo digital que oferece milhares de softwares de provedores independentes, permitindo que você encontre, teste e compre soluções de software prontas para uso na AWS.
+
+#### Informações Disponíveis
+- **Detalhes do Produto**: Informações sobre preços, suporte e avaliações de clientes.
+- **Exploração por Setor e Caso de Uso**: Soluções específicas para diferentes indústrias, como saúde, com casos de uso detalhados.
+
+#### Categorias do AWS Marketplace
+- **Software de Infraestrutura**: Ferramentas para gerenciar e configurar infraestrutura de TI.
+- **DevOps**: Soluções para desenvolvimento de aplicações, monitoramento e teste.
+- **Produtos de Dados**: Ferramentas para gerenciamento e análise de dados.
+- **Serviços Profissionais**: Consultoria e outros serviços profissionais para ajudar na implementação e gestão de tecnologias.
+- **Aplicações de Negócios**: Software para operações de negócios como ERP, CRM, etc.
+- **Machine Learning**: Modelos e ferramentas para implementar e gerenciar soluções de aprendizado de máquina.
+- **Indústrias**: Soluções especializadas para setores específicos, como saúde, educação, e finanças.
+- **Internet das Coisas (IoT)**: Produtos voltados para o desenvolvimento e gestão de dispositivos IoT.
+
+#### Como Usar
+- **Busca e Filtragem**: Pesquise produtos diretamente relacionados ao seu setor ou necessidade específica.
+- **Avaliações e Preços**: Consulte as avaliações de outros usuários e compare as opções de preço para encontrar a melhor solução.
+
+### Exemplos Práticos
+- **Saúde**: Implementar soluções para proteção de prontuários de pacientes ou utilizar machine learning para prever riscos de saúde.
+- **DevOps**: Encontrar ferramentas de automação para desenvolvimento e teste de aplicações.
+
+
 
 ### Teste de Conhecimento
 #### 1. O nível gratuito da AWS inclui ofertas que ficam disponíveis para novos clientes AWS por um determinado período após a data de cadastro da AWS. Qual é a duração deste período?
 R: 12 meses
 
 #### 2. Qual plano do Support inclui todas as verificações do AWS Trusted Advisor pelo menor custo?
-R:
+R: Business
 
 
 # Módulo 9: Migraçao e Inovação
