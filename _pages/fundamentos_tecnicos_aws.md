@@ -1330,6 +1330,76 @@ OBS: Essas são as categorias:
 
 # Módulo 8: Definição de Preços e Suporte
 
+### Nível Gratuito da AWS
+
+O nível gratuito da AWS permite que você experimente determinados serviços da AWS sem custos, de acordo com três tipos de ofertas: Sempre gratuito, 12 meses gratuitos e Versões de teste. Este nível é ideal para novos clientes que querem testar os serviços AWS antes de se comprometerem financeiramente.
+
+#### Sempre Gratuito
+
+Ofertas que não expiram e estão disponíveis para todos os clientes AWS. Exemplos incluem:
+
+- **AWS Lambda**: Até 1 milhão de solicitações gratuitas e 3,2 milhões de segundos de tempo de computação por mês.
+- **Amazon DynamoDB**: 25 GB de armazenamento gratuito por mês.
+
+#### 12 Meses Gratuitos
+
+Estas ofertas são válidas por 12 meses a partir da sua inscrição na AWS e incluem:
+
+- **Amazon S3 Standard**: Quantidades específicas de armazenamento gratuito.
+- **Amazon EC2**: Limites para horas mensais de tempo de computação gratuito.
+- **Amazon CloudFront**: Quantidades de transferência de dados gratuitos para fora.
+
+#### Versões de Teste
+
+Testes gratuitos de curto prazo que começam na data de ativação de um serviço específico. A duração do teste varia conforme o serviço:
+
+- **Amazon Inspector**: Versão gratuita de 90 dias.
+- **Amazon Lightsail**: 750 horas de uso gratuito em um período de 30 dias.
+
+#### Benefícios
+
+O nível gratuito da AWS é uma excelente forma de aprender sobre os serviços da AWS sem pressão financeira, proporcionando a empresas e desenvolvedores uma oportunidade de testar e entender melhor a plataforma antes de fazer qualquer investimento significativo.
+
+
+### Como Funciona a Definição de Preço da AWS
+
+A AWS utiliza um modelo de pagamento conforme o uso, permitindo flexibilidade e controle de custos para seus usuários. Abaixo estão descritas as três principais categorias de definição de preço na AWS.
+
+#### Pague somente pelo que usar
+
+- **Descrição**: Os usuários pagam apenas pelos recursos que usam, sem necessidade de contratos de longo prazo ou licenciamento complexo. Isso aplica-se a todos os serviços AWS, onde você paga conforme o consumo real de recursos como CPU, armazenamento e transferência de dados.
+
+#### Pague menos ao fazer reserva
+
+- **Descrição**: Ao reservar recursos, como instâncias do Amazon EC2 para usos prolongados, os usuários podem obter descontos significativos em comparação ao preço de instâncias sob demanda.
+- **Exemplo**: Utilizar o Amazon EC2 Instance Savings Plans pode resultar em economias de até 72% em comparação com a capacidade equivalente da instância sob demanda para cargas de trabalho contínuas.
+
+#### Pague menos com descontos baseados em volume, quando usar mais
+
+- **Descrição**: A definição de preço da AWS também oferece descontos baseados no volume de uso, onde o custo unitário pode diminuir à medida que o consumo aumenta.
+- **Exemplo**: O custo por GB de armazenamento usado no Amazon S3 é reduzido progressivamente com o aumento do volume de dados armazenados.
+
+### Calculadora de Preços da AWS
+
+A Calculadora de Preços da AWS permite aos usuários explorar e estimar os custos dos serviços AWS para seus casos de uso específicos. As estimativas podem ser organizadas por grupos, refletindo a estrutura organizacional, e depois compartilhadas através de links.
+
+- **Funcionalidade**: Inserir detalhes como tipo de sistema operacional, requisitos de memória e de entrada/saída para obter comparações estimadas de custos entre diferentes tipos de instâncias EC2 e regiões AWS.
+
+### Exemplos de Definição de Preços da AWS
+
+- **AWS Lambda**: Se o uso estiver abaixo do nível gratuito, como 680 solicitações com uma duração total de 255 segundos, não há custos.
+- **Amazon EC2**: Se os recursos utilizados estiverem dentro dos limites do nível gratuito, como uma instância em execução por 107 horas e 11 GB de EBS, não há custos.
+- **Amazon S3**: Uso exemplificado em duas regiões com diferentes níveis de solicitações e uso de armazenamento, todas abaixo dos limites do nível gratuito, resultando em nenhum custo.
+
+
+
+
+### Teste de Conhecimento
+#### 1. O nível gratuito da AWS inclui ofertas que ficam disponíveis para novos clientes AWS por um determinado período após a data de cadastro da AWS. Qual é a duração deste período?
+R: 12 meses
+
+
+
 # Módulo 9: Migraçao e Inovação
 
 # Módulo 10: A Jornada para a Nuvem
