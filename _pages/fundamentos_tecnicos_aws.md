@@ -1432,6 +1432,43 @@ Este painel é uma ferramenta essencial para monitorar, analisar e controlar os 
   - Publique relatórios de uso e custo.
 
 
+
+### Cobrança Consolidada na AWS
+Com a cobrança consolidada, gerenciar várias contas AWS se torna mais simples e econômico, permitindo uma gestão mais eficaz dos recursos e custos em uma organização grande.
+
+
+#### AWS Organizations e Cobrança Consolidada
+
+- **Descrição**: AWS Organizations permite gerenciar várias contas AWS, oferecendo a opção de cobrança consolidada.
+- **Vantagem Principal**: Em vez de receber múltiplas faturas para cada conta, você recebe uma única fatura consolidada, facilitando o controle e a gestão financeira.
+
+#### Funcionamento da Cobrança Consolidada
+
+- **Faturas Únicas**: Todas as despesas das contas vinculadas são consolidadas em uma única fatura para o proprietário da organização.
+- **Transparência**: Você pode visualizar detalhadamente o quanto foi gasto por cada conta vinculada, centralizando a informação e facilitando a análise de custos.
+
+#### Benefícios da Cobrança Consolidada
+
+- **Economia Compartilhada**: O uso acumulado no nível da organização pode resultar em descontos por volume.
+- **Compartilhamento de Recursos**: Recursos como Saving Plans ou instâncias reservadas para EC2 podem ser compartilhados entre as contas na organização.
+- **Custo Zero para o Recurso**: Utilizar a cobrança consolidada é um serviço gratuito dentro do AWS Organizations.
+
+#### Exemplo de Implementação
+
+1. **Criação da Organização**:
+   - Adicione múltiplas contas AWS sob uma conta principal.
+   - Gerencie todas as contas através de uma interface centralizada.
+
+2. **Faturamento Consolidado**:
+   - Receba os encargos de todas as contas vinculadas na fatura da conta principal.
+   - Inclui detalhes de cada conta para uma visão clara do consumo.
+
+3. **Compartilhamento de Benefícios**:
+   - Combine o uso de todas as contas para obter preços mais baixos com base em descontos por volume.
+
+
+
+
 ### Teste de Conhecimento
 #### 1. O nível gratuito da AWS inclui ofertas que ficam disponíveis para novos clientes AWS por um determinado período após a data de cadastro da AWS. Qual é a duração deste período?
 R: 12 meses
