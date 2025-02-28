@@ -1577,7 +1577,17 @@ R: 12 meses
 
 #### 2. Qual plano do Support inclui todas as verificações do AWS Trusted Advisor pelo menor custo?
 R: Business
+#### 3. Qual ação você pode executar com a cobrança consolidada?
+R: Combinar o uso entre contas para obter descontos de preços por volume.
+#### 4. Qual ferramenta de definição de preço é usada para visualizar, entender e gerenciar o custo e o uso da AWS ao longo do tempo?
+R: AWS Cost Explorer
+#### 5. Qual ferramenta de preços permite receber alertas quando o uso do serviço excede um limite que você definiu?
+R: AWS Budgets
+#### 6. Sua empresa deseja ter suporte de um technical account manager (TAM) da AWS. Qual plano de suporte você deve escolher?
+R: Empresarial de Grande Porte
 
+#### 7. Qual serviço ou recurso é usado para encontrar software de terceiros que pode ser executado na AWS?
+R: AWS Marketplace
 
 # Módulo 9: Migraçao e Inovação
 
