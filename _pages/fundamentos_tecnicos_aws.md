@@ -1632,7 +1632,7 @@ O AWS CAF fornece um roteiro estruturado para organizações que buscam migrar p
 
 ### Seis Estratégias de Migração para a Nuvem
 
-Quando uma organização considera migrar aplicações para a nuvem, ela pode escolher entre seis estratégias principais. Cada estratégia atende a diferentes necessidades e objetivos de negócios.
+Quando uma organização considera migrar aplicações para a nuvem, ela pode escolher entre seis estratégias principais. Cada estratégia de migração oferece diferentes benefícios e deve ser escolhida com base nos objetivos específicos de negócio e nas características técnicas das aplicações envolvidas.
 
 #### Redefinir Hospedagem
 - **Também conhecida como**: Lift-and-shift.
@@ -1660,9 +1660,31 @@ Quando uma organização considera migrar aplicações para a nuvem, ela pode es
 - **Descrição**: Eliminação de aplicações obsoletas ou desnecessárias.
 - **Caso de uso**: Ideal para simplificar o ambiente de TI e reduzir custos ao descontinuar aplicações que não agregam valor.
 
-### Escolhendo a Estratégia Correta
-Cada estratégia de migração oferece diferentes benefícios e deve ser escolhida com base nos objetivos específicos de negócio e nas características técnicas das aplicações envolvidas.
 
+
+### AWS Snow Family
+
+A AWS Snow Family é uma série de dispositivos físicos projetados para facilitar o transporte físico de grandes volumes de dados para dentro e para fora da AWS. Abaixo, detalham-se os dispositivos que compõem esta família.
+
+#### AWS Snowcone
+- **Descrição**: O Snowcone é o menor membro da Snow Family, projetado para ser portátil e robusto, facilitando o transporte de dados em locais com limitações de espaço e conectividade.
+
+#### AWS Snowball
+- **Descrição**: O Snowball é um dispositivo de tamanho médio dentro da Snow Family que permite transferir grandes quantidades de dados de e para a nuvem da AWS. Existem versões específicas que suportam tarefas computacionais locais enquanto movimentam dados.
+
+#### AWS Snowmobile
+- **Descrição**: O Snowmobile é um serviço massivo de transferência de dados que pode acomodar até 100 petabytes por unidade. Consiste em um contêiner de 13,71 metros de comprimento montado em um caminhão semirreboque, ideal para mover enormes volumes de dados para a nuvem AWS em uma única viagem.
+
+### Funcionalidades Comuns
+- **Segurança e Gerenciamento**: Todos os dispositivos da Snow Family incorporam recursos avançados de segurança, monitoramento e gerenciamento da AWS.
+- **Capacidade**: Varia de pequenas quantidades de dados com o Snowcone até exabytes com o Snowmobile, atendendo a diferentes necessidades e escalas de dados.
+- **Propriedade e Gestão**: A AWS é responsável pela manutenção, gestão e segurança de todos os dispositivos da Snow Family.
+
+### Utilização
+- **Cenários de uso**: Os dispositivos são usados para migração de dados em massa, recuperação de desastres, conteúdo digital em larga escala, transferência de dados de pesquisa científica, entre outros.
+- **Integração com a AWS**: Integrados plenamente com a AWS para oferecer uma solução coesa de transferência de dados e computação.
+
+Esses dispositivos são projetados para resolver desafios específicos de transferência de dados em ambientes com limitações de conectividade ou grandes volumes de dados.
 
 
 ### Teste de Conhecimento
