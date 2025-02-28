@@ -1634,29 +1634,29 @@ O AWS CAF fornece um roteiro estruturado para organizações que buscam migrar p
 
 Quando uma organização considera migrar aplicações para a nuvem, ela pode escolher entre seis estratégias principais. Cada estratégia atende a diferentes necessidades e objetivos de negócios.
 
-#### #### Redefinir Hospedagem
+#### Redefinir Hospedagem
 - **Também conhecida como**: Lift-and-shift.
 - **Descrição**: Consiste em mover aplicações para a nuvem sem fazer alterações na arquitetura. 
 - **Caso de uso**: Ideal para empresas que desejam migrar rapidamente e a um custo menor.
 
-#### #### Redefinir Plataforma
+#### Redefinir Plataforma
 - **Também conhecida como**: Lift, tinker and shift.
 - **Descrição**: Envolve pequenas otimizações na nuvem para melhorar a eficiência sem modificar a arquitetura central.
 - **Caso de uso**: Útil para aplicações que se beneficiam de otimizações específicas de nuvem sem a necessidade de uma reformulação completa.
 
-#### #### Refatorar/Rearquitetura
+#### Refatorar/Rearquitetura
 - **Descrição**: Reimaginar como uma aplicação é arquitetada utilizando recursos nativos da nuvem para melhorar funcionalidades, escalabilidade ou performance.
 - **Caso de uso**: Recomendada para aplicações que precisam de melhorias significativas que não são possíveis em sua forma atual.
 
-#### #### Recomprar
+#### Recomprar
 - **Descrição**: Substituição de aplicações existentes por versões comerciais disponíveis como SaaS.
 - **Caso de uso**: Aplicável quando substituir aplicações antigas por soluções SaaS modernas traz benefícios como redução de custos e aumento de eficiência.
 
-#### #### Reter
+#### Reter
 - **Descrição**: Manter certas aplicações no ambiente atual devido a restrições de refatoração ou prioridades de negócios.
 - **Caso de uso**: Adequado para aplicações críticas que exigem uma transformação significativa ou que não oferecem retorno imediato se migradas.
 
-#### #### Retirar
+#### Retirar
 - **Descrição**: Eliminação de aplicações obsoletas ou desnecessárias.
 - **Caso de uso**: Ideal para simplificar o ambiente de TI e reduzir custos ao descontinuar aplicações que não agregam valor.
 
