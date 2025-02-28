@@ -1509,11 +1509,49 @@ O AWS Cost Explorer é uma ferramenta analítica projetada para ajudar você a v
 - **Planejamento Orçamentário**: A análise detalhada oferecida pelo AWS Cost Explorer auxilia no planejamento orçamentário, permitindo ajustes proativos nas estratégias de uso e alocação de recursos.
 - **Decisões Estratégicas**: As visualizações e os relatórios gerados podem fundamentar decisões estratégicas, otimizando gastos e melhorando a eficiência operacional.
 
+### Planos do AWS Support
+
+A AWS oferece uma variedade de planos de suporte para atender às necessidades de diferentes tipos de usuários, desde pequenas startups até grandes empresas.
+
+#### Basic Support
+- **Disponibilidade**: Gratuito para todos os clientes da AWS.
+- **Inclusões**: Acesso a documentação, whitepapers, fóruns de suporte, AWS Trusted Advisor (limitado), e AWS Personal Health Dashboard.
+
+#### Developer Support
+- **Ideal para**: Empresas experimentando com a AWS ou configurando testes.
+- **Benefícios**: Suporte por email com tempo de resposta de 24 horas para questões gerais e menos de 12 horas para sistemas críticos danificados.
+
+#### Business Support
+- **Indicado para**: Empresas que operam cargas de trabalho de produção.
+- **Tempo de Resposta**: 4 horas para sistemas de produção danificados e 1 hora para sistemas inoperantes.
+- **Extras**: Acesso completo ao Trusted Advisor, suporte direto por telefone e gestão de eventos de infraestrutura por uma taxa extra.
+
+#### Enterprise On-Ramp
+- **Recomendado para**: Empresas migrando cargas de trabalho críticas.
+- **Tempo de Resposta**: 30 minutos para questões críticas.
+- **Gerenciamento**: Acesso a gerentes técnicos de contas (TAMs) para orientação proativa.
+
+#### Enterprise Support
+- **Projetado para**: Empresas executando cargas de trabalho de missão crítica.
+- **Tempo de Resposta**: 15 minutos para questões críticas.
+- **Suporte**: TAM designado, avaliações proativas, workshops e análises detalhadas.
+
+#### Suporte de Concierge
+- **Incluído em**: Planos Enterprise.
+- **Funções**: Os TAMs fornecem gerenciamento de eventos de infraestrutura, análises da Well-Architected e análises de operações.
+
+### Recursos Adicionais
+- Para mais informações sobre os planos e estruturas de preços do AWS Support, visite: [AWS Premium Support](https://aws.amazon.com/premiumsupport).
+
+### Nota sobre TAMs
+- Os TAMs são parte integral dos planos Enterprise, oferecendo orientação especializada para otimizar o uso de recursos da AWS e suporte personalizado conforme as necessidades do negócio.
 
 ### Teste de Conhecimento
 #### 1. O nível gratuito da AWS inclui ofertas que ficam disponíveis para novos clientes AWS por um determinado período após a data de cadastro da AWS. Qual é a duração deste período?
 R: 12 meses
 
+#### 2. Qual plano do Support inclui todas as verificações do AWS Trusted Advisor pelo menor custo?
+R:
 
 
 # Módulo 9: Migraçao e Inovação
