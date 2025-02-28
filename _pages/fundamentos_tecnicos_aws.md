@@ -1467,6 +1467,28 @@ Com a cobrança consolidada, gerenciar várias contas AWS se torna mais simples 
    - Combine o uso de todas as contas para obter preços mais baixos com base em descontos por volume.
 
 
+### AWS Budgets
+
+O AWS Budgets é uma ferramenta que permite criar orçamentos para gerenciar o uso do serviço, os custos associados e as reservas de instâncias dentro da AWS.
+
+#### Atualizações e Precisão
+
+- **Frequência de Atualização**: As informações no AWS Budgets são atualizadas três vezes ao dia, o que permite monitorar com precisão o uso em relação aos valores orçados.
+- **Utilidade**: Ajuda a manter o uso dentro dos limites desejados ou dos limites do nível gratuito da AWS.
+
+#### Alertas Personalizados
+
+- **Função**: Você pode definir alertas personalizados que notificarão você quando o uso estiver próximo ou ultrapassar o valor orçado.
+- **Exemplo de Configuração de Alerta**: Se o orçamento para o Amazon EC2 for de USD 200 por mês, é possível configurar um alerta para ser notificado quando o uso atingir USD 100.
+
+#### Uso Prático do AWS Budgets
+
+- **Exemplo de Uso**: Ao definir um orçamento para o Amazon EC2, você pode ser proativo na gestão dos custos, evitando surpresas no final do mês.
+- **Configuração de Alertas**: Esses alertas permitem uma resposta rápida a mudanças inesperadas no uso, assegurando que as decisões sobre gastos possam ser ajustadas em tempo real.
+
+#### Para Mais Informações
+
+- **Aprender Mais**: O AWS Budgets possui uma interface detalhada que permite explorar diversas configurações e opções, acessível através do painel de gestão do AWS.
 
 
 ### Teste de Conhecimento
