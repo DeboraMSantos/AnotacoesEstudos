@@ -1630,7 +1630,6 @@ O AWS CAF fornece um roteiro estruturado para organizações que buscam migrar p
 - **Atividades**: Definir e alinhar procedimentos operacionais e treinamentos para suportar operações na nuvem.
 
 
-
 ### Seis Estratégias de Migração para a Nuvem
 
 Quando uma organização considera migrar aplicações para a nuvem, ela pode escolher entre seis estratégias principais. Cada estratégia atende a diferentes necessidades e objetivos de negócios.
@@ -1669,8 +1668,11 @@ Cada estratégia de migração oferece diferentes benefícios e deve ser escolhi
 ### Teste de Conhecimento
 #### 1. Qual perspectiva do AWS Cloud Adoption Framework ajuda você a elaborar, implementar e otimizar sua infraestrutura da AWS com base em suas metas e perspectivas de negócio?
 R: Perspectiva de plataforma
-#### 2. Estratégias de migração
-R:
+#### 2. Qual estratégia de migração envolve a mudança para um produto diferente?
+R: Recomprar
+#### 3. Qual é a capacidade de armazenamento do Snowball Edge Storage Optimized?
+R: 80 TB
+
 
 # Módulo 10: A Jornada para a Nuvem
 
