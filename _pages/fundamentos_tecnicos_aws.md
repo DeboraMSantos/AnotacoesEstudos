@@ -1748,6 +1748,41 @@ Para mais informações sobre como integrar e maximizar o uso do Amazon CodeWhis
 
 Estas são apenas algumas das inovações que a AWS oferece, cada uma com potencial para transformar setores e acelerar o desenvolvimento de novas soluções tecnológicas.
 
+
+
+### Teste de Conhecimento
+#### 1. Qual perspectiva do AWS Cloud Adoption Framework ajuda você a elaborar, implementar e otimizar sua infraestrutura da AWS com base em suas metas e perspectivas de negócio?
+R: Perspectiva de plataforma
+#### 2. Qual estratégia de migração envolve a mudança para um produto diferente?
+R: Recomprar
+#### 3. Qual é a capacidade de armazenamento do Snowball Edge Storage Optimized?
+R: 80 TB
+#### 4. Qual serviço ajuda você a criar, treinar e implantar rapidamente modelos de machine learning?
+R: Amazon SageMaker
+#### 5. Qual perspectiva do AWS Cloud Adoption Framework ajuda você a estruturar a seleção e a implementação de permissões?
+R: Perspectiva de segurança
+#### 6. Quais estratégias fazem parte das seis estratégias de migração de aplicativo? (Selecione DUAS opções.)
+R1: Reter
+R2: Redefinir hospedagem
+
+Todas as 6:
+Redefinir Hospedagem
+Redefinir Plataforma
+Refatorar/Rearquitetura
+Recomprar
+Reter
+Retirar
+
+#### 7. Qual é a capacidade de armazenamento do AWS Snowmobile?
+R: 100 PB
+#### 8. Qual declaração descreve melhor o Amazon Lex?
+R: Um serviço para criação interfaces de conversação usando voz e texto
+
+
+
+
+# Módulo 10: A Jornada para a Nuvem
+
 ### AWS Well-Architected Framework
 
 O AWS Well-Architected Framework ajuda a projetar e operar sistemas confiáveis, seguros, eficientes e econômicos na AWS. Ele oferece um método para avaliar arquiteturas contra melhores práticas e descobrir áreas para melhoria.
@@ -1800,39 +1835,36 @@ O AWS Well-Architected Framework ajuda a projetar e operar sistemas confiáveis,
 ### Implementação e Análise
 O framework encoraja análises regulares para manter e melhorar a qualidade das soluções de nuvem, ajustando-se a novas tecnologias e práticas emergentes.
 
+
+
+### Vantagens da Computação em Nuvem
+
+A computação em nuvem na AWS oferece várias vantagens sobre os ambientes tradicionais on-premises ou híbridos. Aqui estão seis benefícios principais:
+
+#### Troque despesas iniciais por despesas variáveis
+- **Descrição**: Evite os custos antecipados de data centers e servidores físicos, optando por pagar conforme o consumo de recursos computacionais.
+
+#### Beneficie-se de grandes economias de escala
+- **Descrição**: Aproveite um custo variável menor que é difícil de alcançar individualmente, graças ao volume de uso agregado de clientes na nuvem, resultando em preços mais baixos.
+
+#### Pare de tentar adivinhar a capacidade
+- **Descrição**: Elimine a necessidade de prever a capacidade de infraestrutura necessária antes de lançar aplicações, utilizando recursos como o Amazon EC2 que permitem escalar conforme a necessidade.
+
+#### Aumente a velocidade e a agilidade
+- **Descrição**: Aproveite a flexibilidade da nuvem para desenvolver e lançar aplicações mais rapidamente, permitindo que as equipes de desenvolvimento inovem com mais eficiência.
+
+#### Parar de gastar dinheiro com execução e manutenção de data centers
+- **Descrição**: Reduza os gastos e o tempo dedicado à gestão de infraestrutura, permitindo que você foque mais em suas aplicações e clientes.
+
+#### Tenha alcance global em minutos
+- **Descrição**: Utilize a infraestrutura global da AWS para implantar aplicações rapidamente em qualquer parte do mundo, proporcionando uma experiência de baixa latência para seus usuários.
+
+### Implementação e Benefícios
+Esses benefícios da computação em nuvem permitem que as empresas sejam mais ágeis, custo-efetivas e inovadoras, aproveitando a vasta gama de serviços e infraestrutura global que a AWS oferece.
+
 ### Teste de Conhecimento
-#### 1. Qual perspectiva do AWS Cloud Adoption Framework ajuda você a elaborar, implementar e otimizar sua infraestrutura da AWS com base em suas metas e perspectivas de negócio?
-R: Perspectiva de plataforma
-#### 2. Qual estratégia de migração envolve a mudança para um produto diferente?
-R: Recomprar
-#### 3. Qual é a capacidade de armazenamento do Snowball Edge Storage Optimized?
-R: 80 TB
-#### 4. Qual serviço ajuda você a criar, treinar e implantar rapidamente modelos de machine learning?
-R: Amazon SageMaker
-#### 5. Qual perspectiva do AWS Cloud Adoption Framework ajuda você a estruturar a seleção e a implementação de permissões?
-R: Perspectiva de segurança
-#### 6. Quais estratégias fazem parte das seis estratégias de migração de aplicativo? (Selecione DUAS opções.)
-R1: Reter
-R2: Redefinir hospedagem
-
-Todas as 6:
-Redefinir Hospedagem
-Redefinir Plataforma
-Refatorar/Rearquitetura
-Recomprar
-Reter
-Retirar
-
-#### 7. Qual é a capacidade de armazenamento do AWS Snowmobile?
-R: 100 PB
-#### 8. Qual declaração descreve melhor o Amazon Lex?
-R: Um serviço para criação interfaces de conversação usando voz e texto
-#### 9. Qual pilar do AWS Well-Architected Framework se concentra na capacidade de uma carga de trabalho executar de maneira consistente e correta as funções pretendidas?
+#### 1. Qual pilar do AWS Well-Architected Framework se concentra na capacidade de uma carga de trabalho executar de maneira consistente e correta as funções pretendidas?
 R: Confiabilidade
 
-
-
-
-# Módulo 10: A Jornada para a Nuvem
 
 # Módulo 11: Noções Básicas do AWS Certified Cloud Practitioner
