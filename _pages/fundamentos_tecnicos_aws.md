@@ -1748,6 +1748,57 @@ Para mais informações sobre como integrar e maximizar o uso do Amazon CodeWhis
 
 Estas são apenas algumas das inovações que a AWS oferece, cada uma com potencial para transformar setores e acelerar o desenvolvimento de novas soluções tecnológicas.
 
+### AWS Well-Architected Framework
+
+O AWS Well-Architected Framework ajuda a projetar e operar sistemas confiáveis, seguros, eficientes e econômicos na AWS. Ele oferece um método para avaliar arquiteturas contra melhores práticas e descobrir áreas para melhoria.
+
+#### Excelência Operacional
+- **Descrição**: Executar e monitorar sistemas para entregar valor comercial contínuo.
+- **Práticas de design**:
+  - Executar operações como código.
+  - Anotar documentação.
+  - Antecipar falhas.
+  - Realizar alterações pequenas e reversíveis frequentemente.
+
+#### Segurança
+- **Descrição**: Proteger informações, sistemas e ativos enquanto entrega valor comercial.
+- **Práticas de design**:
+  - Automatizar práticas de segurança.
+  - Aplicar segurança em todas as camadas.
+  - Proteger dados em trânsito e em repouso.
+
+#### Confiabilidade
+- **Descrição**: O sistema deve ser capaz de recuperar-se de falhas e adaptar-se às mudanças de demanda.
+- **Práticas de design**:
+  - Testar procedimentos de recuperação.
+  - Usar scaling horizontal para maior disponibilidade.
+  - Implementar recuperação automática de falhas.
+
+#### Eficiência de Desempenho
+- **Descrição**: Utilizar recursos computacionais eficientemente para atender requisitos e adaptar-se a mudanças.
+- **Práticas de design**:
+  - Experimentar com frequência.
+  - Adotar arquiteturas serverless.
+  - Projetar para alcance global em minutos.
+
+#### Otimização de Custos
+- **Descrição**: Executar sistemas para obter o máximo de valor comercial pelo menor custo.
+- **Práticas de design**:
+  - Adotar um modelo de consumo.
+  - Analisar e atribuir despesas.
+  - Usar serviços gerenciados para reduzir custo de propriedade.
+
+#### Sustentabilidade
+- **Descrição**: Melhorar continuamente os impactos ambientais da operação de sistemas.
+- **Práticas de design**:
+  - Entender o impacto ambiental.
+  - Estabelecer metas de sustentabilidade.
+  - Maximizar a utilização dos recursos.
+  - Adotar ofertas de hardware e software mais eficientes.
+  - Usar serviços gerenciados para reduzir o impacto.
+
+### Implementação e Análise
+O framework encoraja análises regulares para manter e melhorar a qualidade das soluções de nuvem, ajustando-se a novas tecnologias e práticas emergentes.
 
 ### Teste de Conhecimento
 #### 1. Qual perspectiva do AWS Cloud Adoption Framework ajuda você a elaborar, implementar e otimizar sua infraestrutura da AWS com base em suas metas e perspectivas de negócio?
@@ -1774,10 +1825,10 @@ Retirar
 
 #### 7. Qual é a capacidade de armazenamento do AWS Snowmobile?
 R: 100 PB
-
 #### 8. Qual declaração descreve melhor o Amazon Lex?
 R: Um serviço para criação interfaces de conversação usando voz e texto
-
+#### 9. Qual pilar do AWS Well-Architected Framework se concentra na capacidade de uma carga de trabalho executar de maneira consistente e correta as funções pretendidas?
+R: Confiabilidade
 
 
 
