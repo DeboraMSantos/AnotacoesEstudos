@@ -1875,4 +1875,73 @@ R2: Parar de gastar dinheiro com execução e manutenção de data centers.
  
 
 
-# Módulo 11: Noções Básicas do AWS Certified Cloud Practitioner
+# Teste final para AWS Certified Cloud Practitioner
+#### 1. Qual opção de preço do Amazon EC2 reduz o custo quando uma empresa oferece um desconto quando você assume um compromisso de gasto por hora com uma família de instância e uma Região por um período de vigência de 1 ou 3 anos?
+R: Savings Plans da instância do EC2
+#### 2. Qual serviço permite implantar e dimensionar rapidamente aplicações na AWS?
+R: AWS Elastic Beanstalk
+#### 3. Qual ação pode ser executada no Amazon CloudFront?
+R: Entregar conteúdo aos clientes por uma rede global de locais de borda.
+#### 4. Qual declaração é VERDADEIRA sobre o AWS Lambda?
+R: A empresa paga apenas pelo tempo de computação durante a execução do código.
+#### 5. Qual pilar do AWS Well-Architected Framework cujo foco é usar recursos de computação de maneiras que atendam aos requisitos do sistema?
+R: Eficiência de desempenho
+#### 6. Quais tarefas são responsabilidades da AWS? (Selecione DUAS opções.)
+R1: Configuração de dispositivos de infraestrutura da AWS
+R2: Manutenção da infraestrutura de virtualização
+#### 7. Qual estratégia de migração envolve alterar a forma como uma aplicação é arquitetada e desenvolvida, normalmente usando recursos nativos da nuvem?
+R: Refatorar
+#### 8. Qual categoria do AWS Trusted Advisor inclui verificações para alta utilização de instâncias do EC2?
+R: Desempenho
+#### 9. Qual declaração descreve melhor o AWS Marketplace?
+R: Um catálogo digital que inclui milhares de ofertas de software de fornecedores independentes de software
+#### 10. Qual ferramenta permite visualizar, entender e gerenciar os custos e uso da AWS ao longo do tempo?
+R: AWS Cost Explorer
+#### 11. Qual componente ou serviço estabelece uma conexão privada dedicada entre o data center on-premises e a nuvem privada virtual (VPC)?
+R: AWS Direct Connect
+#### 12. Quais planos de suporte incluem acesso a todas as verificações do AWS Trusted Advisor? 
+R1: Empresarial de Grande Porte
+R2: Empresarial
+#### 13. Um desenvolvedor de aplicação deseja enviar e receber mensagens entre componentes distribuídos de aplicações. Qual serviço deve ser utilizado?    
+R: Amazon Simple Queue Service (Amazon SQS)
+#### 14. Qual serviço é usado para transferência até 100 PB de dados para a AWS?
+R: AWS Snowmobile
+#### 15. Qual das afirmações a seguir melhor descreve as Zonas de Disponibilidade?
+R: Uma parte totalmente isolada da infraestrutura global da AWS
+#### 16. Um engenheiro de nuvem está executando uma instância do Amazon EC2 e deseja armazenar dados em um recurso anexado. Os dados são temporários e não serão mantidos por longo prazo. Qual recurso você deve usar?
+R: Armazenamento de instância
+#### 17. Qual serviço permite criar fluxos de trabalho necessários para a revisão humana das previsões de machine learning?
+R: Amazon Augmented AI
+#### 18. Qual serviço permite consolidar e gerenciar várias contas AWS em um local central?
+R: AWS Organizations
+#### 19. Um engenheiro de nuvem deseja armazenar dados em um volume anexado a uma instância do Amazon EC2. Qual serviço deve ser utilizado?
+R: Amazon Elastic Block Store (Amazon EBS)
+#### 20. Qual serviço apresenta revisão de detalhes de atividades de usuário e chamadas de API que ocorreram no ambiente AWS?
+R: AWS CloudTrail
+#### 21. Um arquiteto de nuvem quer que o Amazon S3 monitore padrões de acesso do objeto. Qual storage class ele deve usar? 
+R: Amazon S3 Intelligent-Tiering
+#### 22. Quais ações você pode executar no Amazon Route 53? (Selecione DUAS opções.)
+R1: Quais ações você pode executar no Amazon Route 53? (Selecione DUAS opções.)
+R2: Gerenciar registros DNS para nomes de domínio.
+#### 23. Um desenvolvedor de aplicação deseja armazenar dados em um banco de dados de chave-valor. Qual serviço deve ser utilizado?
+R: Amazon DynamoDB
+#### 24. Qual perspectiva do AWS Cloud Adoption Framework se concentra na recuperação de cargas de trabalho de TI para atender aos requisitos dos stekeholders da empresa?
+R: Perspectiva de operações
+#### 25. Qual componente da nuvem privada virtual (VPC) controla o tráfego de entrada e saída para instâncias do Amazon EC2?
+R: Grupo de segurança
+#### 26. Qual serviço executa aplicações em contêineres na AWS?
+R: Amazon Elastic Kubernetes Service (Amazon EKS)
+#### 27. Qual declaração descreve melhor o Amazon GuardDuty?
+R: Um serviço que realiza detecção inteligente de ameaças na infraestrutura e nos recursos da AWS
+#### 28. Na storage class S3 Intelligent-Tiering, o Amazon S3 move objetos entre um nível de acesso frequente e um nível de acesso pouco frequente. Quais classes de armazenamento são usadas para esses níveis? (Selecione DUAS opções.)
+R1: S3 Standard
+R2: S3 Standard-IA
+#### 29. Qual afirmação melhor descreve o Elastic Load Balancing?
+R: Um serviço que distribui o tráfego de entrada entre vários destinos, como instâncias do Amazon EC2
+#### 30. Qual ferramenta realiza ações de automação para serviços e aplicações da AWS por meio de scripts? 
+R: AWS Command Line Interface
+
+
+
+
+
