@@ -1758,6 +1758,27 @@ R: Recomprar
 R: 80 TB
 #### 4. Qual serviço ajuda você a criar, treinar e implantar rapidamente modelos de machine learning?
 R: Amazon SageMaker
+#### 5. Qual perspectiva do AWS Cloud Adoption Framework ajuda você a estruturar a seleção e a implementação de permissões?
+R: Perspectiva de segurança
+#### 6. Quais estratégias fazem parte das seis estratégias de migração de aplicativo? (Selecione DUAS opções.)
+R1: Reter
+R2: Redefinir hospedagem
+
+Todas as 6:
+Redefinir Hospedagem
+Redefinir Plataforma
+Refatorar/Rearquitetura
+Recomprar
+Reter
+Retirar
+
+#### 7. Qual é a capacidade de armazenamento do AWS Snowmobile?
+R: 100 PB
+
+#### 8. Qual declaração descreve melhor o Amazon Lex?
+R: Um serviço para criação interfaces de conversação usando voz e texto
+
+
 
 
 
