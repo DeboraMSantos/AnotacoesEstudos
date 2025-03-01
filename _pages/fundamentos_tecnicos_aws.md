@@ -1717,8 +1717,34 @@ A AWS oferece uma ampla gama de serviços que permitem inovações significativa
 - **AWS DeepRacer**: Uma plataforma experimental para desenvolvedores testarem técnicas de aprendizado por reforço em um ambiente de corrida lúdico.
 - **Internet das Coisas (IoT)**: Ferramentas e serviços que permitem a comunicação e gestão de dispositivos IoT globalmente.
 
+
 ### Treinamento e Certificação AWS
 - **Descrição**: O AWS Training & Certification oferece cursos e certificações que ajudam a manter os profissionais atualizados com as mais recentes tecnologias e melhores práticas recomendadas pela AWS.
+
+### Amazon CodeWhisperer
+
+Amazon CodeWhisperer é uma ferramenta de inteligência artificial para desenvolvimento de software que auxilia os desenvolvedores a escrever código mais eficiente e seguro. Aqui estão os principais benefícios e funcionalidades do Amazon CodeWhisperer:
+
+#### Características Principais
+- **Completar Código**: Utiliza processamento de linguagem natural para entender comentários e gerar código correspondente, facilitando a escrita de funções e blocos de código completos.
+- **Análise de Contexto**: Ajusta sugestões de código para se alinhar ao estilo de codificação e às convenções de nomenclatura do projeto atual.
+- **Verificação de Segurança**: Avalia o código contra padrões de segurança reconhecidos, como os do Open Worldwide Application Security Project, e práticas recomendadas de segurança da AWS.
+
+#### Benefícios para Desenvolvedores
+- **Automatização de Tarefas Repetitivas**: Simplifica o desenvolvimento ao automatizar tarefas repetitivas, economizando tempo dos desenvolvedores.
+- **Aprendizado de Novas Linguagens**: Reduz a necessidade de dedicar horas para aprender novas linguagens, permitindo que os desenvolvedores utilizem sugestões de código adaptadas ao seu estilo.
+- **Qualidade e Eficiência**: Garante a entrega de código de alta qualidade, ajudando a construir aplicações mais robustas e eficientes.
+
+#### Segurança e Conformidade
+- **Mitigação de Vulnerabilidades**: Ajuda a identificar e mitigar vulnerabilidades de segurança, protegendo a integridade da base de código.
+- **Atualizações Contínuas**: Mantém as aplicações seguras e atualizadas com as últimas práticas de segurança.
+
+#### Impacto Organizacional
+- **Aceleração do Desenvolvimento**: Permite uma entrega mais rápida de soluções de software ao acelerar o processo de desenvolvimento.
+- **Foco em Inovação**: Libera os desenvolvedores para se concentrarem em aspectos mais críticos do projeto, potencializando a inovação.
+
+Para mais informações sobre como integrar e maximizar o uso do Amazon CodeWhisperer em seus projetos de desenvolvimento, visite a página oficial ou os recursos de aprendizado relacionados.
+
 
 Estas são apenas algumas das inovações que a AWS oferece, cada uma com potencial para transformar setores e acelerar o desenvolvimento de novas soluções tecnológicas.
 
@@ -1730,6 +1756,9 @@ R: Perspectiva de plataforma
 R: Recomprar
 #### 3. Qual é a capacidade de armazenamento do Snowball Edge Storage Optimized?
 R: 80 TB
+#### 4. Qual serviço ajuda você a criar, treinar e implantar rapidamente modelos de machine learning?
+R: Amazon SageMaker
+
 
 
 # Módulo 10: A Jornada para a Nuvem
