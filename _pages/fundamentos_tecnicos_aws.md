@@ -1865,9 +1865,14 @@ Esses benefícios da computação em nuvem permitem que as empresas sejam mais �
 ### Teste de Conhecimento
 #### 1. Qual pilar do AWS Well-Architected Framework se concentra na capacidade de uma carga de trabalho executar de maneira consistente e correta as funções pretendidas?
 R: Confiabilidade
-
 #### 2. Que processo é uma vantagem da grande economia em escala?
 R: Fazer o pagamento conforme o uso de preços mais baixos em consequência do uso agregado de serviços dos clientes da AWS
+#### 3. Qual pilar do AWS Well-Architected Framework inclui a capacidade de executar cargas de trabalho de maneira eficaz e obter informações sobre as operações?
+R:Excelência operacional
+#### 4. Quais são os benefícios da computação em nuvem? (Selecione DUAS opções.)
+R1: Aumente a velocidade e a agilidade.
+R2: Parar de gastar dinheiro com execução e manutenção de data centers.
+ 
 
 
 # Módulo 11: Noções Básicas do AWS Certified Cloud Practitioner
