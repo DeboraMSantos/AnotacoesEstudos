@@ -17,7 +17,7 @@
 - [Módulo 8: Definição de Preços e Suporte](#módulo-8-definição-de-preços-e-suporte)
 - [Módulo 9: Migração e Inovação](#módulo-9-migração-e-inovação)
 - [Módulo 10: A Jornada para a Nuvem](#módulo-10-a-jornada-para-a-nuvem)
-- [Módulo 11: Noções Básicas do AWS Certified Cloud Practitioner](#módulo-11-noções-básicas-do-aws-certified-cloud-practitioner)
+- [Teste Final AWS Certified Cloud Practitioner](#teste-final-para-aws-certified-cloud-practitioner)
 
   
 </menu>
